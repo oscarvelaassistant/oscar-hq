@@ -34,9 +34,10 @@ Wide-search tasks (contract says so) may use parallel subagents, each with one n
 Write `reports/<date>-<slot>.md` using the format in `reports/README.md`. Decisions first, numbered `D-###` continuing from `state.next_decision`. The morning report is the only one that may exceed 40 lines. Nothing to report means two lines.
 
 ## 6. Publish
-1. `git add -A && git commit -m "HQ run <date> <slot>: <one line>"` and push. If the push is rejected, pull with rebase once and push again; if it fails twice, write the report to the HUB and stop.
+1. Three separate commands, never chained with `&&` (the permission file matches one command at a time): `git add -A`, then `git commit -m "HQ run <date> <slot>: <one line>"`, then `git push`. If the push is rejected, `git pull --rebase` once and push again; if it fails twice, write the report to the HUB and stop.
 2. Save a HUB note: title `HQ report <date> <slot>`, body = the report, tags `report, for-vela`. Add tag `decisions` when the report contains any `D-###`.
-3. If GitHub issues are enabled for signalling (see `log/state.json` `signal_issue`), add a comment on that issue with the report's first 20 lines, so Vela's GitHub-event routine fires.
+3. Signalling Vela directly is off until `proposals/2026-10-31-github-events-with-vela.md` is adopted (her routines do not fire on issue comments; a webhook or a PR would). Vela reads the HUB at 06:30, 12:30 and 20:30 Madrid.
+4. Local runs started by Vela on her computer have no HUB connector: Vela passes the new HUB notes into the run prompt and saves the report to the HUB herself (see `roles/vela.md`). A run that has no HUB tool skips the HUB steps and says so in the report.
 
 ## 7. Log
 Append one line to `log/runs.md`: `<date> <slot>: tasks worked N, done N, waiting N, blocked N, decisions D-### to D-###, duration`. Update `log/state.json`.

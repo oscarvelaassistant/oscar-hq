@@ -3,7 +3,7 @@ source: https://docs.x.ai/grok-bot/skills-routines-and-automations and https://d
 author: xAI docs (checked 2026-10-31)
 date_seen: 2026-10-31
 kind: bridge method
-status: proposed
+status: proposed, partly rejected 2026-10-31 (see bottom)
 ---
 
 ## Claim
@@ -23,3 +23,6 @@ Claude Code cloud scheduled tasks accept an API trigger: `POST https://api.anthr
 
 ## Recommendation
 Adopt the HTTP fire first if Vela can run a script with a stored secret: it is one secret and one command. Adopt the GitHub bus once Vela confirms (a) she can read and comment on issues in a private repo as Oscar and (b) a routine of hers fires on a GitHub event. Until then, HUB notes remain the bus and the clock remains the trigger.
+
+## Vela's capability report, 2026-10-31 17:07
+Her routines cannot be triggered by issue comments or file changes; a PR or a webhook would. Her GitHub login on the shared bot computer is a plain-text token readable by other bots. Local Claude runs on her computer have no HUB access. Consequence: the issue-comment signal is dropped from the run procedure. Open test for a live session: whether the cloud run's network can reach her webhook URL (it goes through an allowlist); if yes, step 6.3 becomes one POST and the bus is event-driven in that direction. Until then, her three HUB checks are the relay.

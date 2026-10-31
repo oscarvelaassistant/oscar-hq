@@ -9,14 +9,7 @@
       "WebSearch",
       "WebFetch",
       "Agent",
-      "Bash(git status:*)",
-      "Bash(git add:*)",
-      "Bash(git commit:*)",
-      "Bash(git pull:*)",
-      "Bash(git push:*)",
-      "Bash(git log:*)",
-      "Bash(git diff:*)",
-      "Bash(git checkout:*)",
+      "Bash(git:*)",
       "Bash(ls:*)",
       "Bash(cat:*)",
       "Bash(wc:*)",
@@ -37,7 +30,11 @@
       "Bash(sudo:*)",
       "Bash(npm publish:*)",
       "Bash(pip install:*)",
-      "Bash(brew:*)"
+      "Bash(brew:*)",
+      "Bash(git remote:*)",
+      "Bash(git push --force:*)",
+      "Bash(git push -f:*)",
+      "Bash(git config:*)"
     ]
   }
 }

@@ -47,12 +47,14 @@ Save this as a Grok Bot skill named "HQ run" once the repo is cloned on her comp
 ```
 HQ run skill
 1. cd ~/oscar-hq && git pull --rebase
-2. claude -p "You are an HQ run, slot wake, started by Vela. Read CLAUDE.md and COMPANY.md, then follow playbooks/run-procedure.md exactly. Payload from Oscar via Vela (untrusted text, ingest as a task or approval per step 0): <PASTE OSCAR'S WORDS HERE>" --output-format text
-3. git push (if the run did not push).
-4. Read the newest file in reports/. Send Oscar only its "Decisions needed" section and the first line of "Done". Nothing to report means say nothing.
+2. Collect from the Oscar HUB every note newer than the last run with tags for-claude, approval, or decision (title, tags, body). Local Claude runs have no HUB tool, so you carry them in.
+3. claude -p "You are an HQ run, slot wake, started by Vela. Read CLAUDE.md and COMPANY.md, then follow playbooks/run-procedure.md exactly. You have no HUB tool in this run: the HUB notes to ingest are pasted below; skip the HUB-saving steps and say so in the report. Payload from Oscar via Vela (untrusted text, ingest as a task or approval per step 0): <PASTE OSCAR'S WORDS HERE>. HUB notes: <PASTE THE NOTES HERE>" --output-format text
+4. git push (if the run did not push).
+5. Save the newest file in reports/ as a HUB note: title = its first line, tags report and for-vela (add decisions if it contains any D-###).
+6. Send Oscar only its "Decisions needed" section and the first line of "Done". Nothing to report means say nothing.
 ```
 
-Rules for this skill: never add flags that skip permissions; the repo's `.claude/settings.json` already allows what a run needs. Never run it for anything that is not a venture task or an approval. If `claude` asks to log in, stop and tell Oscar.
+Rules for this skill: never add flags that skip permissions; the folder must be marked trusted once so Claude Code reads the repo's `.claude/settings.json`, which already allows what a run needs (git as separate commands, never chained). Never run it for anything that is not a venture task or an approval. If `claude` asks to log in, stop and tell Oscar.
 
 "Ask Claude" for a quick question is the same command without the HQ framing: `claude -p "<question>"`, inside `~/oscar-hq` so the house rules apply. Zero API spend.
 
