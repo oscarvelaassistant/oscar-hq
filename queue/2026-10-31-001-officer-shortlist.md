@@ -34,3 +34,4 @@ Gate 1 at sending. The run stops at drafts.
 
 ## Log
 - 2026-10-31 16:05 (Claude, setup): created.
+- 2026-10-31 16:45 (Claude, live with Oscar): Oscar named a warm contact, a friend of his father, former gendarme (Garde républicaine, motorbike escort); he will see him face to face next week. Message drafted (three versions) at discovery/outreach/2026-10-31-garde-republicaine-contact.md and the interview prep at discovery/interviews/2026-11-prep-garde-republicaine-contact.md. This contact is the first candidate for objective 1. The broader shortlist stays useful as the pipeline behind him; the run should rank warm introductions obtained through him above cold LinkedIn messages, and D-001 becomes "which cold messages, if any, to send before his introductions arrive".
