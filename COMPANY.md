@@ -35,6 +35,8 @@ Enforcement is structural: Claude has no mail or messaging tools in HQ runs and 
 | Hardware engineer | `roles/hardware-engineer.md` | Claude HQ run, Claude Code live | Tooling survey, then the first component |
 | CFO and operations | `roles/cfo-ops.md` | Claude HQ run | Spend ledger, event logistics, weekly scorecard |
 | Creative researcher | `roles/creative-researcher.md` | Claude HQ run | Transfer hypotheses from other fields |
+| Cofounder (sparring partner) | `roles/cofounder.md` | Claude, on demand via Vela, live, and Sunday evening run | Turn Oscar's braindumps into one decision with a date (added 2026-10-31 at his request, live) |
+| Researchy (Grok Bot) | brief in `roles/vela.md` | Grok Bot | X and web research delivered as HUB notes tagged for-claude (added 2026-10-31 by Oscar) |
 
 ## Where HQ runs happen
 
@@ -48,6 +50,7 @@ Two places, same repo, same procedure, both on Oscar's Claude subscription:
 - During the day: Vela runs Claude on demand for new tasks and approvals (replaces a fixed midday run).
 - 20:00 cloud run: day closed out, queue set for the night.
 - Vela: relays each report's decisions to Oscar; records his answers. Her schedule is in `roles/vela.md`.
+- Sunday 20:00 run also writes the cofounder's `week-ahead.md`: the one decision for the week.
 - Friday 20:00 run also writes the weekly scorecard (`reports/scorecard-<week>.md`) and a postmortem line per failed task.
 
 ## Bus protocol
