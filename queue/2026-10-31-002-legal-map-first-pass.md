@@ -3,7 +3,7 @@ id: 2026-10-31-002
 title: Legal map and procurement path, first pass
 role: regulation-procurement
 priority: P1
-status: open
+status: in-progress
 created: 2026-10-31
 created_by: Claude
 due: 2026-11-04
@@ -33,3 +33,4 @@ None.
 
 ## Log
 - 2026-10-31 16:05 (Claude, setup): created.
+- 2026-10-31 17:10 (Claude, evening): first pass written, four files in regulation/. Five verdicts with sources (CE 444849, CE 468316, AN QE 16844, CNIL annex 4, CC 2021-834 DC consolidation, Commission AI Act page for Article 5). Not met: AI Act Articles 26 and 113 not fetched (Commission pages needed a permission the run could not grant; EUR-Lex next), Légifrance refused direct fetches, procurement route 1 has no notice by construction and no water-cannon notice was found; ten open questions filed. Judge (falsification by a second agent) not run. Next: fetch EUR-Lex and Légifrance texts, then run the falsification pass before saying done.

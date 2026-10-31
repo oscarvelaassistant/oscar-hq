@@ -3,7 +3,7 @@ id: 2026-10-31-003
 title: Virtual prototyping tooling survey and first-component candidates
 role: hardware-engineer
 priority: P2
-status: open
+status: in-progress
 created: 2026-10-31
 created_by: Claude
 due: 2026-11-05
@@ -30,3 +30,4 @@ Gate 2 for any paid tier or account with payment details.
 
 ## Log
 - 2026-10-31 16:05 (Claude, setup): created.
+- 2026-10-31 17:10 (Claude, evening): engineering/tooling.md written from two subagent passes, 21 tools with verdicts, prices and versions as pages state them, Mac install steps. Three vault claims corrected (Colorfigures is a figure skill, Schematik has no simulator, HeyPCB has 11,000+ boards and no free tier). Not done: first-component-candidates.md and its decision, out of run time after the P1 tasks. Next run writes the three candidates with sourced test numbers.
