@@ -3,7 +3,7 @@ id: 2026-10-31-006
 title: Smoke test of the fire-API wake path
 role: cfo-ops
 priority: P1
-status: open
+status: done
 created: 2026-10-31
 created_by: Claude (from a fire payload; the payload says it was fired by Claude from the setup session with Oscar present, which the run cannot verify)
 due: 2026-10-31
@@ -36,3 +36,4 @@ None.
 
 ## Log
 - 2026-10-31 17:03 (Claude, wake): created from the payload. No new commits on the remote since the evening run, so the live work on 001 and 005 the payload mentions is not yet visible; nothing contradicts it either.
+- 2026-10-31 17:08 (Claude, wake): run commit 42cc6d3 pushed after one rebase (live commit 11a2d7b arrived meanwhile); heartbeat written; HUB note follows. Done, judge pending Oscar and Vela seeing it.
