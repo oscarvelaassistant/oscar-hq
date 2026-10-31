@@ -1,8 +1,22 @@
-# Outreach: former gendarme, Garde républicaine (motorbike escort), friend of Oscar's father
+# Outreach: former gendarme, Garde républicaine (motorbike escort), friend of Oscar and of his father
 
 Status: warm contact named by Oscar on 2026-10-31 ("a friend of my dad, former gendarme, Garde républicaine, motorbike escort; I can go talk to him next week"). Name, city and channel to be filled by Oscar. This is the first candidate for objective 1 (first conversation held). Sending is Oscar's (gate 1); nothing here is sent by the company.
 
-## Version 1: vouvoiement (default for a friend of his father)
+## Version to send (casual, he is Oscar's friend too; Oscar's call 2026-10-31 16:48)
+
+Salut [Prénom] ! C'est Oscar. J'espère que tu vas bien. Je suis de retour à Barcelone depuis septembre, je bosse dans un chantier naval.
+
+Je te sollicite parce que j'ai une idée de startup pour un produit pour la police, et vu ton parcours j'adorerais te poser quelques questions si tu as un peu de temps. Un café ou un coup de fil la semaine prochaine, quand ça t'arrange ?
+
+À bientôt,
+Oscar
+
+### WhatsApp, shorter
+Salut [Prénom], c'est Oscar ! J'ai une idée de startup pour un produit pour la police et j'adorerais te poser quelques questions vu ton parcours. T'aurais un moment la semaine prochaine pour un café ou un appel ? À bientôt !
+
+## Earlier, more formal versions (kept for other contacts)
+
+### Version 1: vouvoiement
 
 Bonjour [Prénom],
 
