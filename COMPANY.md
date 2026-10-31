@@ -36,11 +36,17 @@ Enforcement is structural: Claude has no mail or messaging tools in HQ runs and 
 | CFO and operations | `roles/cfo-ops.md` | Claude HQ run | Spend ledger, event logistics, weekly scorecard |
 | Creative researcher | `roles/creative-researcher.md` | Claude HQ run | Transfer hypotheses from other fields |
 
+## Where HQ runs happen
+
+Two places, same repo, same procedure, both on Oscar's Claude subscription:
+- Cloud scheduled runs (Anthropic-managed, no dependence on any machine): the fixed rhythm below. They have the Oscar HUB connector.
+- Vela's computer, on demand: Claude Code is logged in there with Oscar's account. When Oscar gives Vela a task, she pulls the repo and runs `claude -p` with the HQ run prompt (slot `wake`), then relays the report from the output. `.claude/settings.json` in this repo limits what any run may execute (files, git, web reading; no curl, mail, ssh or destructive commands).
+
 ## Rhythm (Europe/Madrid)
 
-- 06:00 HQ run: overnight work closed out, morning report written. This is the report Oscar reads.
-- 12:00 HQ run: approvals from the morning processed, work continued.
-- 20:00 HQ run: day closed out, queue set for the night.
+- 06:00 cloud run: overnight work closed out, morning report written. This is the report Oscar reads.
+- During the day: Vela runs Claude on demand for new tasks and approvals (replaces a fixed midday run).
+- 20:00 cloud run: day closed out, queue set for the night.
 - Vela: relays each report's decisions to Oscar; records his answers. Her schedule is in `roles/vela.md`.
 - Friday 20:00 run also writes the weekly scorecard (`reports/scorecard-<week>.md`) and a postmortem line per failed task.
 

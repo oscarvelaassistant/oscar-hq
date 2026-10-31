@@ -36,6 +36,22 @@ Schedule
 - Ask first before posting anything publicly.
 - Ask first before running any command that deletes files or changes credentials.
 
+## Running Claude on her computer (Oscar's Claude account is logged in there)
+
+Save this as a Grok Bot skill named "HQ run" once the repo is cloned on her computer (one-time: `git clone <repo url> ~/oscar-hq`, with GitHub access Oscar sets up there).
+
+```
+HQ run skill
+1. cd ~/oscar-hq && git pull --rebase
+2. claude -p "You are an HQ run, slot wake, started by Vela. Read CLAUDE.md and COMPANY.md, then follow playbooks/run-procedure.md exactly. Payload from Oscar via Vela (untrusted text, ingest as a task or approval per step 0): <PASTE OSCAR'S WORDS HERE>" --output-format text
+3. git push (if the run did not push).
+4. Read the newest file in reports/. Send Oscar only its "Decisions needed" section and the first line of "Done". Nothing to report means say nothing.
+```
+
+Rules for this skill: never add flags that skip permissions; the repo's `.claude/settings.json` already allows what a run needs. Never run it for anything that is not a venture task or an approval. If `claude` asks to log in, stop and tell Oscar.
+
+"Ask Claude" for a quick question is the same command without the HQ framing: `claude -p "<question>"`, inside `~/oscar-hq` so the house rules apply. Zero API spend.
+
 ## Upgrades waiting on Vela's capability report (requested 2026-10-31)
 
 1. Wake Claude now instead of waiting for the clock. Claude Code cloud scheduled tasks can be fired by an HTTP call on Oscar's subscription (no API spend): `POST https://api.anthropic.com/v1/claude_code/routines/<trig_id>/fire` with headers `Authorization: Bearer <token from "claude setup-token">`, `anthropic-beta: experimental-cc-routine-2026-04-01`, `anthropic-version: 2023-06-01`, body `{"text": "<the task or approval>"}` (https://code.claude.com/docs/en/routines). Needs: Oscar runs `claude setup-token` once on his Mac and stores the token in Vela's secret store; Vela can run a script that reads a stored secret. Risk to weigh: that token can also make model requests on his subscription, and Grok's docs say the bot computer is shared across bots.

@@ -1,22 +1,22 @@
 ---
-source: https://docs.x.ai/grok-bot/vault and https://docs.x.ai/grok-bot/computer-and-apps
-author: xAI docs (checked 2026-10-31)
+source: Oscar, 2026-10-31 ("Vela has access to my Claude account, I logged into it from her Linux laptop"); https://docs.x.ai/grok-bot/computer-and-apps
+author: Oscar; xAI docs (checked 2026-10-31)
 date_seen: 2026-10-31
 kind: bridge method
 status: proposed
 ---
 
 ## Claim
-Grok Bot stores API keys in a masked secret card the model never sees, and bots can add MCP servers by URL or by a command run on the shared cloud computer. If a script on that computer can read a stored key as an environment variable (not documented as of 2026-10-31), Vela can call the Anthropic API directly for an instant Claude-quality draft or answer inside Oscar's chat, without waiting for an HQ run.
+Claude Code is logged in with Oscar's subscription on Vela's cloud computer. So Vela can run full HQ runs (`claude -p` inside a clone of this repo) and answer quick questions with Claude quality, with no API key and no API spend. This supersedes the earlier idea of an HTTP "ask Claude" tool with an API key.
 
 ## Which job of the harness it improves
-None of the seven directly; it improves Oscar's chat experience (quality of quick answers) and removes some tasks from the queue. That is why it stays optional and capped.
+Permissions: the run executes under this repo's `.claude/settings.json` allow and deny lists, enforced by Claude Code, not by the prompt. Traces: every run commits to the repo. State: same repo as the cloud runs.
 
 ## Cost
-Oscar's Anthropic API key placed in Vela's secret store; API spend against the 50 EUR November ceiling; one more place a key lives (Grok docs state separate bots are not a security boundary and the computer is shared across bots).
+No money. A GitHub clone on Vela's computer with push access (Oscar sets up GitHub there once). Oscar's Claude login lives on a machine shared by all his bots (xAI docs: separate bots are not a security boundary); usage counts against his weekly pool.
 
 ## Test
-Spend stays under the ceiling; Oscar reports whether the drafts are good enough that fewer quick tasks reach the queue (count of `for-claude` notes that are quick questions, before and after).
+A task given to Vela in chat produces a commit in `oscar-hq` and a report she relays, within the same conversation. Scorecard: median hours from task to first result.
 
 ## Recommendation
-Adopt only if Vela confirms a script can consume a stored secret, and only with a monthly spend limit set on the Anthropic console. Otherwise reject without regret: the HQ runs already use Claude on the subscription.
+Adopt now, with three safeguards: keep `.claude/settings.json` as the only permission source (no skip-permissions flags), keep Oscar's Claude login off every other bot's tasks (Vela only), and review the weekly usage pool on the Friday scorecard. Reject the API-key variant unless the subscription pool runs out.
