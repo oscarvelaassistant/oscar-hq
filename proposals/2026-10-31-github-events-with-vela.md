@@ -18,5 +18,8 @@ Vela's GitHub app connected to Oscar's account with access to the private repo; 
 ## Test
 Decisions answered within one Vela check instead of up to three hours; measured on the scorecard as median hours to answer.
 
+## Simpler variant: fire the HQ run by HTTP
+Claude Code cloud scheduled tasks accept an API trigger: `POST https://api.anthropic.com/v1/claude_code/routines/<trig_id>/fire` with a subscription OAuth token from `claude setup-token`, beta header `experimental-cc-routine-2026-04-01`, body `{"text": "..."}`; the text arrives in the run as an untrusted payload that the saved prompt must opt in to act on (https://code.claude.com/docs/en/routines). The HQ run prompt opts in (run-procedure step 0). One secret in Vela's store, one curl, no GitHub app needed. The reverse direction (Claude waking Vela) still needs her webhook or GitHub-event routine.
+
 ## Recommendation
-Adopt once Vela confirms (a) she can read and comment on issues in a private repo as Oscar and (b) a routine of hers fires on a GitHub event. Until then, HUB notes remain the bus.
+Adopt the HTTP fire first if Vela can run a script with a stored secret: it is one secret and one command. Adopt the GitHub bus once Vela confirms (a) she can read and comment on issues in a private repo as Oscar and (b) a routine of hers fires on a GitHub event. Until then, HUB notes remain the bus and the clock remains the trigger.

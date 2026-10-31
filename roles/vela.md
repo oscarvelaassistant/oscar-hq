@@ -36,8 +36,11 @@ Schedule
 - Ask first before posting anything publicly.
 - Ask first before running any command that deletes files or changes credentials.
 
-## What Vela reports about herself (pending)
-Her capability report (requested 2026-10-31 in the handoff note) decides two upgrades: (1) if she can use GitHub as Oscar, tasks and approvals move from HUB notes to issues and comments on this repo, and Claude's runs wake her through a GitHub event instead of a clock; (2) if she can call an HTTP API with a stored secret, an "ask Claude" tool gives her instant Claude-quality drafts in chat within the 50 EUR ceiling.
+## Upgrades waiting on Vela's capability report (requested 2026-10-31)
+
+1. Wake Claude now instead of waiting for the clock. Claude Code cloud scheduled tasks can be fired by an HTTP call on Oscar's subscription (no API spend): `POST https://api.anthropic.com/v1/claude_code/routines/<trig_id>/fire` with headers `Authorization: Bearer <token from "claude setup-token">`, `anthropic-beta: experimental-cc-routine-2026-04-01`, `anthropic-version: 2023-06-01`, body `{"text": "<the task or approval>"}` (https://code.claude.com/docs/en/routines). Needs: Oscar runs `claude setup-token` once on his Mac and stores the token in Vela's secret store; Vela can run a script that reads a stored secret. Risk to weigh: that token can also make model requests on his subscription, and Grok's docs say the bot computer is shared across bots.
+2. GitHub as the bus. Grok Bot routines can fire on GitHub events and webhooks, and Vela has a built-in GitHub app that acts as Oscar (docs.x.ai). Claude Code cloud scheduled tasks can also fire on GitHub events. If both hold, tasks and approvals become issues and comments on this repo and nobody polls anything. Proposal: `proposals/2026-10-31-github-events-with-vela.md`.
+3. "Ask Claude" in chat. If a script on her computer can read a stored secret, Vela calls the Anthropic Messages API directly for instant Claude-quality drafts, within the 50 EUR ceiling and a spend limit set on the console. Proposal: `proposals/2026-10-31-ask-claude-tool-for-vela.md`.
 
 ## Sources
 xAI docs on bots, skills, routines, approvals and collaboration (docs.x.ai/grok-bot); xAI design note on one coordinating bot over several specialists (https://x.ai/news/designing-grok-bot); grokbot-field-notes chief-of-staff roster file (MIT, https://github.com/unicodef1wn/grokbot-field-notes/blob/main/roster/chief-of-staff.md).
