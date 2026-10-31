@@ -16,6 +16,7 @@ Attach the repository `oscar-hq` (owner: Oscar's GitHub account) with push acces
 ## 3. Ingest signals
 - HUB notes created after `state.last_hub_note` with tag `for-claude`: each becomes a queue file (status `open`, role chosen from the roster, P2 unless the note says otherwise). A note that is a question, not a task, is answered in the report.
 - HUB notes tagged `approval`: apply `D-### yes` or `D-### no` to the matching task (`waiting-approval` becomes `in-progress` or `dropped`). Record the reason given.
+- HUB notes tagged `decision` and `cofounder` (from the Grok Cofounder bot): append one line per note to `ventures/_company/cofounder/decisions.md` (date, decision, next action, due) and any parked items to `parked.md`. Not tasks; nothing else to do unless the note is also tagged `for-claude`, in which case the Claude cofounder role answers it in this run (`roles/cofounder.md`) and the answer goes in the report.
 - Queue files whose front matter `approval:` field changed since last run: same.
 - Update `state.last_hub_note` only after the queue files are written.
 
