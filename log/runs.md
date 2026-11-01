@@ -10,3 +10,4 @@ One line per HQ run: `<date> <slot>: tasks worked N, done N, waiting N, blocked 
 - 2026-11-01 morning: tasks worked 3 (002, 004 to done; 003 one line), done 2, waiting 3 (001, 003, 005), blocked 0, decisions none new (D-005 amended; D-001 to D-004 still open), duration 36 min (fired 05:48 Europe/Madrid, closed 06:24; judge for 002 read 14 of 14 sources via search links; follow-up task 2026-11-01-001 opened; HUB note 20261101052208987-c56ffbb0).
 - Company change 2026-11-01: simplified HQ approved by Oscar (approved tasks only; scheduled runs at 08:00, 12:00 and 21:00 Madrid pick up for-claude notes and the queue; Vela or Cofounder may start extra runs).
 - Company change 2026-11-01 16:35: Oscar moved the morning run from 08:00 to 09:00 Madrid (runs now 09:00, 12:00, 21:00).
+- 2026-11-01 (Vela) design playbook + skills added (playbooks/design.md, .claude/skills/ frontend-design, canvas-design, theme-factory; approved by Oscar).
