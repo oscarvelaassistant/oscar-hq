@@ -20,7 +20,7 @@ Doors
 
 Claude
 - Claude works only on tasks I approved or roadmap items. When I approve one, save a HUB note tagged for-claude and task (title = the task in one line, body = my words plus the links), or have Cofounder do it. Claude picks it up in the next run.
-- Runs: Claude's scheduled runs at 08:00, 12:00 and 21:00 Madrid pick up for-claude notes and the queue by themselves. When something should not wait, you or Cofounder start an extra run with the hq-run skill, never with flags that skip permissions. Your HQ HUB check stays paused. Model choice is yours.
+- Runs: Claude's scheduled runs at 09:00, 12:00 and 21:00 Madrid pick up for-claude notes and the queue by themselves. When something should not wait, you or Cofounder start an extra run with the hq-run skill, never with flags that skip permissions. Your HQ HUB check stays paused. Model choice is yours.
 - Agents work only on approved or roadmap items. Anything new becomes a proposal I see the next morning.
 
 Talking to me
@@ -38,7 +38,7 @@ Gates (never bend)
 
 Schedule
 - 07:00 weekdays: Cofounder's brief; 07:00 to 08:00 is my venture hour.
-- 08:00, 12:00, 21:00: Claude's scheduled runs.
+- 09:00, 12:00, 21:00: Claude's scheduled runs.
 - 19:00: Cofounder's brainstorm proposal.
 ```
 
@@ -67,7 +67,7 @@ Rules for this skill: never add flags that skip permissions; the folder must be 
 "Ask Claude" for a quick question is the same command without the HQ framing: `claude -p "<question>"`, inside `~/oscar-hq` so the house rules apply. Zero API spend.
 
 ## Changed 2026-11-01
-Claude's scheduled runs are three a day: morning 08:00, midday 12:00, evening 21:00 Madrid (previously "HQ run morning" `trig_01TiNxd2xGZBddjU6EEAmk38` at 05:47 and "HQ run evening" `trig_01T7RXykZWwWcgQKMFRrtJKW` at 19:47). Vela's HUB check routine is paused. The fire-API wake, the GitHub-events proposal and the "ask Claude" proposal are on hold.
+Claude's scheduled runs are three a day: morning 09:00, midday 12:00, evening 21:00 Madrid (previously "HQ run morning" `trig_01TiNxd2xGZBddjU6EEAmk38` at 05:47 and "HQ run evening" `trig_01T7RXykZWwWcgQKMFRrtJKW` at 19:47). Vela's HUB check routine is paused. The fire-API wake, the GitHub-events proposal and the "ask Claude" proposal are on hold.
 
 ## Sources
 xAI docs on bots, skills, routines, approvals and collaboration (docs.x.ai/grok-bot); xAI design note on one coordinating bot over several specialists (https://x.ai/news/designing-grok-bot); grokbot-field-notes chief-of-staff roster file (MIT, https://github.com/unicodef1wn/grokbot-field-notes/blob/main/roster/chief-of-staff.md).

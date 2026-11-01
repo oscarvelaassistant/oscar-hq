@@ -44,7 +44,7 @@ Enforcement is structural: Claude has no mail or messaging tools in HQ runs and 
 ## How HQ runs start
 
 Simplified HQ, approved by Oscar on 2026-11-01. Tasks reach Claude through HUB notes tagged `for-claude` and through `queue/`; Claude picks them up by itself in a run. Oscar does not have to tell Claude to check for tasks. Runs, same repo, same procedure, all on Oscar's Claude subscription:
-- Scheduled cloud runs (Anthropic-managed, with the Oscar HUB connector), three a day: `morning` 08:00, `midday` 12:00, `evening` 21:00 Madrid. Each reads the HUB notes tagged `for-claude` and the queue and picks up approved tasks by itself.
+- Scheduled cloud runs (Anthropic-managed, with the Oscar HUB connector), three a day: `morning` 09:00, `midday` 12:00, `evening` 21:00 Madrid. Each reads the HUB notes tagged `for-claude` and the queue and picks up approved tasks by itself.
 - An extra run when something should not wait: Vela or Cofounder starts one (Vela runs Claude Code on her computer with the hq-run skill, `claude -p`, slot `wake`), never with flags that skip permissions.
 
 `.claude/settings.json` in this repo limits what any run may execute (files, git, web reading; no curl, mail, ssh or destructive commands).
@@ -54,7 +54,7 @@ What a run may work on: approved or roadmap items only (`ventures/_company/cofou
 ## Rhythm (Europe/Madrid)
 
 - 07:00 weekdays: Cofounder's brief. 07:00 to 08:00 weekdays is Oscar's venture hour.
-- 08:00 morning run, 12:00 midday run.
+- 09:00 morning run, 12:00 midday run.
 - 19:00: Cofounder's brainstorm proposal.
 - 21:00 evening run.
 - Any time: Vela or Cofounder may start an extra run.
