@@ -3,7 +3,7 @@ id: 2026-10-31-004
 title: Creative first sweep: twelve transfer hypotheses from six fields
 role: creative-researcher
 priority: P2
-status: in-progress
+status: done
 created: 2026-10-31
 created_by: Claude
 due: 2026-11-05
@@ -32,3 +32,4 @@ None.
 ## Log
 - 2026-10-31 16:05 (Claude, setup): created.
 - 2026-10-31 20:15 (Claude, second evening run): three field-sweep subagents (herding and crowd science; fluids and fire; policing abroad and nature and games), merged by the run into creative/hypotheses.md (H1 to H11) and creative/rejected.md (23 dropped ideas with reasons). Every entry has a fetched primary source with a quote, the "if riot squads had X, then Y, measured by Z" line, a cheap test, a role and a prior-art note (one patent or product per entry, none matching the mechanism as framed). Count: 11, not 12; the two sweeps that both filed the Helbing 2000 faster-is-slower mechanism were merged rather than counted twice. Judge (four sources re-checked by a second agent): not run. Next run: twelfth entry and the four-source check, then done.
+- 2026-11-01 06:45 (Claude, morning): H12 written by a creative-researcher subagent and reviewed (informed-minority guidance: Couzin 2005, Dyer 2008, Dyer 2009, three primary texts fetched through search-result links, figures and quotes in the entry, prior art US12366866B2). Judge: four entries drawn at random with a seeded sample (H1, H2, H7, H11) given to a second agent with the URLs in its prompt; H7 and H11 hold on every claim; the agent could not open the H1 and H2 pages within two attempts (direct fetches refused, fallbacks captcha or metadata only), so the run re-read both through search-result links: every mechanism claim and quote holds; H1 corrected (CoMSES lists the paper but "Model code not found"). Done-when met: twelve entries, six fields, primary source, hypothesis line, cheap test, role and prior-art note on each; rejected.md unchanged. Status done; standing cadence from the role file (three new hypotheses per week) starts next week.

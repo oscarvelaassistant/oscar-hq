@@ -19,6 +19,8 @@ Opening line (20 seconds): who Oscar is (sergent de réserve opérationnelle, pr
 
 Closing (one minute): « Qui d'autre a vécu une nuit comme ça et accepterait vingt minutes ? » and « Puis-je revenir vers vous quand j'aurai quelque chose à montrer ? »
 
+Added 2026-11-01 (D-003, asked either way): only if the officer has himself brought up drones, water or street closures during the story, one question before the closing: « Entre un drone d'observation, un engin qui projette de l'eau à distance et un véhicule qui ferme une rue, lequel casse ou manque le plus une nuit d'émeute, et pourquoi ? » If he has not brought them up, the rule below holds and the question is not asked.
+
 ## Rules for Oscar during the conversation
 - Questions 1 to 7 are the story. Do not jump to question 10 before the story is told, even if the officer offers opinions early; note them and come back.
 - Follow numbers: how many officers, how many minutes, how many metres, how many fires. Write them down as said; they become the first requirements.
