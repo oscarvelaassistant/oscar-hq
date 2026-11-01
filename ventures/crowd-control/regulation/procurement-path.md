@@ -25,7 +25,37 @@ Task 2026-10-31-002. Written 2026-10-31 evening run, checked 2026-11-01 morning 
 - Also: BOAMP 24-93149, Ministère de l'Intérieur (DGSCGC), framework for leasing water-bomber aircraft with French-speaking crews ("avions bombardiers d'eau (ABE), avec équipages francophones"), open procedure, max 54,000,000 EUR HT, awarded to Titan Firefighting Company SL (Viver, Spain), winner chosen 31 May 2024, concluded 4 Jul 2024, published 7 Aug 2024, value of contracts awarded 17,554,405 EUR (CPV 60442000; judge's reading 2026-11-01): the sécurité civile buys through the same ministry and awards to foreign suppliers. https://www.boamp.fr/telechargements/FILES/PDF/2024/08/24-93149.pdf
 - What it means: a fire-suppression robot sells to SDIS and to the BSPP, through joint procurements led by one SDIS, with two-bidder competitions being normal.
 
+## Second pass, 2026-11-01 evening run (task 2026-11-01-001)
+
+### Route 1, now with a named programme: Innov'Achats
+- The ministry runs its R. 2122-9-1 purchases through a fund called Innov'Achats, launched at the start of 2024 by the Depafi (direction de l'évaluation de la performance, de l'achat, des finances et de l'immobilier): about sixty files received from February 2024, "une quinzaine de projets ont été retenus, pour un montant qui représente environ 1,2 million d'euros", selection committee, call renewed each year; example projects include "un gilet pare-balles féminin sur la base de textiles innovants" (Acteurs publics, 12 September 2024, read 2026-11-01).
+- Per a French Tech Grand Paris write-up of an April 2026 talk by a ministry buyer (secondary, read 2026-11-01): Innov'Achats funds experiments "jusqu'à 100 000 euros HT (120 000 euros TTC) par projet", about 1 million EUR a year outside AI; a second fund, SmartMI, 2 million EUR for AI from 2026; defence, security and cyber projects may reach 300,000 EUR HT under conditions; the 2026 campaign ran 2 February to 12 June; and "C'est obligatoirement un agent du Ministère qui dépose le dossier", so a company cannot apply by itself, it needs an internal sponsor.
+- L. 2172-3 and R. 2123-1 (legal-map.md, Q11): the product must be "nouveau ou sensiblement amélioré"; the young-company presumption was added by the loi de finances pour 2024 and removed by loi 2025-391 of 30 April 2025 (one reproduction source); inside a larger contract such lots are capped at 20 percent of the total.
+- What it means for Oscar: route 1 is real and has a door, a yearly campaign with monthly committees, but the key is held inside the ministry: an officer or a desk who wants the experiment and files it. The officer conversations are also the search for that sponsor. No official ministry page for Innov'Achats was found this run; the two sources are press and a blog.
+
+### Route 4: the ministry's maintien de l'ordre consumables framework (the shape of the core market)
+- BOAMP 22-149405, published 10 November 2022, Ministère de l'Intérieur, "fourniture de grenades de maintien de l'ordre et accessoires", eight lots (tear gas 56 mm and 40 mm with propulsion means for 50 or 100 m, GM2L instant tear gas replacing the GLI-F4, sound grenades, cartridge grenades), estimated 38 million EUR over four years, offers due 10 January 2023 (Politis, 14 November 2022, which links https://www.boamp.fr/pages/avis/?q=idweb%3A%2222-149405%22).
+- BOAMP 23-155499, results published November 2023: the award "vient d'être validé pour finalement plus de 78 millions, pour les quatre prochaines années", lot 1 to Nobel Sport (close to 40 million EUR), several lots to Alsetex (over 21 million EUR in total) and to Rivolier (over 12 million EUR), lot 4 not multi-awarded (Politis, 10 November 2023, which links https://www.boamp.fr/pages/avis/?q=idweb%3A%2223-155499%22; the full title per the 2022 article: "fourniture de grenades de maintien de l'ordre et accessoires destinés aux services de la police nationale" and the gendarmerie).
+- Status of the evidence: both notice ids appear only in the articles' BOAMP links, not in their body text; the BOAMP pages themselves were not read this run by the run or the judge (the BOAMP page needed a permission an unattended run cannot grant; one attempt each). The route is recorded with that flag.
+- What it means: the police and gendarmerie buy their intermediate-force consumables as four-year multi-lot frameworks from three French makers; a new entrant with a new device sells either as a lot in such a framework or, before that, through route 1.
+
+### Préfecture de police as a buyer
+- The Préfecture de police de Paris publishes its own notices on BOAMP under its own name: 25-37319 (2 April 2025, diving equipment, 620,000 EUR maximum, open procedure, documents on https://marches.maximilien.fr) and 25-95487 (27 August 2025, clothing for plain-clothes motorcyclists, 1,400,000 EUR maximum, internal id 24-BCPA-590, documents on https://www.marches-publics.gouv.fr; judge's reading 2026-11-01). No barrier or BRAV-M equipment notice was found this run. What it means: the PP is a separate contracting authority with its own purchasing bureau (BCPA), a second door beside the ministry.
+
+### UGAP
+- UGAP notices found this run are firefighter PPE and clothing frameworks (26-21570, 2 March 2026, 6,984,000 EUR, five lots including "Gilets de protection balistique, anti-couteau et anti-pic"; 25-136680, 11 December 2025, professional clothing and PPE distribution, 100 million EUR estimated). No maintien de l'ordre item found. Q10 stays open.
+
+### Sources added this pass (read 2026-11-01)
+- Acteurs publics, 12 September 2024: https://acteurspublics.fr/articles/commande-publique-innovante-les-projets-qui-sortent-du-lot-au-ministere-de-linterieur/
+- French Tech Grand Paris (secondary): https://www.frenchtech-grandparis.com/post/ministere-de-linterieur-comment-financer-ses-experimentations-tech-jusqua-100-000-eu
+- Politis, 14 November 2022: https://www.politis.fr/articles/2022/11/maintien-de-lordre-un-appel-doffres-de-38-millions-deuros-de-grenades-45030/
+- Politis, 9 November 2023: https://www.politis.fr/articles/2023/11/maintien-de-lordre-la-france-soffre-plus-de-78-millions-deuros-de-grenades/
+- BOAMP 25-37319: https://www.boamp.fr/telechargements/FILES/PDF/2025/04/25-37319.pdf
+- BOAMP 25-95487: https://www.boamp.fr/telechargements/FILES/PDF/2025/08/25-95487.pdf
+- BOAMP 26-21570: https://www.boamp.fr/telechargements/FILES/PDF/2026/03/26-21570.pdf
+- BOAMP 25-136680: https://www.boamp.fr/telechargements/FILES/PDF/2025/12/25-136680.pdf
+
 ## Not yet covered
-- UGAP (central purchasing body) catalogue route: not verified this run.
-- Partenariat d'innovation (CCP L. 2172-3 first paragraph) and the ministry's innovation calls: no reference found this run.
-- The Préfecture de police as a separate buyer (barriers, BRAV-M equipment): not searched this run.
+- UGAP catalogue: no maintien de l'ordre item found (see above); how a product gets referenced there is unread.
+- Partenariat d'innovation (L. 2172-3 first paragraph) notices by the ministry: none found this run (the two BOAMP hits for the search terms were a CRA construction assistance contract, 24-48151, and a health insurance contract, 25-79257).
+- Water cannon vehicles: still no notice (Q6).

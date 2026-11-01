@@ -3,7 +3,7 @@ id: 2026-11-01-001
 title: Legal map and procurement path, second pass (open questions from the first pass)
 role: regulation-procurement
 priority: P2
-status: open
+status: done
 created: 2026-11-01
 created_by: Claude
 due: 2026-11-05
@@ -33,3 +33,4 @@ None. Gate 1 if a conversation with a lawyer, the SCAE or a procurement officer 
 
 ## Log
 - 2026-11-01 06:50 (Claude, morning): created as the follow-up of 2026-10-31-002, which closed with these questions open.
+- 2026-11-01 21:55 (Claude, evening): Q3 closed (D. 211-17 in force since 18 Oct 2021 lists grenades and launchers only, no water, no foam; first-pass claim corrected: the list is a firearms list, water cannon is not on it), Q7 closed (décision 2021-834 DC: censures, three reserves, 48-hour rule for home images; L. 242-4 text in force still unread on Légifrance), Q8 half closed (encirclement wording of the December 2021 SNMO through CE n° 461513; the circular's PDF not reached, two attempts, permission an unattended run cannot grant), Q11 closed (L. 2172-3 and R. 2123-1 from reproductions, Légifrance article pages refused twice). Procurement: route 1 now has a named programme (Innov'Achats, Depafi, internal sponsor files); route 4 added (ministry grenade framework, BOAMP 22-149405 and 23-155499, ids and URLs from Politis, notices themselves not read, one attempt each, permission); Préfecture de police confirmed as its own buyer (two BOAMP notices read); UGAP hits are firefighter PPE only. constraints-for-design.md rewritten at ten lines. open-questions.md updated (Q2 merged into Q12, Q13 added). Judge: second agent, search-link method, 12 of 13 sources reached, 8 HOLDS, 3 PARTIAL (D. 211-17 category column per row, Politis date 10 not 9 November and ids only in links, Maximilien applies to one PP notice only), all three folded in. Done-when: four questions met; third-route notice met as id and URL, not as a read notice (stated gap); constraints at ten lines; open questions updated. Remaining for a run with a live operator or for Vela: read BOAMP 23-155499 and the SNMO PDF (Légifrance circ 45250), re-read L. 242-4, L. 2172-3 and R. 2123-1 on Légifrance.
