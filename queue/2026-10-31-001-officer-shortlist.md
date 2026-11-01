@@ -27,7 +27,7 @@ A real reply. Until then the report says "drafts ready, zero contact". The short
 ## Inputs
 - `roles/customer-discovery.md`.
 - Oscar's idea file: `~/Claude Projects/InnovationHub/ideas/crowd-control.md` (not in this repo; its content is summarised in `ventures/crowd-control/README.md`).
-- Vela's shared note `🗂️ Shared Projects/Crowd-control tech.md` in the vault: on 2026-10-24 the plan was to message ten retired maintien-de-l'ordre officers on LinkedIn and text Mathieu; status unknown, ask Oscar in the decision whether any of that happened.
+- Vela's shared note `🤖 AI HQ/🗂️ Shared Projects/Crowd-control tech.md` in the vault: on 2026-10-24 the plan was to message ten retired maintien-de-l'ordre officers on LinkedIn and text Mathieu; status unknown, ask Oscar in the decision whether any of that happened.
 
 ## Gates
 Gate 1 at sending. The run stops at drafts.
