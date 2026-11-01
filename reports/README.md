@@ -1,6 +1,6 @@
 # Reports
 
-One file per run: `YYYY-MM-DD-<slot>.md` (`morning` 08:00, `midday` 12:00, `evening` 21:00, `wake` for an extra run Vela or Cofounder starts, `test`). A second run on the same day and slot adds `-2`, `-3`. Weekly: `scorecard-YYYY-Www.md`, only when Oscar approves that task. Oscar does not read reports directly: Vela batches their decisions to him. Keep a report under 40 lines unless decisions need the room.
+One file per run: `YYYY-MM-DD-<slot>.md` (`morning` 09:00, `midday` 12:00, `evening` 21:00, `wake` for an extra run Vela or Cofounder starts, `test`). A second run on the same day and slot adds `-2`, `-3`. Weekly: `scorecard-YYYY-Www.md`, only when Oscar approves that task. Oscar does not read reports directly: Vela batches their decisions to him. Keep a report under 40 lines unless decisions need the room.
 
 ## Format
 

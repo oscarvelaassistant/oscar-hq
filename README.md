@@ -21,7 +21,7 @@ This repository is the company's shared state. Every agent that works here reads
 ## How a task moves
 
 1. Oscar approves a task (to Vela, to Cofounder, or from a morning brief or proposal): it lands in `queue/` or as a HUB note tagged `for-claude`.
-2. The next Claude HQ run picks it up by itself, without Oscar asking: either Vela or Cofounder starts an extra one right away (Claude Code on Vela's computer, `claude -p` with Oscar's subscription, hq-run skill), or the next scheduled run does (08:00, 12:00 and 21:00 Madrid). The run reads the role file, does the work, writes the output under `ventures/`, and sets the task status.
+2. The next Claude HQ run picks it up by itself, without Oscar asking: either Vela or Cofounder starts an extra one right away (Claude Code on Vela's computer, `claude -p` with Oscar's subscription, hq-run skill), or the next scheduled run does (09:00, 12:00 and 21:00 Madrid). The run reads the role file, does the work, writes the output under `ventures/`, and sets the task status.
 3. The run writes `reports/<date>-<slot>.md`. Anything that needs Oscar is a numbered decision (`D-###`); anything new Claude thought of is a proposal.
 4. Vela batches decisions into her messages to Oscar (at most 3 a day, aiming for 2); he answers in chat; Vela records the answer (a HUB note tagged `approval`, or `queue/` front matter). The next run acts on it.
 
