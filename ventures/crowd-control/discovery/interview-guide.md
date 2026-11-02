@@ -17,7 +17,7 @@ Opening line (20 seconds): who Oscar is (sergent de réserve opérationnelle, pr
 9. Depuis cette nuit, qu'est-ce qui a changé dans votre unité, et qu'est-ce qui n'a pas changé alors que tout le monde le demandait ?
 10. Si un fabricant vous écoutait vraiment, quelle est la première chose que vous lui demanderiez de changer, et qui faudrait-il convaincre pour que l'unité l'ait ?
 
-Closing (one minute): « Qui d'autre a vécu une nuit comme ça et accepterait vingt minutes ? » and « Puis-je revenir vers vous quand j'aurai quelque chose à montrer ? »
+Closing (one minute): « Qui d'autre a vécu une nuit comme ça et accepterait vingt minutes ? » and « Puis-je revenir vers vous quand j'aurai quelque chose à montrer ? » and « Dans votre chaîne, qui a déjà déposé un dossier Innov'Achats ou d'expérimentation ? » (Who in your chain has ever filed an Innov'Achats or experimentation dossier? Added 2026-11-02, approved by Oscar.)
 
 Added 2026-11-01 (D-003, asked either way): only if the officer has himself brought up drones, water or street closures during the story, one question before the closing: « Entre un drone d'observation, un engin qui projette de l'eau à distance et un véhicule qui ferme une rue, lequel casse ou manque le plus une nuit d'émeute, et pourquoi ? » If he has not brought them up, the rule below holds and the question is not asked.
 
