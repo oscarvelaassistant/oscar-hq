@@ -7,3 +7,4 @@ One line per decision: date, decision, next action, due, outcome when known.
 - 2026-11-01: Claude checks for-claude HUB notes by itself, three runs a day at 08:00, 12:00 and 21:00 Madrid (Oscar's call, Claude Ultra so usage is fine); next action: Vela turns runs on; due 2026-11-01; outcome: live per Vela (commit ca5fca5).
 - 2026-11-01: Cofounder writes its own decisions into this file (Oscar's call); next action: log each decision after every conversation; due ongoing; outcome pending.
 - 2026-11-01: casual WhatsApp to François (former gendarme, Garde républicaine) sent by Oscar; next action: wait for reply, then hold the conversation with the two-page brief; due when he replies; outcome: sent 2026-11-01.
+- 2026-11-02: D-001 cold messages held until François the gendarme replies (Oscar's call). Revisit 6 Nov.
