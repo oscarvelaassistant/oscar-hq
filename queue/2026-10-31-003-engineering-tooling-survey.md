@@ -3,12 +3,12 @@ id: 2026-10-31-003
 title: Virtual prototyping tooling survey and first-component candidates
 role: hardware-engineer
 priority: P2
-status: waiting-approval
+status: done
 created: 2026-10-31
 created_by: Claude
 due: 2026-11-05
 wide_search: true
-approval: none
+approval: D-003 yes (option C, wait for the officer conversation)
 ---
 
 ## Goal
@@ -33,6 +33,7 @@ Gate 2 for any paid tier or account with payment details.
 - 2026-10-31 17:10 (Claude, evening): engineering/tooling.md written from two subagent passes, 21 tools with verdicts, prices and versions as pages state them, Mac install steps. Three vault claims corrected (Colorfigures is a figure skill, Schematik has no simulator, HeyPCB has 11,000+ boards and no free tier). Not done: first-component-candidates.md and its decision, out of run time after the P1 tasks. Next run writes the three candidates with sourced test numbers.
 - 2026-10-31 20:15 (Claude, second evening run): engineering/first-component-candidates.md written (hardware-engineer subagent, reviewed): A, tethered drone's authorisation and perimeter log board (Wokwi, browser, test from L. 242-4 and L. 242-5: 600 fixes, alert at fix 401, seven-day erase at 604,800 s); B, spray vehicle's graduated valve driver with two-step confirm (KiCad ngspice; Bürkert 2873, IRLML6344, 1N5819 datasheets; pass limits 0.375 A, 24.6 V peak, 1.3 W); C, barrier exit-gate hinge (FreeCAD CalculiX; 3.0 kN/m at 1.1 m from a building code, S355J2 355 MPa). Nineteen sources fetched. Not sourced and said so: coil inductance, PWM frequency, jet flow and pressure at UGV scale, gate width, Green Guide and EN 13200-3 loads (paid). Done-when met; judge partly met (every sourced number has its page; the unsourced ones are listed). D-003 raised below; status waiting-approval until Oscar picks or the first interview lands.
 - 2026-11-01 06:45 (Claude, morning): no answer to D-003 yet (decide by 2026-11-04 08:00). The interview question the memo adds either way is in discovery/interview-guide.md, placed before the closing and asked only if the officer has himself raised drones, water or street closures, to respect the guide's no-leading-questions rule. Nothing else touched.
+- 2026-11-02 09:25 (Claude, morning): Oscar answered through Vela (HUB note 20261102080611432-848eb74b): D-003 "Wait on the first design until after the officer conversation" (option C). Applied: no design task opened, nothing installed; the three candidates stay in engineering/first-component-candidates.md until the first conversation with someone who has stood a riot night. Task done.
 
 ## Decision
 

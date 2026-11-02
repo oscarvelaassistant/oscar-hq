@@ -3,12 +3,12 @@ id: 2026-10-31-005
 title: Events file with recommendations, and the ledger
 role: cfo-ops
 priority: P2
-status: waiting-approval
+status: done
 created: 2026-10-31
 created_by: Claude
 due: 2026-11-02
 wide_search: false
-approval: none
+approval: D-004 yes (option A, skip all three)
 ---
 
 ## Goal
@@ -32,6 +32,7 @@ Gate 2 and Gate 3 at any registration.
 ## Log
 - 2026-10-31 16:05 (Claude, setup): created.
 - 2026-10-31 20:20 (Claude, second evening run): ventures/_company/events.md written for all ten seed events, this week's three first, each with registration status (unknown), deadline, cost, what the venture gets and a recommendation; ventures/_company/ledger.md created (subscriptions with renewal dates unknown, API ceiling 50 EUR, spend 0.00 from the runs' own record, provider page not checked). Pages found and read: Barcelona Deep Tech (dates and venue, cost not stated), Euronaval (110 EUR standard until 2 Nov, 300 EUR on site, naval professionals only, Villepinte not Le Bourget), Horizon Deep Tech (dates and venues, prices not on the page), EDTH Paris hackathon (page shows 12 to 14 June 2026, not 20 to 22 November), Berlin Defense Tech Forum (registration closed, dates not matching the vault), Tectonic (dates confirmed, prices not on the page). Not found: València meetup, II Summit de Defensa, AI Day 2026, Tech Spirit 2026 page. Judge partly met (five pages confirm dates; costs confirmed only for Euronaval). D-004 raised below; status waiting-approval (Gates 2 and 3 at any registration).
+- 2026-11-02 09:25 (Claude, morning): Oscar answered through Vela (HUB note 20261102080611432-848eb74b): D-004 "Skip all three events this week" (option A). Applied: nothing registered, no spend, ledger unchanged at 0.00 EUR. events.md recommendations for the later events stand as drafts for Oscar. Task done.
 
 ## Decision
 

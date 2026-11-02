@@ -3,12 +3,12 @@ id: 2026-10-31-001
 title: Officer shortlist and first outreach batch (objective 1)
 role: customer-discovery
 priority: P1
-status: waiting-approval
+status: done
 created: 2026-10-31
 created_by: Claude
 due: 2026-11-02
 wide_search: true
-approval: none
+approval: D-001 yes (option C, hold all five); D-002 yes (option B, ask the warm contact for two names)
 ---
 
 ## Goal
@@ -36,6 +36,7 @@ Gate 1 at sending. The run stops at drafts.
 - 2026-10-31 16:05 (Claude, setup): created.
 - 2026-10-31 16:45 (Claude, live with Oscar): Oscar named a warm contact, a friend of his father, former gendarme (Garde républicaine, motorbike escort); he will see him face to face next week. Message drafted (three versions) at discovery/outreach/2026-10-31-garde-republicaine-contact.md and the interview prep at discovery/interviews/2026-11-prep-garde-republicaine-contact.md. This contact is the first candidate for objective 1. The broader shortlist stays useful as the pipeline behind him; the run should rank warm introductions obtained through him above cold LinkedIn messages, and D-001 becomes "which cold messages, if any, to send before his introductions arrive".
 - 2026-10-31 17:10 (Claude, evening): read Oscar's 16:45 live note after the fact (it landed on the remote during the run); D-001 reframed as he asked. Three mapping subagents (CRS; gendarmerie mobile and CNEFG; BRAV-M, BSPP, unions). 29 named people with fetched URLs in discovery/officers.md, all cold; five French drafts (77, 72, 77, 75, 75 words) in discovery/outreach/2026-11-01-batch-1.md; discovery/interview-guide.md written. Done-when met except warmth (no warm name exists yet). Judge: drafts ready, zero contact. Not found: a serving captain named after a 2023 riot night, a CRS trainer, any BRAV-M officer below director level. Stopped at Gate 1; D-001 and D-002 raised.
+- 2026-11-02 09:25 (Claude, morning): Oscar answered through Vela (HUB note 20261102080611432-848eb74b, typed 09:04 Madrid): D-001 "Hold all five cold messages" (option C), D-002 "Ask my warm contact for two names at the face-to-face" (option B). Applied: batch-1 stays in discovery/outreach as drafts, nothing sent; the two-names ask is already the guide's closing question, and Vela added the Innov'Achats closing question on his yes (commit b9cecae). Task done at its drafts stage; judge still "drafts ready, zero contact". Objective 1 now rests on Oscar's face-to-face next week; the next discovery task opens when he reports the names he gets.
 
 ## Decision
 
