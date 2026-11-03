@@ -1,7 +1,7 @@
 {
-  "last_hub_note": "20261103081019773-8f1d63c6",
-  "next_decision": 6,
+  "last_hub_note": "20261103110539606-4f947f63",
+  "next_decision": 7,
   "signal_issue": null,
-  "last_run": "2026-11-03 morning",
+  "last_run": "2026-11-03 evening",
   "notes": "last_hub_note is the id of the most recent Oscar HUB note already processed; runs only ingest newer ones. signal_issue is the GitHub issue number used to wake Vela, null until she confirms a GitHub-event routine."
 }
