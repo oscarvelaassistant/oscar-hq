@@ -1,54 +1,62 @@
-# Cofounder morning brief, Monday 9 November 2026
+# Cofounder morning brief, Tuesday 10 November 2026
 
-Written 05:25 Madrid for page 2 of Oscar's Digest. Times Europe/Madrid.
+Written 05:40 Madrid for page 2 of Oscar's Digest. Times Europe/Madrid.
 
 ## Where we are
-Idea stage. Quiet weekend: no new brainstorm item since 1 Nov, no for-claude note, HQ queue empty (every HQ run 6 to 8 Nov reported nothing new). The François call (4 Nov 18:00) is still not logged, day five. roadmap.md is still the placeholder, day nine.
+Idea stage, but moving. The François call (4 Nov) is logged at last (commit 1712203). Lead hypothesis is now identification after the fact: who did what in a masked crowd. Friday 13 Nov you and Mathieu work his notes. Officer route waits on François the reservist.
 
 ## Open questions
-- Did the François call happen, and what did he say? Which François? Nothing in repo, HUB or memory.
-- What counts as traction? Unanswered; it gates the roadmap.
-- SNMO December 2021 PDF (Légifrance circ 45250): only Oscar's browser can reach it. Q8 waits. Source: reports/2026-11-06-evening.md.
+- What counts as traction? Still unanswered; it gates the roadmap.
+- Is it legal in France for police to jam phones or identify phones in a perimeter? Not checked. Source: interview file, "Open / unverified".
+- "Mantids de l'ordre": is that the général in charge of maintien de l'ordre, or another post? Confirm before asking for the number.
+- Did François stand riot nights himself, or is he mainly a door? Not clear from the notes.
 
 ## Roadmap progress
-Placeholder since 1 Nov. I put roadmap v0 on top on 3 Nov and 5 Nov; not picked either time. Pattern, named once: the roadmap waits on the call, the call waits on nothing. Default holds: explore in the morning hour.
+roadmap.md is still the placeholder, day ten. It was my top item on 3, 5 and 9 Nov, not picked. Not on top today. Default holds: explore in the morning hour.
 
-## Done since Friday
-- HQ: D-007 filed 6 Nov (Friday scorecard rule conflict), decide by 13 Nov 12:00. Source: reports/2026-11-06-evening.md.
-- HQ midday push refused 6, 7, 8 Nov (seventh day in a row since 2 Nov); evening runs recovered each. D-006 stays on default B. Source: reports/2026-11-08-evening.md.
-- Friday brief committed (039d5ca).
+## Done since yesterday
+- François interview logged with key signals and leads (1712203). Source: discovery/interviews/2026-11-04-francois-gendarme.md.
+- Lead hypothesis set: identification after the fact (Cofounder HUB note, 9 Nov).
+- Friday method agreed as default: Opportunity Solution Tree plus Mom Test filter, unless you pick otherwise by Thu 12 Nov 21:00.
+- You sent the WhatsApp to François the reservist asking for one or two full-time officers.
+- HQ: midday push refused for the eighth day, evening run recovered it. HQ flagged a tag collision: the ARESA work agent uses for-claude on day-job notes. Source: reports/2026-11-09-evening.md.
 
 ## Threads in play
 | Thread | State | Next | Source |
 |---|---|---|---|
-| Roadmap | Placeholder, day nine | v0 today (decision 1) | roadmap.md |
-| Officer route | 4 Nov call not logged, day five | Five-line debrief (decision 2) | journal 3 Nov |
-| Cold batch (D-001) | Held until the call is logged | Follows decision 2 | decisions.md |
-| Buyer route | Street pressure continues; conférence sociale today | Watch | France 3, 8 Nov |
-| First component | Three candidates ready | Waits for officer input (D-003) | engineering/first-component-candidates.md |
-| HQ plumbing | D-006 on B (7 days of 403s); D-007 open | Decision 3 | reports/2026-11-06-evening.md |
-| Tools | ArtCraft, Claude Code login, more Grok bots: revisit was 7 Nov, passed unreviewed | Re-date at the morning hour | parked.md, brainstorm.md |
+| Officer route | WhatsApp to François the reservist sent 9 Nov | Wait; fallback 12 Nov | journal 9 Nov |
+| General's number | François the gendarme offered it; not asked | Ask after reservist fallback | interview file |
+| Legality check | Parked as a Claude task for 13 Nov, never filed | Decision 1 | HQ evening 9 Nov |
+| Friday with Mathieu | Fri 13 Nov, tree plus Mom Test by default | Read the questions before Friday | journal 9 Nov |
+| Alain Bauer | Watch a debate; contact deferred until after officer talks | After two officer talks | journal 9 Nov |
+| Roadmap | Placeholder, day ten | Not today | roadmap.md |
+| HQ plumbing | D-006 on B (8 days of 403s); D-007 open; tag collision | Decision 2 | reports/2026-11-09-evening.md |
+| Tools | ArtCraft, Claude Code login, more Grok bots: 7 Nov revisits passed | Re-date at a morning hour | parked.md, brainstorm.md |
 
 ## Tasks and due dates
 - Today 09:00: HQ morning run.
-- Fri 13 Nov 12:00: D-007 decide-by (default: no scorecard).
-- Overdue: parked revisits dated 7 Nov (Claude Code login, more Grok bots, ArtCraft).
+- Today: education intersyndicale strike and march (lycéens, students, teachers). Source: franceinfo.
+- Thu 12 Nov: no reply from the reservist means ask François the gendarme for the general's number.
+- Thu 12 Nov 21:00: Friday method default (the tree) locks.
+- Fri 13 Nov: session with Mathieu. 12:00 D-007 decide-by (default: no scorecard).
+- Overdue: parked revisits dated 7 Nov.
 
 ## Decisions for today (Oscar picks the focus)
-1. Roadmap v0: write it now or keep the placeholder? Pick: write v0 in the morning hour, 20 minutes, traction = two officers agree to a second talk. It is the only thing that turns "explore" into a check. Default: placeholder stays, keep exploring. Reversible.
-2. François call: log it in five lines, or say it did not happen? Pick: five lines into discovery/interviews today, 10 minutes, voice note to Vela is fine. Default: blank, D-001 stays held. Reversible.
-3. D-007 Friday scorecard: which rule wins? Pick: B, drop the Friday clause from the evening task; a scorecard has nothing to count until the roadmap exists. Default (13 Nov 12:00): no scorecard. Reversible.
-(Friday's top was D-001; today's top is the roadmap.)
+1. Legality of phone jamming and phone ID: approve it as a Claude task today, or leave it parked? Pick: approve it today, 2 minutes, one line to Vela or me. Claude only runs on approved work, so without it Friday's tree has a whole branch nobody checked. Default: stays parked, Friday runs without it. Reversible.
+2. HQ tag collision: does the ARESA agent drop for-claude, or does HQ only act on for-claude from the roster (you, Vela, Cofounder, Researchy)? Pick: the roster rule. One line in HQ's run procedure, and ARESA keeps its own tags. Default: as now, HQ reads and logs, starts nothing. Reversible.
+3. Strobe-light riot shields (Interior trial, below): log them as an existing solution on Friday's tree? Pick: yes, one line under "control on the line". It is the state buying hardware right now, and it does nothing for identification, which is your gap. Default: not logged. Reversible.
+(Yesterday's top was the roadmap; today's top is the legality check.)
 
 ## On the street (France)
-- 5 Nov consolidated: 642 arrests and 112 police and gendarmes injured, up from 448 and 53 at 18:00. Source: Interior via Belga, https://www.lalibre.be/international/europe/2026/11/06/france-642-personnes-interpellees-et-112-policiers-blesses-lors-des-manifestations-NUK7RXYG7FDTTMPB6LBX2EQRYU/
-- Interior named "groups at risk of several hundred radical and ultra-left militants" trying to reach protected city centres in Rennes, Marseille, Nantes, Lyon, Bordeaux, Strasbourg. Source: same.
-- 7 Nov, fourth Saturday in a row: Montpellier march held despite a préfecture ban, up to 4,800 people (préfecture), 5 arrests, 1 police officer and 1 gendarme injured. Source: https://france3-regions.franceinfo.fr/occitanie/herault/montpellier/manifestation-du-samedi-7-novembre-5-personnes-interpellees-deux-policiers-blesses-a-montpellier-3446202.html
-- Pau: 4 minors placed under judicial investigation for the 5 Nov mortar fire at police; detention sought for a 16-year-old; 4 officers hurt by mortars, two with 2 and 3 days ITT. Source: https://france3-regions.franceinfo.fr/nouvelle-aquitaine/pyrenees-atlantiques/pau/policiers-blesses-par-des-tirs-de-mortier-devant-un-lycee-a-pau-quatre-mineurs-mis-en-examen-une-information-judiciaire-ouverte-3445929.html
-- Today: conférence sociale at Matignon with unions and employers this morning. Source: France 3 Montpellier above.
+- 9 Nov, Bègles: a head teacher hit in the head by a projectile; about thirty masked people set fire to two school gates; 4 arrests, 2 officers lightly hurt. Source: Ma vigilance citing franceinfo, https://mavigilance.fr/jour/2026-11-09
+- Interior confirms a trial of strobe-light anti-riot shields, used per a police source by the BRAV-M in Paris during the lycée protests; 14 light belts handed to gendarmerie, police nationale and Préfecture de police. RSF and LDH worry; the ministry says the LED light is not dangerous. Source: same page.
+- 7 Nov national tally: 154 arrests, 16 police hurt. Source: Interior via AFP, cited at https://mavigilance.fr/themes/interpellations
+- 9 Nov, Montélimar: mortar fire, about 200 people dispersed with gas. Source: ICI Drôme Ardèche, cited at the same page.
+- 9 Nov: Lecornu held the conférence sociale on wages at Matignon; CGT strike called for 17 Nov; gilets jaunes call rallies Saturday. Source: https://www.franceinfo.fr/societe/manifestations/consultations-a-matignon-manifestations-en-quete-d-une-sortie-de-crise-le-gouvernement-entame-une-nouvelle-semaine-sociale-chargee_8274125.html
+- Education minister on France 2: over 200 staff hurt since the movement began. His figures, not independently verified. Source: Ma vigilance, 9 Nov page.
 
 ## Flags: conflicting dates and facts
-- 5 Nov injured: 53 (provisional, 18:00) vs 112 (consolidated, 6 Nov). Use 112.
-- Montpellier: headline says "plus de 5000", préfecture says up to 4,800.
-- Pau: 7 police hurt (police nationale, includes arrests) vs 4 (procureur, mortars only). Consistent once split.
-- Parked revisits dated 7 Nov passed with no review. The "Friday scorecard" on Saturday 7 Nov is now HQ's D-007.
+- General's number: one 9 Nov plan says ask François by 11 Nov; the later one says ask only if the reservist has not replied by 12 Nov. Later one wins.
+- Alain Bauer: "contact by 13 Nov" vs "deferred until after a couple of officer talks". Later one wins.
+- decisions.md stops at 2 Nov. The 9 Nov decisions are in HUB notes and journal only, and D-001 (revisit 6 Nov, or after the call) is still open though the call is now logged.
+- Legality check: two Cofounder notes park it for 13 Nov, but no for-claude note exists, so nothing will start it. That is decision 1.
