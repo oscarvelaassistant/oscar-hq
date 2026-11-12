@@ -1,59 +1,59 @@
-# Cofounder morning brief, Wednesday 11 November 2026
+# Cofounder morning brief, Thursday 12 November 2026
 
-Written about 05:30 Madrid for page 2 of Oscar's Digest. Times Europe/Madrid.
+Written about 05:35 Madrid for page 2 of Oscar's Digest. Times Europe/Madrid.
 
 ## Where we are
-Idea stage, quiet day. Lead hypothesis is identification after the fact: who did what in a masked crowd. Nothing new came in since yesterday: no reply logged from François the reservist, no decision taken on yesterday's three. Friday 13 Nov you and Mathieu work François's notes. Today is 11 November, a public holiday in France.
+Idea stage. Lead hypothesis is still identification after the fact: who did what in a masked crowd. One new input yesterday: your 2K police camera drone idea (brainstorm.md, 11 Nov). No reply logged from François the reservist, so today is the fallback day you set for the general's number. Tomorrow you and Mathieu work François's notes; the method (Opportunity Solution Tree plus Mom Test) locks tonight at 21:00 unless you pick otherwise.
 
 ## Open questions
 - What counts as traction? Still unanswered; it gates the roadmap.
-- Is it legal in France for police to jam phones or identify phones in a perimeter? Not checked, not filed. Source: interview file, "Open / unverified".
-- "Mantids de l'ordre": is that the général in charge of maintien de l'ordre, or another post? Confirm before you ask for the number.
-- Did François stand riot nights himself, or is he mainly a door?
+- The drone idea: French police already fly camera drones over protests (Décret 2023-283, 19 Apr 2023, per brainstorm.md). So what do those drones fail to give them after the fact? Nobody has asked an officer yet.
+- "Mantids de l'ordre": is that the général in charge of maintien de l'ordre, or another post? Confirm in the same message.
+- Is phone jamming or phone identification in a perimeter legal in France? Not checked, not filed.
 
 ## Roadmap progress
-roadmap.md is still the placeholder, day eleven. Not on top today. Default holds: explore in the morning hour.
+roadmap.md is still the placeholder, day twelve. Not on top today. Default holds: explore in the morning hour.
 
 ## Done since yesterday
-- Nothing on the venture. Yesterday's three decisions (legality check, HQ tag rule, strobe shields on the tree) sit on their defaults.
-- HQ: three runs, all "nothing new". Midday push refused for the ninth day in a row; the evening run recovered it. Source: reports/2026-11-10-midday.md and -evening.md.
+- Venture: drone idea logged to brainstorm.md (commit 64f5661). Yesterday's three decisions sit on their defaults.
+- HQ: three runs, all "nothing new". Midday push refused for the tenth day in a row (2 to 11 Nov); the evening run recovered it. Source: reports/2026-11-11-midday.md and -evening.md.
 
 ## Threads in play
 | Thread | State | Next | Source |
 |---|---|---|---|
-| Officer route | WhatsApp to François the reservist sent 9 Nov, no reply logged | Fallback tomorrow, decision 1 | journal 9 Nov |
-| General's number | François the gendarme offered it; not asked | Ask Thu 12 Nov if no reply | interview file |
-| Legality check | Approve-or-park asked yesterday, not answered | Decision 3 | HQ evening 10 Nov |
-| Friday with Mathieu | Fri 13 Nov, tree plus Mom Test by default | Method locks Thu 21:00 | journal 9 Nov |
-| Alain Bauer | Contact deferred until after officer talks | After two officer talks | journal 9 Nov |
-| Roadmap | Placeholder, day eleven | Not today | roadmap.md |
-| HQ plumbing | D-006 on B, nine days of 403s; D-007 open; tag collision open | Decision 2 | reports/2026-11-10-evening.md |
+| Drone idea | Logged 11 Nov, not on Friday's tree | Decision 1 | brainstorm.md |
+| General's number | François the gendarme offered it; not asked | Today, decision 2 | interview file, journal 9 Nov |
+| Officer route | WhatsApp to François the reservist sent 9 Nov, no reply logged | Waits on decision 2 | journal 9 Nov |
+| Friday with Mathieu | Fri 13 Nov, tree plus Mom Test by default | Method locks tonight 21:00 | journal 9 Nov |
+| Legality check | Approve-or-park asked 10 Nov, unanswered | Carried, stays parked | HQ evening 10 Nov |
+| Alain Bauer | Deferred until after officer talks | After two officer talks | journal 9 Nov |
+| Roadmap | Placeholder, day twelve | Not today | roadmap.md |
+| HQ plumbing | D-006 on B, ten days of 403s; D-007 open | Decision 3 | reports/2026-11-11-evening.md |
 | Tools | ArtCraft, Claude Code login, more Grok bots: 7 Nov revisits passed | Re-date at a morning hour | parked.md, brainstorm.md |
 
 ## Tasks and due dates
-- Today 09:00, 12:00, 21:00: HQ runs.
-- Thu 12 Nov: no reply from the reservist means you ask François the gendarme for the general's number.
-- Thu 12 Nov 21:00: Friday method default (the tree) locks.
+- Today: ask François the gendarme for the general's number (your fallback date, set 9 Nov).
+- Today 21:00: Friday method default (tree plus Mom Test) locks. HQ runs 09:00, 12:00, 21:00.
 - Fri 13 Nov: session with Mathieu. 12:00 D-007 decide-by (default: no scorecard).
-- Sat 14 Nov: youth call to march. Tue 17 Nov: CGT strike.
+- Sat 14 Nov: youth and CGT fonction publique marches. Tue 17 Nov: CGT strike.
 - Overdue: parked revisits dated 7 Nov.
 
 ## Decisions for today (Oscar picks the focus)
-1. Reservist silent two days. Tomorrow, ask François the gendarme for the general's number, or keep waiting until after Friday? Pick: ask tomorrow as planned, one WhatsApp you send, 2 minutes. The general is the bigger door, and one real answer before Friday gives the tree a root that is not guesswork. Also confirm the exact title in the same message. Default: wait until after Friday. Reversible.
-2. HQ midday push, nine refusals in a row (D-006). Fix it (option A: Vela adds oscar-hq with push access to the midday task's sources, about 5 minutes), or drop the midday run to two runs a day? Pick: A. It is one setting, and every evening run spends its first job cleaning up after midday. Default: B, evening keeps recovering. Reversible.
-3. Legality check on phone jamming and phone ID, carried from yesterday, not on top. Pick: approve it as a Claude task, one line to Vela or me. Default: stays parked, Friday runs without that branch. Reversible.
-(Yesterday's top was the legality check; today's top is the general's number.)
+1. Drone idea: put it on tomorrow's tree as one branch under identification after the fact, or keep it in the brainstorm log? Pick: put it on the tree, framed as a question, not a product: "what do today's police drones miss when you try to name who threw what?". Ten minutes with Mathieu tomorrow. Police already fly drones legally, so the open space is the gap, and only officers can tell you that. Default: stays in the log, Friday runs without it. Reversible.
+2. General's number, today is your fallback day. Send the one WhatsApp to François the gendarme now, or wait until after Friday? Pick: send today, 2 minutes, and confirm the exact title. It is the bigger door and it was your plan. Default: wait until after Friday. Reversible.
+3. HQ midday push, ten refusals (D-006). Pick: A, Vela adds oscar-hq with push access to the midday task, about 5 minutes. Default: B, evening keeps recovering. Reversible.
+(Yesterday's top was the general's number; today's top is the drone branch. The general stays as decision 2 because today is the date you set.)
 
-## On the street (France), 10 Nov
-- Chelles: a deputy mayor hit in the chest by a full, closed bottle of petrol in front of a lycée; attempted murder inquiry; the thrower is not identified. Three pupils arrested for violence on police, no link established to the throw. Source: parquet de Meaux via franceinfo, cited at https://mavigilance.fr/jour/2026-11-10 . That is your identification gap in one story.
-- Nuñez (Interior) on X: "Nous ne sommes plus ici dans le cadre d'un mouvement lycéen, ce sont des violences urbaines". Source: https://www.europe1.fr/societe/en-direct-mobilisation-des-lyceens-240-blesses-parmi-les-enseignants-depuis-le-debut-du-mouvement-1222595
-- After mortar fire at several schools and the Aix fire, several police unionists called for officers outside schools or for CCTV. Source: https://www.blick.ch/fr/monde/france/en-france-ca-degenere-entre-lyceens-et-policiers/0pv4bpb
-- Lyon: 3,500 marched (préfecture); a breakaway of about 400 dispersed with tear gas; outside Saint-Exupéry, mortars at police, tear gas back, a pupil hit in the head; 2 arrests for mortar fire. Source: https://www.leprogres.fr/faits-divers-justice/2026/11/10/colere-lyceenne-deux-interpellations-ce-mardi-matin-une-dizaine-d-etablissements-touches
-- National: 18 arrests by 14:00 (Interior minister's office); 49 of about 3,700 lycées blocked at 09:30 (Education ministry); Paris 5,900 marchers (préfecture) vs 10,000 (Interfac IDF). Source: https://mavigilance.fr/themes/interpellations and https://mavigilance.fr/jour/2026-11-10
-- Government says about 240 Education staff hurt since mid-September, after saying "près de 300" earlier the same day. Government figure, not independently verified. Source: Europe 1 (AFP), link above.
-- RSF counts 71 journalists obstructed up to 7 Nov, 52 by police. Two journalists filed complaints over 5 Nov at Nation. Source: Le Progrès (AFP) via https://mavigilance.fr/jour/2026-11-10
+## On the street (France), 10 and 11 Nov
+- Chelles, Seine-et-Marne: two violent incidents in 48 hours, mortars fired into a classroom and a deputy mayor hit by a petrol bottle. Four minors arrested and one adult jailed; all had no record and attend local lycées. Source: franceinfo, 11 Nov, https://www.franceinfo.fr/replay-jt/france-2/20-heures/tirs-de-mortiers-au-lycee-de-chelles-qui-sont-les-interpelles_8278286.html
+- Justice ministry, figures up to 9 Oct: 1,504 minors brought before a judge; 93 % boys, 62 % aged 15 to 16; 42 % of minors held in garde à vue were held for violence on police. Source: same franceinfo report.
+- Champs-sur-Marne: a Torcy police officer got 30 days' incapacity (ITT) after a 13-year-old on a scooter hit him during an arrest near lycée Descartes, where mortars were fired at police on 10 Nov. Source: Le Parisien, 11 Nov, https://www.leparisien.fr/seine-et-marne-77/un-ado-de-13-ans-en-trottinette-percute-un-policier-et-lui-casse-le-bras-pres-du-lycee-descartes-a-champs-sur-marne-11-11-2026-HO5AISO7NVF67JVMM5XDZK3ZOA.php
+- Education minister Édouard Geffray on BFMTV: 245 Education staff hurt since the movement began. Government figure. Source: franceinfo via https://mavigilance.fr/jour/2026-11-11
+- Toulouse: the préfet banned undeclared protests 10:00 to 13:00 around the 11 Nov ceremony; organisers risk six months and 7,500 euros. Source: La Dépêche via https://mavigilance.fr/jour/2026-11-11
+- Youth and teacher groups will join the CGT fonction publique call to march Saturday after talks with the government failed. Source: France Culture, 11 Nov, https://www.radiofrance.fr/franceculture/podcasts/journal-de-12h30/journal-de-12h30-du-mercredi-11-novembre-2026-6014773
 
 ## Flags: conflicting dates and facts
-- Education staff hurt: "près de 300" then 240, both from the government on 10 Nov; the ministry had said "over 200". Use 240, labelled government.
-- decisions.md stops at 2 Nov; the 9 Nov decisions live only in HUB notes and journal. My memory says Oscar let me write decisions.md on 1 Nov, my standing brief says read only. I have not touched it; Oscar, one word settles it.
-- Yesterday's brief said "Today 09:00: HQ morning run" but HQ runs three times a day (09:00 per report, 08:00 in decisions.md 1 Nov). Unresolved since 3 Nov.
+- Chelles arrests: France Culture says three lycéens arrested after the petrol attack, none held in garde à vue; franceinfo says four minors arrested and one adult jailed across both Chelles incidents. Probably different scopes, not confirmed.
+- Education staff hurt: "près de 300" then 240 on 10 Nov, now 245 on 11 Nov, all government. Use 245, labelled government.
+- decisions.md stops at 2 Nov; later decisions live only in HUB notes and journal. Who writes it is still unsettled. I have not touched it.
+- HQ morning run: 09:00 in reports, 08:00 in decisions.md (1 Nov). Unresolved since 3 Nov.
