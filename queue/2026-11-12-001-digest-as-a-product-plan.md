@@ -3,11 +3,11 @@ id: 2026-11-12-001
 title: Plan Oscar's Digest as a product
 role: cofounder
 priority: P2
-status: waiting-approval
+status: done
 created: 2026-11-12
 created_by: Oscar (HUB note 20261112130840286-c6cc2d47 via Vela, wake run)
 wide_search: false
-approval: none
+approval: "D-008 yes, modified (2026-11-12 14:55 Madrid, Oscar via Cofounder, relayed by Vela in the wake-2 payload): Phase 0 goes ahead, but the first tests write issues with Claude on Oscar's own subscription, no API key and no API spend for now. He was told that Anthropic's terms bar subscription use for issues made for other people and chose it anyway; recorded as his call. Cofounder logged it in ventures/_company/cofounder/decisions.md."
 ---
 
 ## Goal
@@ -33,6 +33,7 @@ Oscar's answer to the decision in the report, and Cofounder recording it in deci
 ## Log
 - 2026-11-12 14:13 (Claude, wake): filed from the wake payload, started.
 - 2026-11-12 14:18 (Claude, wake): plan written at ventures/digest/plan.md (five areas, phases, gates, sourced prices, three open inputs). Done-when met except the judge, which is Oscar's answer. Stopped at gate 2 for the prototype's API spend: D-008 below.
+- 2026-11-12 14:57 (Claude, wake-2): D-008 answered yes with a change (subscription, not API key, for the first tests). Judge met: Oscar answered and Cofounder recorded it. Task closed; the build spec is task 2026-11-12-002. The plan's section 2 now carries a pointer to the decision.
 
 ## Decision
 ### D-008 Start the Digest product prototype on an API key inside the November ceiling

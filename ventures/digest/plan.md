@@ -15,6 +15,8 @@ What a product cannot reuse as is: the writing step (see section 2), the persona
 
 ## 2. The fact that shapes the whole build: generation must move to the API
 
+Decision record, 2026-11-12 14:55 Madrid (Oscar via Cofounder, relayed by Vela; D-008 yes, modified): for the first tests the issues are written with Claude on Oscar's own subscription through Claude Code, not with an API key, so no API spend for now. He was told the terms below bar this for issues made for other people and chose it anyway; recorded as his call. This section's consequences therefore apply from the moment Oscar moves to an API key, not to Phase 0. The build spec is `ventures/digest/spec.md`.
+
 Anthropic's Claude Code legal page says OAuth sign-in is "intended exclusively for purchasers of Claude Free, Pro, Max, Ultra, Team, and Enterprise subscription plans and is designed to support ordinary use of Claude Code", that developers building products "should use API key authentication", and that Anthropic "does not permit third-party developers ... to route requests through Free, Pro, Max, or Ultra plan credentials on behalf of their users". Customers "may not pay for, resell, or intermediate Claude usage on their end users' behalf". Source: https://code.claude.com/docs/en/legal-and-compliance
 
 Consequences:
@@ -81,8 +83,8 @@ First issue within 24 hours of sign-up, free; the second month is paid. Pricing 
 
 ## 7. How to build it: phases and gates
 
-Phase 0, prototype for three readers (Oscar, the two partners), no site, nothing public. Needs D-008 (API spend within the November ceiling).
-- Fork the pipeline into `/workspace/digest-product` (the personal one stays untouched). Profile JSON, generic gather stage, API writing stage with token logging, renderer parameterised by length. Oscar builds with Claude Code on the box (Opus, effort high, as the rules say); the daily product run itself uses the API key, never the subscription.
+Phase 0, prototype for three readers (Oscar, the two partners), no site, nothing public. D-008 answered yes on 2026-11-12 with the change recorded in section 2: the writing step runs on Oscar's subscription for the first tests. Spec: `ventures/digest/spec.md`.
+- Fork the pipeline into `/workspace/digest-product` (the personal one stays untouched). Profile JSON, generic gather stage, writing stage behind one interface (`claude-code` on the subscription in Phase 0, `api` ready for a later gate 2 decision) with usage logging, renderer parameterised by length. Oscar builds with Claude Code on the box (Opus, effort high, as the rules say).
 - Run it daily for four weeks for the three readers. Measure: issues delivered on time, tokens and USD per issue per model, how many issues each partner opened (the web link logs it), and what each one asked to change.
 - Exit test: both partners read it on most days of week four, and cost per issue is known. Otherwise stop; the cost was four weeks of Oscar's venture hour and under 50 EUR of API.
 
@@ -107,4 +109,5 @@ The role file records why Oscar's earlier ventures were closed: software too eas
 ## Open inputs from Oscar (Vela folds them into a batch)
 - Who the two partners are and what each one brings.
 - Which language the first clients read.
-- Whether he has an Anthropic Console API key already (if not, the D-008 yes covers creating one).
+- Whether he has an Anthropic Console API key already: no longer needed for Phase 0 (D-008 as answered); it returns when the `api` backend is switched on.
+- The spec's own open inputs: `ventures/digest/spec.md` section 13 (partners' cities, timezones, languages, devices; the Phase 0 hostname).
