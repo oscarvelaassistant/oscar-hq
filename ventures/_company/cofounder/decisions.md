@@ -9,3 +9,4 @@ One line per decision: date, decision, next action, due, outcome when known.
 - 2026-11-01: casual WhatsApp to François (former gendarme, Garde républicaine) sent by Oscar; next action: wait for reply, then hold the conversation with the two-page brief; due when he replies; outcome: sent 2026-11-01.
 - 2026-11-02: D-001 cold messages held until François the gendarme replies (Oscar's call). Revisit 6 Nov.
 - D-008 (2026-11-12, Oscar, 14:55 Madrid): start the Phase 0 Digest prototype for Oscar plus the two partners. For the first tests, Claude on Oscar's own account is the writing backend (no API key, no API spend for now; told about Anthropic's terms, his call). Focus: front end, customer journey and cloud backend. Nothing public.
+- D-009 (2026-11-12, Oscar, 15:11 Madrid): Digest test PDFs are emailed from Oscar's own Gmail to Oscar, Paul and Pietro, with no mail service sign-up; all issues are in English.
