@@ -50,7 +50,7 @@ Client accounts (built, no third party): email plus magic-link login (no passwor
 
 Billing: Stripe. Spain pricing: standard EEA cards 1.5% plus EUR 0.25 per transaction; international cards 3.15% plus EUR 0.25, plus 2% for currency conversion; Stripe Billing (subscriptions) 0.7% of billing volume on pay-as-you-go. Source: https://stripe.com/es/pricing. Opening a Stripe account is gate 2 (signup) and needs the legal entity in section 8.
 
-Email delivery: Resend free plan is 3,000 emails a month, capped at 100 a day, 3 custom domains; Pro is USD 20 a month for 50,000 emails. Source: https://resend.com/pricing. Whether Cloudflare's own Worker email binding can send to arbitrary external recipients is unverified (its docs mention a recipient allowlist, https://developers.cloudflare.com/email-routing/email-workers/send-email-workers/); I don't know. Signing up for Resend is gate 2. Until then, Phase 0 delivers by web link and device pull, no email.
+Email delivery: D-009 (2026-11-12 15:11 Madrid, Oscar via Cofounder, logged by Vela): the MVP delivers each issue as a PDF by email, sent from Oscar's own Gmail account to the three readers, with no mail service sign-up; all issues in English. A mail service of the product's own (Resend, Postmark, Mailgun, Mailjet, Amazon SES, Cloudflare Email Sending, Proton SMTP) is a gate 2 decision for Phase 2; the options with quoted prices and URLs are in `ventures/digest/spec.md` section 7a. Cloudflare's own sending needs the Workers Paid plan for arbitrary recipients (https://developers.cloudflare.com/email-service/); on the free plan it sends only to verified addresses.
 
 Hub rule: client data is the product's data, not Oscar's personal data, so it lives in the product's own Worker and KV, outside the personal hub. The hub gets one read tool, `digest_product_status` (clients, issues sent, failures, token spend), so the dashboard and Oscar's own Digest can show it. For Vela line: `2026-11-12 | product client data lives in the product Worker's KV, outside the personal hub; only a status read tool goes behind the hub | revisit 2026-12-12 | for Vela`.
 
@@ -60,7 +60,7 @@ Three stages per issue, each a separate program so a failure is visible and retr
 
 1. Gather, per client profile: public sources only. For each topic a fixed list of RSS feeds and news pages (the client can add feeds or URLs), fetched by the Worker (Cloudflare free plan: 100,000 requests a day, 5 cron triggers per account, 15 minutes wall time per scheduled run; sources: https://developers.cloudflare.com/workers/platform/pricing/ and https://developers.cloudflare.com/workers/platform/limits/). Weather and sunrise for the client's city from open-meteo as today. Nothing from X for clients (the exports are Oscar's connector data). Output: `data/<client>/<date>/sources.json`.
 2. Write, with the API: Haiku 5.5 ranks and deduplicates candidates against the profile; Sonnet 5.5 writes the issue in the client's language and style within the copy budget the renderer enforces; Opus 5.5 only for a weekly long edition if the quality gap shows in the prototype. Every story keeps its source URL; a story without one is dropped by the build as today. The prompt is the generalised `DAILY-PROMPT.md` with the personal parts removed (no WHOOP, no vault, no council unless a client opts into a health section with their own data).
-3. Render and deliver: the existing Python and Playwright renderer, parameterised by length and style (section 6), produces the PDF and a PNG preview; delivery is a web link and device pull first, email once Resend is approved. Each run writes `status-<client>-<date>.json` like today.
+3. Render and deliver: the existing Python and Playwright renderer, parameterised by length and style (section 6), produces the PDF and a PNG preview; delivery is the PDF by email from Oscar's Gmail (D-009), plus the web link and, for Oscar, the device pull. Each run writes `status-<client>-<date>.json` like today.
 
 Where it runs: Phase 0 on the box (Python already works there; the box has no cron, so a timer loop like `whoop-morning-watch.sh`, or a systemd user timer). Phase 2 moves gather and delivery into the Worker cron and keeps rendering on the box or on a small always-on machine; Playwright does not run in a Worker. A Worker-only pipeline would need an HTML-to-PDF service, which is a new account and a later decision.
 
@@ -71,26 +71,26 @@ Quality rules kept from the personal Digest: sourced facts, no em dashes, overfl
 One form, under five minutes, stored as the client's profile JSON:
 
 - Name as it should print on the masthead; email; city and timezone (weather, sunrise, delivery time).
-- Language: English, Spanish, Catalan, French (the pipeline already writes English; the other three are a prompt change plus a proof-read of the first issues by a partner who speaks the language).
+- Language: English, Spanish, Catalan, French (the pipeline already writes English; the other three are a prompt change plus a proof-read of the first issues by a partner who speaks the language). Phase 0 is English only (D-009); Paul reads French and Spanish and can proof-read those.
 - Cadence: daily or weekly, with the delivery time (daily: ready by 07:00 local; weekly: pick the day).
 - Length: short (one page), standard (two pages), long (three pages, weekly only). The renderer's page templates give these for free.
 - Style: newspaper (today's design), letter (one column, a personal note first), brief (headline and three lines per story). Newspaper ships first; letter and brief are template work.
 - Topics: a pick list seeded from the feeds we already know work (defence and naval, AI and robotics, hardware, art and history, birds and nature, local news for the city) plus free text and the client's own feeds or URLs. The profile grows the way `profile.md` does, from what the client reads: the web app records which stories were opened.
-- Delivery: email (PDF attached and a web link), web link only, or e-ink pull with a device token.
+- Delivery: email (PDF attached and a web link; the default, and the MVP's channel per D-009), web link only, or e-ink pull with a device token.
 - Data: the profile and 30 days of issues; deleted on cancellation; no sharing with anyone; the privacy page says this plainly (clients will be in the EU).
 
 First issue within 24 hours of sign-up, free; the second month is paid. Pricing is a partners' decision, not set here. Public anchors for comparable products, as quoted by secondary pages on 2026-11-12: Readless Pro USD 4.90 a month and Max USD 9 a month (https://www.readless.app/solutions/daily-news-digest), i-digest USD 5.9 self-managed and USD 12.9 managed daily digest (https://i-digest.com/), Feedly's AI tier about USD 12 a month (https://summry.io/en/blog/ai-news-digest-tools-compared). Those products deliver summaries in an app or an email; none that I found delivers a laid-out newspaper made for one reader, which is the thing to price.
 
 ## 7. How to build it: phases and gates
 
-Phase 0, prototype for three readers (Oscar, the two partners), no site, nothing public. D-008 answered yes on 2026-11-12 with the change recorded in section 2: the writing step runs on Oscar's subscription for the first tests. Spec: `ventures/digest/spec.md`.
+Phase 0, prototype for three readers (Oscar, Paul and Pietro), no site, nothing public. D-008 answered yes on 2026-11-12 with the change recorded in section 2: the writing step runs on Oscar's subscription for the first tests. D-009 the same day: each issue is delivered as a PDF by email from Oscar's own Gmail, no mail service sign-up, English only. Spec: `ventures/digest/spec.md`.
 - Fork the pipeline into `/workspace/digest-product` (the personal one stays untouched). Profile JSON, generic gather stage, writing stage behind one interface (`claude-code` on the subscription in Phase 0, `api` ready for a later gate 2 decision) with usage logging, renderer parameterised by length. Oscar builds with Claude Code on the box (Opus, effort high, as the rules say).
 - Run it daily for four weeks for the three readers. Measure: issues delivered on time, tokens and USD per issue per model, how many issues each partner opened (the web link logs it), and what each one asked to change.
 - Exit test: both partners read it on most days of week four, and cost per issue is known. Otherwise stop; the cost was four weeks of Oscar's venture hour and under 50 EUR of API.
 
 Phase 1, name, domain, site with sign-up and samples. Decisions: domain purchase (gate 2), site goes live (gate 3). Builds on the Phase 0 issues as samples.
 
-Phase 2, accounts, billing, email, archive. Decisions: Stripe account (gate 2, needs the entity), Resend account (gate 2). The hub status tool and the For Vela line close here.
+Phase 2, accounts, billing, a product mail service, archive. Decisions: Stripe account (gate 2, needs the entity), the mail service (gate 2; options and prices in the spec, section 7a). The hub status tool and the For Vela line close here.
 
 Phase 3, first paying clients from the partners' own circles; weekly scorecard line: clients, churn, cost per issue against price, failures. Opus for the weekly edition only if the prototype shows the gap.
 
@@ -107,7 +107,7 @@ A third each, profits shared three ways (Oscar's correction of 2026-11-12). Two 
 The role file records why Oscar's earlier ventures were closed: software too easy to copy, work that bored him, missing insider knowledge. This is software, and the design can be copied in a weekend by anyone with the same tools. What cannot be copied fast is ten days of a working pipeline, a reader who already likes it, and three people who will read a daily issue and say what is wrong. So the honest test is Phase 0, not the site: if two friends do not read a free issue most mornings, no domain will fix that. Build Phase 0, measure, then decide on the domain. Said once; Oscar's call after that.
 
 ## Open inputs from Oscar (Vela folds them into a batch)
-- Who the two partners are and what each one brings.
-- Which language the first clients read.
+- What each partner brings (section 8): still open. Who they are is answered (2026-11-12 15:09): Paul and Pietro, both in Barcelona; details in the spec, section 13.
+- Which language the first clients read: answered, English for all three in Phase 0 (D-009).
 - Whether he has an Anthropic Console API key already: no longer needed for Phase 0 (D-008 as answered); it returns when the `api` backend is switched on.
-- The spec's own open inputs: `ventures/digest/spec.md` section 13 (partners' cities, timezones, languages, devices; the Phase 0 hostname).
+- The spec's own open inputs: all answered on 2026-11-12 (`ventures/digest/spec.md` section 13).
