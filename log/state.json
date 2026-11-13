@@ -1,7 +1,7 @@
 {
-  "last_hub_note": "20261113090143597-87c0b317",
-  "next_decision": 14,
+  "last_hub_note": "20261113153915577-b5e8cb1f",
+  "next_decision": 16,
   "signal_issue": null,
-  "last_run": "2026-11-13 wake-3",
-  "notes": "last_hub_note is the id of the most recent Oscar HUB note already processed; runs only ingest newer ones. signal_issue is the GitHub issue number used to wake Vela, null until she confirms a GitHub-event routine. next_decision skipped 10 (not raised, D-009 confirmed) and 11 (used by Cofounder in decisions.md on 2026-11-13); the wake run of 2026-11-13 raised D-012, the wake-2 run raised D-013, the wake-3 run amended D-012 and D-013 and reserved no new number (D-014 is named in plan.md as a future memo, not raised)."
+  "last_run": "2026-11-13 evening",
+  "notes": "last_hub_note is the id of the most recent Oscar HUB note already processed; runs only ingest newer ones. signal_issue is the GitHub issue number used to wake Vela, null until she confirms a GitHub-event routine. next_decision skipped 10 (not raised, D-009 confirmed) and 11 (used by Cofounder in decisions.md on 2026-11-13); the wake run of 2026-11-13 raised D-012, the wake-2 run raised D-013, the wake-3 run amended D-012 and D-013; D-014 was named in plan.md as a future memo and dropped by D-015; D-015 is Innovator's number for Oscar's Pocket Factory path decision (HUB note 20261113153915577-b5e8cb1f, plan.md header), so the evening run of 2026-11-13 set the counter to 16."
 }

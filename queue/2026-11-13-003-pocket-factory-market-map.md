@@ -3,7 +3,7 @@ id: 2026-11-13-003
 title: Pocket Factory: market map of what exists today, for the pitch deck
 role: cofounder
 priority: P1
-status: open
+status: done
 created: 2026-11-13
 created_by: Oscar (16:37 direction via Vela, D-015), filed by Innovator
 wide_search: true
@@ -27,3 +27,4 @@ Nothing is bought, contacted, signed up for or published.
 
 ## Log
 - 2026-11-13 (Innovator): filed from Oscar's 16:37 direction.
+- 2026-11-13 21:31 (evening run): done. `ventures/pocket-factory/market-map.md` written: four segment tables (about 45 players with price, funding, customers, each with a URL or "unknown"), a buyers table with 14 funded purchases or budget lines, the gap in four lines, three lead facts with sources and their caveats. Wide search used: five parallel subagents (robot cells; expeditionary fab and buyers; desktop fab and foundation models; market figures; investor lens), results merged and cited by the run. Done-when met on every line. Judge pending: Oscar reads it in a morning hour and says whether it is enough to start the deck.

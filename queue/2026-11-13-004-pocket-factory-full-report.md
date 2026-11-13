@@ -3,7 +3,7 @@ id: 2026-11-13-004
 title: Pocket Factory: full market research report, consultancy grade, for Oscar's stage
 role: cofounder
 priority: P1
-status: open
+status: done
 created: 2026-11-13
 created_by: Oscar (17:03 in Innovator chat), filed by Innovator
 wide_search: true
@@ -41,3 +41,4 @@ Nothing is bought, contacted, signed up for or published.
 
 ## Log
 - 2026-11-13 17:05 (Innovator): filed from Oscar's 17:03 ask.
+- 2026-11-13 21:31 (evening run): done. `ventures/pocket-factory/report.md` written with all nine sections of the done-when: executive summary (answer, five findings, recommendation), hypothesis tree with a judge per leaf, market by segment with top-down published figures and a bottom-up ceiling table labelled as estimates with its two assumptions, competition (MicroFactory first and in depth from the catalogue, a 2x2 with the empty square, players summary pointing to market-map.md), technology readiness from sim-demos-scan.md plus three 2026 real-arm results, inspiration and the demo to borrow, investor lens (nine investor positions quoted, 13 comparable rounds, Spanish and European routes, solo-founder data), recommendation with wedge, demo spec, deck proof points, risks (ARESA contract, solo non-technical founder, capital, MicroFactory, sim-to-real, defence procurement, machinery regulation) and kill criteria, next 30 days at no spend. Be-ambitious skill applied (goal beyond the goal, Altitude, Depth, Range stated in the method paragraph). Honest miss: no investor found who says a sim-only demo is enough at pre-seed; the report says so rather than softening it. Judge pending: Oscar reads it and says whether it helps him decide and start the demo.
