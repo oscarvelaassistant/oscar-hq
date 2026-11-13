@@ -1,59 +1,61 @@
-# Cofounder morning brief, Thursday 12 November 2026
+# Cofounder morning brief, Friday 13 November 2026
 
 Written about 05:35 Madrid for page 2 of Oscar's Digest. Times Europe/Madrid.
 
 ## Where we are
-Idea stage. Lead hypothesis is still identification after the fact: who did what in a masked crowd. One new input yesterday: your 2K police camera drone idea (brainstorm.md, 11 Nov). No reply logged from François the reservist, so today is the fallback day you set for the general's number. Tomorrow you and Mathieu work François's notes; the method (Opportunity Solution Tree plus Mom Test) locks tonight at 21:00 unless you pick otherwise.
+Two tracks now. Crowd control: idea stage, lead hypothesis still identification after the fact (who did what in a masked crowd). Today is the session with Mathieu on François's notes; the method defaulted to Opportunity Solution Tree plus Mom Test at 21:00 last night. Digest as a product: new since yesterday. You approved Phase 0 (D-008) and Gmail delivery in English to you, Paul and Pietro (D-009). Claude wrote the plan and the build spec; nothing is built yet.
 
 ## Open questions
-- What counts as traction? Still unanswered; it gates the roadmap.
-- The drone idea: French police already fly camera drones over protests (Décret 2023-283, 19 Apr 2023, per brainstorm.md). So what do those drones fail to give them after the fact? Nobody has asked an officer yet.
-- "Mantids de l'ordre": is that the général in charge of maintien de l'ordre, or another post? Confirm in the same message.
-- Is phone jamming or phone identification in a perimeter legal in France? Not checked, not filed.
+- What counts as traction? Still unanswered; it gates the roadmap. Now it matters for two tracks, not one.
+- Digest partners: who owns what between you, Paul and Pietro? Your own due date was today (journal, 12 Nov). Names are in, roles are not logged.
+- Digest MVP: email only, or email plus the web reader as archive and settings? Claude assumed both (reports/2026-11-12-wake-3.md). One line from you settles it.
+- General's number: yesterday was your fallback date. Nothing logged as sent. I don't know if you asked.
 
 ## Roadmap progress
-roadmap.md is still the placeholder, day twelve. Not on top today. Default holds: explore in the morning hour.
+roadmap.md is still the placeholder, day thirteen. The Digest track is not on it either. Not on top today.
 
 ## Done since yesterday
-- Venture: drone idea logged to brainstorm.md (commit 64f5661). Yesterday's three decisions sit on their defaults.
-- HQ: three runs, all "nothing new". Midday push refused for the tenth day in a row (2 to 11 Nov); the evening run recovered it. Source: reports/2026-11-11-midday.md and -evening.md.
+- Digest: brainstorm entry (b043c6e, split fixed to a third each, 3c2a809). Claude's plan (ventures/digest/plan.md, 0b45c4f), build spec (82abfa4), your answers and PDF-by-email folded in (103a923). D-008 and D-009 logged in decisions.md (af9f041, 749fd61).
+- Crowd control: nothing new logged. Yesterday's three decisions sit on their defaults unless you acted off the record.
+- HQ: midday push refused for the eleventh day in a row (2 to 12 Nov); the evening run recovered it. API spend 0.00 EUR this month. Source: reports/2026-11-12-evening.md.
 
 ## Threads in play
 | Thread | State | Next | Source |
 |---|---|---|---|
-| Drone idea | Logged 11 Nov, not on Friday's tree | Decision 1 | brainstorm.md |
-| General's number | François the gendarme offered it; not asked | Today, decision 2 | interview file, journal 9 Nov |
-| Officer route | WhatsApp to François the reservist sent 9 Nov, no reply logged | Waits on decision 2 | journal 9 Nov |
-| Friday with Mathieu | Fri 13 Nov, tree plus Mom Test by default | Method locks tonight 21:00 | journal 9 Nov |
-| Legality check | Approve-or-park asked 10 Nov, unanswered | Carried, stays parked | HQ evening 10 Nov |
-| Alain Bauer | Deferred until after officer talks | After two officer talks | journal 9 Nov |
-| Roadmap | Placeholder, day twelve | Not today | roadmap.md |
-| HQ plumbing | D-006 on B, ten days of 403s; D-007 open | Decision 3 | reports/2026-11-11-evening.md |
-| Tools | ArtCraft, Claude Code login, more Grok bots: 7 Nov revisits passed | Re-date at a morning hour | parked.md, brainstorm.md |
+| Friday with Mathieu | Today, tree plus Mom Test | Decision 1 | journal 9 Nov |
+| Digest Phase 0 | Spec done, build not started | Decision 2 | reports/2026-11-12-wake-3.md |
+| Digest partners | Paul and Pietro named, roles not logged | Due today, your date | journal 12 Nov |
+| General's number | Fallback date was yesterday, not logged | Ask Mathieu to hold you to it | journal 9 Nov |
+| Officer route | Reservist asked 9 Nov, no reply logged | Waits on the general | journal 9 Nov |
+| Drone idea | Yesterday's top; on the tree only if you chose it | Session decides | brainstorm.md |
+| Legality check | Unanswered since 10 Nov | Stays parked | HQ evening 12 Nov |
+| Alain Bauer | After two officer talks | Waits | journal 9 Nov |
+| Roadmap | Placeholder, day thirteen | Not today | roadmap.md |
+| HQ plumbing | D-006 on B, eleven 403s; D-007 decides 12:00 today | Decision 3 | reports/2026-11-12-evening.md |
+| Tools | 7 Nov parked revisits passed | Re-date at a morning hour | parked.md |
 
 ## Tasks and due dates
-- Today: ask François the gendarme for the general's number (your fallback date, set 9 Nov).
-- Today 21:00: Friday method default (tree plus Mom Test) locks. HQ runs 09:00, 12:00, 21:00.
-- Fri 13 Nov: session with Mathieu. 12:00 D-007 decide-by (default: no scorecard).
-- Sat 14 Nov: youth and CGT fonction publique marches. Tue 17 Nov: CGT strike.
+- Today: session with Mathieu. Digest roles for you, Paul and Pietro (your date). D-007 decide-by 12:00 (default: no Friday scorecard). HQ runs 09:00, 12:00, 21:00.
+- Sat 14 Nov: CGT fonction publique march, youth and teacher groups joining. Also the D-008 decide-by from Claude's plan, already answered.
+- Tue 17 Nov: CGT strike.
 - Overdue: parked revisits dated 7 Nov.
 
 ## Decisions for today (Oscar picks the focus)
-1. Drone idea: put it on tomorrow's tree as one branch under identification after the fact, or keep it in the brainstorm log? Pick: put it on the tree, framed as a question, not a product: "what do today's police drones miss when you try to name who threw what?". Ten minutes with Mathieu tomorrow. Police already fly drones legally, so the open space is the gap, and only officers can tell you that. Default: stays in the log, Friday runs without it. Reversible.
-2. General's number, today is your fallback day. Send the one WhatsApp to François the gendarme now, or wait until after Friday? Pick: send today, 2 minutes, and confirm the exact title. It is the bigger door and it was your plan. Default: wait until after Friday. Reversible.
-3. HQ midday push, ten refusals (D-006). Pick: A, Vela adds oscar-hq with push access to the midday task, about 5 minutes. Default: B, evening keeps recovering. Reversible.
-(Yesterday's top was the general's number; today's top is the drone branch. The general stays as decision 2 because today is the date you set.)
+1. The Mathieu session: what do you walk out with? Pick: one written branch of the tree plus the one question you will put to the first officer, saved to the interview file the same day. Fifteen minutes at the end. Without a written output, Friday becomes a good chat and nothing moves. Default: the session runs on the tree with no set output. Reversible.
+2. Digest build step 1 (Worker skeleton and tests, no deploy). Vela files it as a queue task so Claude starts without you, or it waits until you sit at the box? Pick: file it. Step 1 needs no password, no spend and nothing public; step 3 (the app password and first test email) still needs you. Two minutes for Vela. Default: waits for you live. Reversible.
+3. D-007, Friday scorecard, decides at 12:00 today. Pick: let it default to no scorecard. The roadmap is a placeholder, so there is nothing to score against yet. Zero minutes. Default: no scorecard. Reversible.
+(Yesterday's top was the drone branch. Today's top is the session output.)
 
-## On the street (France), 10 and 11 Nov
-- Chelles, Seine-et-Marne: two violent incidents in 48 hours, mortars fired into a classroom and a deputy mayor hit by a petrol bottle. Four minors arrested and one adult jailed; all had no record and attend local lycées. Source: franceinfo, 11 Nov, https://www.franceinfo.fr/replay-jt/france-2/20-heures/tirs-de-mortiers-au-lycee-de-chelles-qui-sont-les-interpelles_8278286.html
-- Justice ministry, figures up to 9 Oct: 1,504 minors brought before a judge; 93 % boys, 62 % aged 15 to 16; 42 % of minors held in garde à vue were held for violence on police. Source: same franceinfo report.
-- Champs-sur-Marne: a Torcy police officer got 30 days' incapacity (ITT) after a 13-year-old on a scooter hit him during an arrest near lycée Descartes, where mortars were fired at police on 10 Nov. Source: Le Parisien, 11 Nov, https://www.leparisien.fr/seine-et-marne-77/un-ado-de-13-ans-en-trottinette-percute-un-policier-et-lui-casse-le-bras-pres-du-lycee-descartes-a-champs-sur-marne-11-11-2026-HO5AISO7NVF67JVMM5XDZK3ZOA.php
-- Education minister Édouard Geffray on BFMTV: 245 Education staff hurt since the movement began. Government figure. Source: franceinfo via https://mavigilance.fr/jour/2026-11-11
-- Toulouse: the préfet banned undeclared protests 10:00 to 13:00 around the 11 Nov ceremony; organisers risk six months and 7,500 euros. Source: La Dépêche via https://mavigilance.fr/jour/2026-11-11
-- Youth and teacher groups will join the CGT fonction publique call to march Saturday after talks with the government failed. Source: France Culture, 11 Nov, https://www.radiofrance.fr/franceculture/podcasts/journal-de-12h30/journal-de-12h30-du-mercredi-11-novembre-2026-6014773
+## On the street (France), 12 Nov
+- Meaux, lycée Henri-Moissan, and Cugnaux near Toulouse (second time in a week): mortars lit inside school corridors. Montpellier, lycée Jean-Mermoz: a bin set on fire in the toilets. Source: franceinfo, https://www.franceinfo.fr/societe/education/blocage-des-lycees/comment-enrayer-les-violences-dans-les-lycees_8279978.html
+- Île-de-France: 170 lycées damaged since the movement began; the region suspends sport and culture aid for families of pupils found guilty. Val-d'Oise préfet asked police to check bags at lycée gates for mortars. Education minister Geffray: "tout sera judiciarisé". Source: same franceinfo report.
+- Champs-sur-Marne: the 13-year-old who broke a Torcy officer's arm (30 days ITT) was brought before a juvenile judge in Meaux on 12 Nov; prosecutor asked for contrôle judiciaire. Source: Europe 1 with AFP, https://www.europe1.fr/police-justice/mobilisation-lyceenne-un-collegien-de-13-ans-presente-a-un-juge-des-enfants-apres-avoir-casse-le-bras-dun-policier-1228412
+- Pau: judicial investigation opened 7 Nov against four minors aged 15 to 17 for hurting four police officers with mortars; the investigation also has to identify others involved. Source: franceinfo, https://www.franceinfo.fr/societe/education/blocage-des-lycees/une-information-judiciaire-a-ete-ouverte-a-pau-contre-des-lyceens-pour-violences-sur-des-policiers_8272136.html
+- Why it matters for us (my opinion): Pau shows the after-the-fact identification problem in a live case, which is the lead hypothesis.
 
 ## Flags: conflicting dates and facts
-- Chelles arrests: France Culture says three lycéens arrested after the petrol attack, none held in garde à vue; franceinfo says four minors arrested and one adult jailed across both Chelles incidents. Probably different scopes, not confirmed.
-- Education staff hurt: "près de 300" then 240 on 10 Nov, now 245 on 11 Nov, all government. Use 245, labelled government.
-- decisions.md stops at 2 Nov; later decisions live only in HUB notes and journal. Who writes it is still unsettled. I have not touched it.
+- Europe 1 opens with the officer hit "à Meaux", then places it at lycée Descartes, Champs-sur-Marne. Meaux is the court. Use Champs-sur-Marne.
+- franceinfo puts Montpellier's lycée Jean-Mermoz in the Gard. Montpellier is in the Hérault. Not checked further.
+- Digest partners: journal says roles due Fri 13 Nov, but nothing in the repo says who owns what. If you already said it, it was not logged.
+- decisions.md now has D-008 and D-009, but D-002 to D-007 are missing from it; they live only in HQ reports and HUB notes.
 - HQ morning run: 09:00 in reports, 08:00 in decisions.md (1 Nov). Unresolved since 3 Nov.
