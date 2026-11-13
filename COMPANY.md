@@ -37,37 +37,37 @@ Enforcement is structural: Claude has no mail or messaging tools in HQ runs and 
 | Hardware engineer | `roles/hardware-engineer.md` | Claude HQ run, Claude Code live | Tooling survey, then the first component |
 | CFO and operations | `roles/cfo-ops.md` | Claude HQ run | Spend ledger, event logistics, weekly scorecard |
 | Creative researcher | `roles/creative-researcher.md` | Claude HQ run | Transfer hypotheses from other fields |
-| Cofounder (Grok Bot) | `roles/cofounder.md` | Grok Bot | Work-only side door for venture work and brainstorms; keeps `ventures/_company/cofounder/`; 07:00 weekday brief and 19:00 brainstorm proposal (simplified HQ, 2026-11-01) |
-| Cofounder deep take (Claude) | `roles/cofounder.md` | Claude, on a hand-off from Vela or Cofounder, or live | The deep take on a kill-or-continue, money or cofounder-agreement fork (added 2026-10-31 at his request, live) |
+| Innovator (Grok Bot) | `roles/cofounder.md` | Grok Bot | Work-only side door for venture work and brainstorms; keeps `ventures/_company/cofounder/`; 07:00 weekday brief and 19:00 brainstorm proposal (simplified HQ, 2026-11-01) |
+| Innovator deep take (Claude) | `roles/cofounder.md` | Claude, on a hand-off from Vela or Innovator, or live | The deep take on a kill-or-continue, money or cofounder-agreement fork (added 2026-10-31 at his request, live) |
 | Researchy (Grok Bot) | brief in `roles/vela.md` | Grok Bot | X and web research delivered as HUB notes tagged for-claude (added 2026-10-31 by Oscar) |
 
 ## How HQ runs start
 
 Simplified HQ, approved by Oscar on 2026-11-01. Tasks reach Claude through HUB notes tagged `for-claude` and through `queue/`; Claude picks them up by itself in a run. Oscar does not have to tell Claude to check for tasks. Runs, same repo, same procedure, all on Oscar's Claude subscription:
 - Scheduled cloud runs (Anthropic-managed, with the Oscar HUB connector), three a day: `morning` 09:00, `midday` 12:00, `evening` 21:00 Madrid. Each reads the HUB notes tagged `for-claude` and the queue and picks up approved tasks by itself.
-- An extra run when something should not wait: Vela or Cofounder starts one (Vela runs Claude Code on her computer with the hq-run skill, `claude -p`, slot `wake`), never with flags that skip permissions.
+- An extra run when something should not wait: Vela or Innovator starts one (Vela runs Claude Code on her computer with the hq-run skill, `claude -p`, slot `wake`), never with flags that skip permissions.
 
 `.claude/settings.json` in this repo limits what any run may execute (files, git, web reading; no curl, mail, ssh or destructive commands).
 
-What a run may work on: approved or roadmap items only (`ventures/_company/cofounder/roadmap.md`). Oscar, Vela and Cofounder file tasks only for those. Anything new becomes a proposal for the next morning. Model choice for any run Vela starts is her call.
+What a run may work on: approved or roadmap items only (`ventures/_company/cofounder/roadmap.md`). Oscar, Vela and Innovator file tasks only for those. Anything new becomes a proposal for the next morning. Model choice for any run Vela starts is her call.
 
 ## Rhythm (Europe/Madrid)
 
-- 07:00 weekdays: Cofounder's brief. 07:00 to 08:00 weekdays is Oscar's venture hour.
+- 07:00 weekdays: Innovator's brief. 07:00 to 08:00 weekdays is Oscar's venture hour.
 - 09:00 morning run, 12:00 midday run.
-- 19:00: Cofounder's brainstorm proposal.
+- 19:00: Innovator's brainstorm proposal.
 - 21:00 evening run.
-- Any time: Vela or Cofounder may start an extra run.
+- Any time: Vela or Innovator may start an extra run.
 - Vela batches every question to Oscar into at most 3 messages a day, aiming for 2. No topic is pushed to Oscar two mornings in a row unless he chose it.
-- Vela and Cofounder stay in sync: Vela routes Oscar's work items and brainstorms (X finds included) to Cofounder.
+- Vela and Innovator stay in sync: Vela routes Oscar's work items and brainstorms (X finds included) to Innovator.
 - No weekly runs: a scorecard or a week-ahead note is written only when Oscar approves that task.
 
 ## Bus protocol
 
 Three channels, in order of preference. Every signal carries a date and an id.
 1. This repo: `queue/`, `reports/`, `proposals/`, decisions and `log/`. The shared record and source of truth.
-2. Oscar HUB notes (Vela, Cofounder and the scheduled run have it; local runs get them pasted in by Vela). Tags: `for-claude` (an approved task or roadmap item for the next run), `approval` (body: `D-### yes` or `D-### no: reason`), `report` + `for-vela`, `for-oscar`. Runs record the last HUB note id they processed in `log/state.json`.
-3. The vault, under `🤖 AI HQ/` (`🤖 AI HQ/🗂️ Shared Projects/` and `🤖 AI HQ/🧠 Brain Dump/`): the handoff note `🤝 Vela ⇄ Claude` for anything human-readable that should also live in Obsidian, and `🧠 Venture brainstorm`, Vela's mirror of Cofounder's brainstorm and roadmap.
+2. Oscar HUB notes (Vela, Innovator and the scheduled run have it; local runs get them pasted in by Vela). Tags: `for-claude` (an approved task or roadmap item for the next run), `approval` (body: `D-### yes` or `D-### no: reason`), `report` + `for-vela`, `for-oscar`. Runs record the last HUB note id they processed in `log/state.json`.
+3. The vault, under `🤖 AI HQ/` (`🤖 AI HQ/🗂️ Shared Projects/` and `🤖 AI HQ/🧠 Brain Dump/`): the handoff note `🤝 Vela ⇄ Claude` for anything human-readable that should also live in Obsidian, and `🧠 Venture brainstorm`, Vela's mirror of Innovator's brainstorm and roadmap.
 
 ## Queue conventions
 
@@ -79,4 +79,4 @@ Per run: at most 4 tasks worked, 60 minutes of work, 2 attempts per approach. Tw
 
 ## Change control
 
-Proposals for new roles, methods or rule changes go in `proposals/` using `playbooks/method-intake.md`, and reach Oscar the next morning through Vela or Cofounder. Approved proposals are applied by the next run and logged.
+Proposals for new roles, methods or rule changes go in `proposals/` using `playbooks/method-intake.md`, and reach Oscar the next morning through Vela or Innovator. Approved proposals are applied by the next run and logged.

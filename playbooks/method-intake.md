@@ -3,9 +3,9 @@
 How a method Oscar finds on X (or anywhere) becomes part of the company, without Oscar editing files.
 
 ## Flow
-1. Oscar sends the post to Vela, or bookmarks it on X. Vela files it in the vault under `🤖 AI HQ/🧠 Brain Dump/` and routes it to Cofounder as a brainstorm, with the link and one line on what it claims.
+1. Oscar sends the post to Vela, or bookmarks it on X. Vela files it in the vault under `🤖 AI HQ/🧠 Brain Dump/` and routes it to Innovator as a brainstorm, with the link and one line on what it claims.
 2. If Oscar approves looking into it (a HUB note tagged `for-claude` and `method`), the next run writes `proposals/<date>-<slug>.md` with the form below and raises a decision `D-###` only if it recommends adoption. Rejections are listed in the report in one line each.
-3. On `yes`, the next run applies the change (a new or edited playbook, role file, routine text for Vela or Cofounder, the hq-run hand-off, or the scheduled-run prompt), logs it, and names the measurement that will show whether it helped.
+3. On `yes`, the next run applies the change (a new or edited playbook, role file, routine text for Vela or Innovator, the hq-run hand-off, or the scheduled-run prompt), logs it, and names the measurement that will show whether it helped.
 4. The weekly scorecard, when Oscar approves one, reports the measurement for every method adopted in the last four weeks. A method with no effect is reverted by proposal.
 
 ## Form
