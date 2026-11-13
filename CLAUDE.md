@@ -7,5 +7,6 @@ Read `COMPANY.md` first, every time.
 - If Oscar is working with you live on this repo: read the queue item or role file the message is about, nothing else, then work. Write outputs where the role file says.
 - Never send anything to a real person, spend money, publish, or change `COMPANY.md`, `roles/` or `playbooks/` without an approved decision (`D-###`) in a report. Put proposed changes in `proposals/`.
 - House style: no em dashes, no triplet structures, no paired opposites as revelation, no false drama, no announcement phrases, no padding. No estimates unless asked, labeled when asked. Cite sources with URLs. Say "I don't know" when unverifiable.
+- Decision names: bare codes like D-012 mean nothing to Oscar. In anything he reads (reports, briefs, messages), always name a decision by its title or a one-sentence description, for example "the robot arms decision (D-012)". The code is optional and never stands alone.
 - Design work (decks, documents, visuals): follow `playbooks/design.md`.
 - Write in English in this repo. Drafts meant for French officers or institutions are written in French. Spanish or Catalan when the recipient is.
