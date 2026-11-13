@@ -1,7 +1,7 @@
 {
-  "last_hub_note": "20261112200416842-5929d417",
-  "next_decision": 10,
+  "last_hub_note": "20261113090143597-87c0b317",
+  "next_decision": 13,
   "signal_issue": null,
-  "last_run": "2026-11-13 morning",
-  "notes": "last_hub_note is the id of the most recent Oscar HUB note already processed; runs only ingest newer ones. signal_issue is the GitHub issue number used to wake Vela, null until she confirms a GitHub-event routine."
+  "last_run": "2026-11-13 wake",
+  "notes": "last_hub_note is the id of the most recent Oscar HUB note already processed; runs only ingest newer ones. signal_issue is the GitHub issue number used to wake Vela, null until she confirms a GitHub-event routine. next_decision skipped 10 (not raised, D-009 confirmed) and 11 (used by Cofounder in decisions.md on 2026-11-13); the wake run of 2026-11-13 raised D-012."
 }
