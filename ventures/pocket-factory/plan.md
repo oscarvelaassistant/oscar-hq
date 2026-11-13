@@ -1,5 +1,11 @@
 # Pocket Factory: Claude's view and the roadmap to a factory that runs where it is dropped
 
+> **Direction change, 13 Nov 2026 16:37 Madrid (Oscar via Vela, logged by Innovator as D-015).** Oscar: "i dont think i need to buy anything! I can work on the idea, do some market research of what exists today, then the goal would be to make a pitchdeck and go find an investor, if they are interested then i will quit my job and work on that!!"
+> - The robot arms decision (D-012) and the 3D printer decision (D-013) are answered: no purchase. The stiff arm decision (D-014) is dropped. Stages 1a and 1b below, and every purchase line, are on hold, kept only as material for the deck's "what the money buys" slide.
+> - The path now: (1) refine the idea, (2) market research on what exists today, (3) pitch deck, (4) investor outreach, done by Oscar himself, (5) quit ARESA only once an investor is interested.
+> - Still at no spend and worth keeping from the software-first stage: a simulated demo (LeRobot in simulation) that the deck can show.
+> - The rest of this file is the 11:15 plan, unchanged.
+
 Written 2026-11-13 10:09 by the wake run (task 2026-11-13-001, D-011). Revised 2026-11-13 10:49 by a second wake run (task 2026-11-13-002) after Oscar's 10:41 direction: MicroFactory looks limited and unambitious, mostly soldering and small tasks; he wants one system that can solder and also make bigger things outright; the end state is a ready-built factory you can set up on Mars or in a remote African village. Revised again 2026-11-13 11:10 by a third wake run (same task, cut off before committing the first time) with two new inputs: Oscar's 10:46 line ("let's be ambitious because with the new frontier LLMs, hardware has never been more accessible, i can catch up with no time") and Cofounder's sweep of MicroFactory's founder (`ihorbeaver-sweep.md`). Status: plan only. Nothing here has been bought, contacted, applied for or published. Durations are my estimates, included because Oscar asked for a realistic roadmap. Prices carry a URL or are marked unknown. Opinions are labelled as mine.
 
 Sources read in full: `transcript-2026-11-13.md` (https://web.plaud.ai/s/pub_37a79fe3-22f4-4f8c-ac54-3d77316d87fb), `landscape.md` (Cofounder, 13 Nov), `ventures/_company/cofounder/brainstorm.md` line of 13 Nov 10:41.
