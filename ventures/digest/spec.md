@@ -2,6 +2,8 @@
 
 Written 2026-11-12 by the wake-2 run (task 2026-11-12-002), following `ventures/digest/plan.md`; updated the same day by the wake-3 run (task 2026-11-12-003) with Oscar's answers to section 13 and the change to PDF-by-email delivery (D-009). Status: spec only. Nothing in here has been deployed, registered, created, sent or generated for anyone. Every limit and price is quoted from the URL next to it or marked unknown. No estimates, except where a number is labelled as Claude Code's own client-side estimate.
 
+2026-11-16: after the Digest beta decision (D-016) a smaller beta is planned in `ventures/digest/beta-plan.md` (a link, a setup form, a PDF by email, one week, then a review). Where the two differ, the beta plan governs the beta; this spec stays the later full build.
+
 The spec is written so a Claude Code build session on the box (Opus, effort high, as the rules say) can build Phase 0 from it without raising a new decision. Where it cannot, section 12 says so.
 
 ## 0. Decision record and scope

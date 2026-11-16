@@ -3,7 +3,7 @@ id: 2026-11-16-003
 title: Digest beta: the most Pareto-efficient build so Paul and Pietro can make their own Digest from a link
 role: cofounder
 priority: P1
-status: open
+status: done
 created: 2026-11-16
 created_by: Oscar (19:03 in Innovator chat), filed by Innovator
 effort: Fable high
@@ -36,3 +36,7 @@ Oscar reads it and can start build session 1 the same day.
 
 ## Gates
 Plan only. Nothing deployed, bought, signed up for, sent or published in this task.
+
+## Log
+- 2026-11-16 19:05 (Claude, wake-3): started from Vela's hand-off.
+- 2026-11-16 19:13 (Claude, wake-3): done. `ventures/digest/beta-plan.md` written with the six parts of the done-when: the cut table against `spec.md`, the smallest path with where each piece runs (a six-route Worker `digest-beta` for the link and form, the box for writing, PDF and email; the hub considered and not used, with a For Vela line), three build sessions and a handover step each with a done-when, what Oscar does by hand and every yes, the review after the first week, and Claude's labelled judgement. Checks: no em dash in the file, every decision code follows its title, no estimates. `spec.md` and `plan.md` each got one pointer line. Sources read: `plan.md`, `spec.md`, `/workspace/digest/README.md`, `daily.sh`, `DAILY-PROMPT.md`, AgentConfig `hub/registry.json`; the builders and the hub's `worker.js` were not read, and the plan says so. Judge pending: Oscar reads it and starts build session 1. No gate crossed: nothing deployed, bought, signed up for, sent or published.
