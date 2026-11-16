@@ -30,7 +30,16 @@ Market sizing: `report.md`, section 3, with every estimate labelled there. Its s
 
 ## 3. Final form (his picture, my reading)
 
-A small box you put raw material into and ask for something; it makes it, checks it, hands it over, anywhere, with no skilled person needed. What travels is the knowledge, like the Warhammer STC he described. How big the box is, how many tools it has and which materials it takes are open. I am not designing any of that now.
+A small box you put raw material into and ask for something; it makes it, checks it, hands it over, anywhere, with no skilled person needed. What travels is the knowledge, like the Warhammer STC he described. How big the box is and how many tools it has are open. I am not designing any of that now.
+
+**Any material as the end goal (Oscar, 16 Nov, 14:48).** His words: "ultimately it'd be great to have it be anyfactory (unless that's just not practical or maybe I gotta start with something else first)." Wood and plastic were only ideas for a first material.
+
+Is it practical? My opinion: as a direction, yes. As a literal "anything", not as written, and I know of no product that does it.
+- Machines that do several processes already exist, so widening is real engineering, not fantasy. The Snapmaker Artisan combines an FDM printer, a 10 W laser and a 200 W CNC in one machine (https://matterhackers.com/r/H534oP, list price 2,999 USD). The Marine Corps AIMMS shelter fields CNC, welding, scanning and hybrid metal printing (https://www.navsea.navy.mil/Media/News/Article/4511482/carderock-supports-marine-corps-new-mobile-manufacturing-capability-for-forward/).
+- Both still need a trained person to move the part and the material (`market-map.md`, section 4). Each new material brings its own process, tool, feed and finishing, so "any" gets built one process at a time. It does not arrive in one go.
+- "Anything from raw material" has a ceiling that I believe is real but did not source: parts like chips or batteries cannot be made from raw stock in a small box, so soldering means buying components. That is a limit on "anything", not on a very wide workbench.
+
+Sensible first step (my opinion): start with one material, and treat it as the way into any-material, not the destination. The part to build once and reuse is the operator: read the request, plan the job, make the part, check it, redo it. The tools and materials are what change from one to the next. Whether the checking step transfers across materials I do not know; that is the thing the first material would teach. The second material comes after the first loop works.
 
 ## 4. The MVP to chase (my opinion)
 
@@ -41,11 +50,11 @@ Why this is the Pareto version:
 2. Narrowing the material and the process is what makes it testable. Something like "it made 17 of 20 parts of one family and the check caught the other 3" (an invented example) is a statement an investor or an engineer can judge. "It builds anything" is not.
 3. It is what a pitch deck and an engineer cofounder can react to. HAX lists "concept stage without a working prototype" and "a sole founder working with contracted engineers" among its rejection reasons (https://hax.co/faq/). I found no investor who says a simulation alone is enough at pre-seed (`report.md`, section 7).
 
-Left out on purpose: soldering, many tools, big parts, shipping it anywhere. Those are the vision, not the first thing.
+Left out on purpose: soldering, many tools, big parts, shipping it anywhere. Those are the vision, not the first thing. The first material is the way into the any-material end goal in section 3, not a replacement for it.
 
 ## 5. Side question: just wood, or just plastic?
 
-Short answer (mine): yes to starting with one material, it is the same Pareto move as above. Whether either is "still big" I do not know: I found no sizing of either for this kind of box. Between the two I would start with plastic.
+Oscar's 16 Nov follow-up: these two were only ideas and the end goal is any material (section 3). This section only helps pick the first one. Short answer (mine): yes to starting with one material, it is the same Pareto move as above. Whether either is "still big" I do not know: I found no sizing of either for this kind of box. Between the two I would start with plastic.
 
 **Wood.**
 - For: the material is local in many places, and cutting sheet on a CNC router is a mature process. WikiHouse works this way: "locally sourced plywood cut on a CNC mill from openly shared template files," assembled "with minimal skill by local people" (https://makezine.com/article/home/wikihouse-open-source-home-building/). In a quick search I found no confirmed WikiHouse build in Africa.
@@ -71,4 +80,4 @@ My pick, plastic first: the simplest machine, the clearest paid demand, and the 
 
 ## 7. Open question for Oscar
 
-- Wood or plastic for the one-sentence vision, or leave it open until he has slept on it?
+- Is the vision sentence "an any-material factory, starting with one material", with the first material (plastic, wood or another) left open until he has slept on it?
