@@ -3,7 +3,7 @@ id: 2026-11-16-004
 title: DailyDigest test page: the setup form on Oscar's own Digest backend, plus the question design
 role: cofounder
 priority: P1
-status: open
+status: in-progress
 created: 2026-11-16
 created_by: Oscar (19:12 in Innovator chat), filed by Innovator
 effort: Fable 5.2 high
@@ -37,3 +37,8 @@ Oscar, in his words (19:12 Madrid, 16 Nov): "create a new page to test the Daily
 
 ## Report back
 Page URL (or local path), the final question list, the cut list, what Oscar must do by hand next, and any gate reached.
+
+## Log
+- 2026-11-16 21:06 (Claude, evening, cloud run): started. The box (`/workspace/digest`, `/workspace/digest-product/`) is not reachable from a cloud run, so part B's fork, runner and PDF cannot be done here; the cloud half (the page and the Worker) can.
+- 2026-11-16 21:13 (Claude, evening): part A done: `ventures/digest/questions.md` (everything that could be asked, the cut into asked now, inferred, asked later and dropped, the connects worth it at beta stage, the friction rules applied one by one, the final wording, the profile the writer receives). Part B, cloud half done as a draft: `ventures/digest/beta/` with `public/form.html` (the setup page, three fields above the button, autosave on every field, masthead preview from the name, one button, status line), `worker.js` (the six routes, nonce CSP, noindex, runner token), `worker.test.mjs` (28 checks with a mock KV, all pass), `wrangler.toml` (KV id blank), `new_link.sh`. Page rendered at 390 px in headless Chromium and looked at. No em dash (checked by a test). Nothing deployed, no account, no spend, nothing sent.
+- Status stays `in-progress`: the done-when (Oscar fills it in on his phone, presses the button, a PDF is produced on the box and passes the validator) needs sessions 1 to 3 on the box. Next: a Claude Code session on the box with Oscar, starting with session 1 of `beta-plan.md`; session 3 takes this folder as its starting point.

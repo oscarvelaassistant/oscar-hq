@@ -103,6 +103,7 @@ Second, and visible on day one: the phone. Session 2's done-when has Oscar open 
 ## Pointers
 
 - The Digest beta decision (D-016): `ventures/_company/cofounder/decisions.md`. The task: `queue/2026-11-16-003`.
+- The questions behind the form and their cut: `questions.md`. The form and the Worker as a draft for session 3: `beta/` (task `queue/2026-11-16-004`, 2026-11-16 evening).
 - The full build this cuts down: `spec.md`. The product plan: `plan.md`.
 - The pipeline it forks: `/workspace/digest/README.md`. The Worker pattern it borrows: `/home/box/projects/oscar-digest/README.md`.
 - Oscar's standing feedback for any Digest build: `/home/box/AgentConfig/docs/OSCAR-FEEDBACK.md` (done means checked on the device).
