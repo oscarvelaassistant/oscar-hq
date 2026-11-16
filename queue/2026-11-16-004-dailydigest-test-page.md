@@ -42,3 +42,36 @@ Page URL (or local path), the final question list, the cut list, what Oscar must
 - 2026-11-16 21:06 (Claude, evening, cloud run): started. The box (`/workspace/digest`, `/workspace/digest-product/`) is not reachable from a cloud run, so part B's fork, runner and PDF cannot be done here; the cloud half (the page and the Worker) can.
 - 2026-11-16 21:13 (Claude, evening): part A done: `ventures/digest/questions.md` (everything that could be asked, the cut into asked now, inferred, asked later and dropped, the connects worth it at beta stage, the friction rules applied one by one, the final wording, the profile the writer receives). Part B, cloud half done as a draft: `ventures/digest/beta/` with `public/form.html` (the setup page, three fields above the button, autosave on every field, masthead preview from the name, one button, status line), `worker.js` (the six routes, nonce CSP, noindex, runner token), `worker.test.mjs` (28 checks with a mock KV, all pass), `wrangler.toml` (KV id blank), `new_link.sh`. Page rendered at 390 px in headless Chromium and looked at. No em dash (checked by a test). Nothing deployed, no account, no spend, nothing sent.
 - Status stays `in-progress`: the done-when (Oscar fills it in on his phone, presses the button, a PDF is produced on the box and passes the validator) needs sessions 1 to 3 on the box. Next: a Claude Code session on the box with Oscar, starting with session 1 of `beta-plan.md`; session 3 takes this folder as its starting point.
+- 2026-11-16 21:30 (Claude, wake-4, local run on the box, started 19:13 by Vela): this run and the evening cloud run worked this task at the same time without seeing each other, because the task still read `open` in the repo until this run committed at its end. Result: two question designs, two pages and two Workers. Nothing of the evening run was changed. This run's question design is kept beside it as `ventures/digest/questions-box-run.md`; its code is on the box in `/workspace/digest-product/`. The choice between them is the decision below. This run also went over the 60-minute budget (about two hours by the clock) and stopped building when it saw that.
+
+## State of the box half after wake-4 (2026-11-16)
+Code lives in `/workspace/digest-product/` (outside this repo, no git there). Its `README.md` lists every file, what was checked and what is not built, in order.
+
+Done
+- Part A, second version: `ventures/digest/questions-box-run.md` (final wording, the cut, connects, friction rules).
+- Setup page `worker/form.html`, built into `worker/dist/worker.js` (239 KB, fonts embedded, strict CSP). Checked in headless Chrome at 390 and 320 px wide with the real CSP header: masthead follows the name, tap-to-fill topics, autosave, button, status texts, prefill on return. Screenshots in `dev/shots/`. The save and status answers in that check were stand-ins, not the Worker.
+- `validate.py` (10 unit tests pass) and `render_issue.py` (one-page PDF and PNG from a placeholder fixture, passes `validate.py --pdf`).
+
+Not done (the next run picks up here, in this order)
+1. Run `node --test worker/test/` (12 tests written, never run: this run was not allowed to start node or the claude CLI). The Worker has never executed.
+2. `new_link.py`, `beta_runner.py`, `write.sh` and `WRITE-PROMPT.md` (designs in the fork README).
+3. Calibrate the validator's copy budgets to the page (a four-story issue leaves the right columns half empty; an 86-character lower-left headline overflowed and the renderer refused it).
+4. One real issue from Oscar's answers through the writer, validated with links opened.
+5. `send.py` against the stub.
+
+Not met from the done-when: Oscar opening the page on his phone, and a PDF built from his answers.
+
+## Decision
+
+### D-017 Which DailyDigest setup page to keep
+- What: two runs built the page the same evening without seeing each other's work. Pick the question set; the code follows the pick.
+- Why now: the next box session should build on one page, and the validator and PDF renderer on the box are written for one profile shape.
+- Options:
+  - A) The evening run's page (`ventures/digest/questions.md`, `ventures/digest/beta/`). Three required fields: name, city, one box for topics. Work and the never-list share one optional 600-character box behind a fold. Masthead "The <Name> Daily". Its Worker passes 28 tests.
+  - B) The box run's page (`ventures/digest/questions-box-run.md`, `/workspace/digest-product/`). Four questions on the first screen: name, three topic lines, "What do you do all day?", an optional never-list. City is guessed and optional. Masthead "<Name>'s Digest" in the paper's own blackletter, fonts embedded. Its Worker has never run.
+  - C) B's questions and look, on A's tested Worker.
+- Recommendation: C (my opinion, and I wrote B, so weigh that). "What do you do all day?" is the only source for the "why you" lines, so it belongs where every reader answers it, and the masthead on the page should match the PDF they receive. A's Worker is the one with passing tests. Tradeoff: one merging step before anything can be deployed, and one more field on the first screen than A.
+- Reversible: yes. Nothing is deployed and both versions stay on disk.
+- Decide by: 2026-11-18 09:00. Default if silent: A stays the repo's version, the box fork waits, nothing is deployed.
+
+The deploy itself is unchanged: Oscar's typed yes in the session that does it, as `beta-plan.md` section 4 says.
