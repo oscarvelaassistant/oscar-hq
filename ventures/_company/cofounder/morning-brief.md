@@ -1,61 +1,58 @@
-# Cofounder morning brief, Friday 13 November 2026
+# Innovator morning brief, Monday 16 November 2026
 
-Written about 05:35 Madrid for page 2 of Oscar's Digest. Times Europe/Madrid.
+Written about 05:40 Madrid for page 2 of Oscar's Digest. Times Europe/Madrid.
 
 ## Where we are
-Two tracks now. Crowd control: idea stage, lead hypothesis still identification after the fact (who did what in a masked crowd). Today is the session with Mathieu on François's notes; the method defaulted to Opportunity Solution Tree plus Mom Test at 21:00 last night. Digest as a product: new since yesterday. You approved Phase 0 (D-008) and Gmail delivery in English to you, Paul and Pietro (D-009). Claude wrote the plan and the build spec; nothing is built yet.
+One focus: Pocket Factory (sole focus since 13 Nov, D-011). No-spend path (D-015): refine the idea, market research, pitch deck, then investors; ARESA only once an investor is interested. The market map and the 20-page report landed Fri 13 Nov evening and went to you Sat 14 Nov. HQ has waited on your read all weekend. Today is your first morning hour on it.
 
 ## Open questions
-- What counts as traction? Still unanswered; it gates the roadmap. Now it matters for two tracks, not one.
-- Digest partners: who owns what between you, Paul and Pietro? Your own due date was today (journal, 12 Nov). Names are in, roles are not logged.
-- Digest MVP: email only, or email plus the web reader as archive and settings? Claude assumed both (reports/2026-11-12-wake-3.md). One line from you settles it.
-- General's number: yesterday was your fallback date. Nothing logged as sent. I don't know if you asked.
+- Who buys Pocket Factory first, and what does it make for them? Roadmap step 1, your sentence, this week.
+- Do the ARESA contract's IP, non-compete and outside-work clauses touch a robotics side venture? Unread. Roadmap says before the deck.
+- Crowd control and the Digest product: parked or alive? D-011 made Pocket Factory sole focus, but nothing formally parks them, and Digest Phase 0 (D-008) is still approved.
+- What counts as traction? Still unanswered.
 
 ## Roadmap progress
-roadmap.md is still the placeholder, day thirteen. The Digest track is not on it either. Not on top today.
+Real roadmap since 13 Nov (six steps). Step 2, market research: done, waiting on your read. Step 1, the one-sentence refinement: due this week. Steps 3 to 6: not started.
 
-## Done since yesterday
-- Digest: brainstorm entry (b043c6e, split fixed to a third each, 3c2a809). Claude's plan (ventures/digest/plan.md, 0b45c4f), build spec (82abfa4), your answers and PDF-by-email folded in (103a923). D-008 and D-009 logged in decisions.md (af9f041, 749fd61).
-- Crowd control: nothing new logged. Yesterday's three decisions sit on their defaults unless you acted off the record.
-- HQ: midday push refused for the eleventh day in a row (2 to 12 Nov); the evening run recovered it. API spend 0.00 EUR this month. Source: reports/2026-11-12-evening.md.
+## Done since Friday
+- Pocket Factory: market map and full report (0c75aaf, Fri 13 Nov 20:33), simulated-demos scan and MicroFactory catalogue (b14d8ae), your X bookmarks on simulated demos (f39dc5d). Report PDF sent to you and the vault Sat 14 Nov.
+- Brainstorm: "PlayStation: The First 30 Years" as a prototype-to-manufacturing reference (46664f2, Sun 15 Nov, via Vela).
+- HQ: four runs Sat and Sun, nothing new, all waiting on your read (reports/2026-11-15-evening.md). Spend 0.00 EUR.
 
 ## Threads in play
 | Thread | State | Next | Source |
 |---|---|---|---|
-| Friday with Mathieu | Today, tree plus Mom Test | Decision 1 | journal 9 Nov |
-| Digest Phase 0 | Spec done, build not started | Decision 2 | reports/2026-11-12-wake-3.md |
-| Digest partners | Paul and Pietro named, roles not logged | Due today, your date | journal 12 Nov |
-| General's number | Fallback date was yesterday, not logged | Ask Mathieu to hold you to it | journal 9 Nov |
-| Officer route | Reservist asked 9 Nov, no reply logged | Waits on the general | journal 9 Nov |
-| Drone idea | Yesterday's top; on the tree only if you chose it | Session decides | brainstorm.md |
-| Legality check | Unanswered since 10 Nov | Stays parked | HQ evening 12 Nov |
-| Alain Bauer | After two officer talks | Waits | journal 9 Nov |
-| Roadmap | Placeholder, day thirteen | Not today | roadmap.md |
-| HQ plumbing | D-006 on B, eleven 403s; D-007 decides 12:00 today | Decision 3 | reports/2026-11-12-evening.md |
-| Tools | 7 Nov parked revisits passed | Re-date at a morning hour | parked.md |
+| ARESA contract clauses | Unread | Decision 1 | roadmap.md, journal 14 Nov |
+| Step 1, who buys first | Yours this week | Decision 1 | roadmap.md |
+| Market map and report | Delivered, no reaction logged | Decision 2 | HQ 15 Nov evening |
+| Simulated demo (step 3) | Spec is a proposal, not filed | After step 1 | roadmap.md |
+| Pitch deck (step 4) | Opens after step 2 is read | Waits | roadmap.md |
+| Crowd control | Untouched since D-011 | Decision 3 | decisions.md |
+| Digest product, partners | Phase 0 approved, roles never logged | Decision 3 | decisions.md, journal 12 Nov |
+| Team fit, Paul and Mathieu | Fionn: wait until clear | Deep take, unscheduled | brainstorm 13 Nov |
+| Parked tools (7 Nov) | Revisits passed | Re-date | parked.md |
 
 ## Tasks and due dates
-- Today: session with Mathieu. Digest roles for you, Paul and Pietro (your date). D-007 decide-by 12:00 (default: no Friday scorecard). HQ runs 09:00, 12:00, 21:00.
-- Sat 14 Nov: CGT fonction publique march, youth and teacher groups joining. Also the D-008 decide-by from Claude's plan, already answered.
-- Tue 17 Nov: CGT strike.
-- Overdue: parked revisits dated 7 Nov.
+- Today: first morning hour, 07:00 to 08:00. HQ runs 09:00, 12:00, 21:00.
+- Tue 17 Nov: CGT strike and a youth mobilisation called "massive" (France 24). 08:00 is the default point for decision 1.
+- This week: roadmap step 1 sentence.
+- Overdue: parked revisits dated 7 Nov; Digest partner roles (were due Fri 13 Nov).
 
 ## Decisions for today (Oscar picks the focus)
-1. The Mathieu session: what do you walk out with? Pick: one written branch of the tree plus the one question you will put to the first officer, saved to the interview file the same day. Fifteen minutes at the end. Without a written output, Friday becomes a good chat and nothing moves. Default: the session runs on the tree with no set output. Reversible.
-2. Digest build step 1 (Worker skeleton and tests, no deploy). Vela files it as a queue task so Claude starts without you, or it waits until you sit at the box? Pick: file it. Step 1 needs no password, no spend and nothing public; step 3 (the app password and first test email) still needs you. Two minutes for Vela. Default: waits for you live. Reversible.
-3. D-007, Friday scorecard, decides at 12:00 today. Pick: let it default to no scorecard. The roadmap is a placeholder, so there is nothing to score against yet. Zero minutes. Default: no scorecard. Reversible.
-(Yesterday's top was the drone branch. Today's top is the session output.)
+1. Your morning hour: contract or customer? Pick: ARESA contract clauses first, 30 min, then 30 min on the step 1 sentence. A clause you missed can kill the venture; a late sentence costs a day. Default if undecided by Tue 17 Nov 08:00: step 1 first, contract Wed 18 Nov. Reversible.
+2. Market map and report: one line of verdict. Pick: "good enough" or "redo X", by Wed 18 Nov, so Claude can open the pitch deck. 5 min. Default: deck stays closed. Reversible.
+3. Crowd control and the Digest product. Pick: park both formally, revisit Mon 14 Dec. A sole focus with two open tracks is not a sole focus. Default: they stay open and untouched. Reversible.
+(Friday's top was the Mathieu session. Today's top is the morning hour on Pocket Factory.)
 
-## On the street (France), 12 Nov
-- Meaux, lycée Henri-Moissan, and Cugnaux near Toulouse (second time in a week): mortars lit inside school corridors. Montpellier, lycée Jean-Mermoz: a bin set on fire in the toilets. Source: franceinfo, https://www.franceinfo.fr/societe/education/blocage-des-lycees/comment-enrayer-les-violences-dans-les-lycees_8279978.html
-- Île-de-France: 170 lycées damaged since the movement began; the region suspends sport and culture aid for families of pupils found guilty. Val-d'Oise préfet asked police to check bags at lycée gates for mortars. Education minister Geffray: "tout sera judiciarisé". Source: same franceinfo report.
-- Champs-sur-Marne: the 13-year-old who broke a Torcy officer's arm (30 days ITT) was brought before a juvenile judge in Meaux on 12 Nov; prosecutor asked for contrôle judiciaire. Source: Europe 1 with AFP, https://www.europe1.fr/police-justice/mobilisation-lyceenne-un-collegien-de-13-ans-presente-a-un-juge-des-enfants-apres-avoir-casse-le-bras-dun-policier-1228412
-- Pau: judicial investigation opened 7 Nov against four minors aged 15 to 17 for hurting four police officers with mortars; the investigation also has to identify others involved. Source: franceinfo, https://www.franceinfo.fr/societe/education/blocage-des-lycees/une-information-judiciaire-a-ete-ouverte-a-pau-contre-des-lyceens-pour-violences-sur-des-policiers_8272136.html
-- Why it matters for us (my opinion): Pau shows the after-the-fact identification problem in a live case, which is the lead hypothesis.
+## On the street (France), 14 Nov, act V
+- 404 arrested in France, 50 police and gendarmes hurt (Interior ministry). Source: franceinfo, https://www.franceinfo.fr/societe/manifestations/manifestation-du-14-novembre-a-paris-108-personnes-placees-en-garde-a-vue-dont-38-mineurs_8283458.html
+- Turnout 106,000 (ministry) vs 200,000 (organisers), down from 146,000 on 7 Nov and 550,000 at the 17 Oct peak. 70,000 police and gendarmes deployed again. Source: L'Indépendant, https://www.lindependant.fr/2026/11/15/mobilisation-acte-v-404-interpellations-en-france-dont-126-a-paris-samedi-14-novembre-13653841.php ; France 24, https://www.france24.com/fr/france/20261114-acte-v-du-mouvement-social-des-revendications-vari%C3%A9es-une-affluence-en-baisse
+- Paris préfecture of police: 310 arrêtés in six weeks, 219 on protests, including drone and helicopter overflight authorisations. Source: franceinfo, https://www.franceinfo.fr/societe/manifestations/interdictions-de-manifestations-couvre-feux-parcours-hors-des-centres-villes-comment-les-prefets-multiplient-les-mesures-administratives-en-amont-des-mobilisations_8274263.html
+- Police injuries since the movement began: mostly light, hearing loss and tinnitus. Source: France 24 with AFP, https://www.france24.com/fr/info-en-continu/20261115-manifestations-de-samedi-plus-de-400-interpellations-en-france
+- Why it matters (my opinion): parked thread now, but the drone overflight orders keep confirming the 11 Nov note that the drone exists; the gap is elsewhere.
 
 ## Flags: conflicting dates and facts
-- Europe 1 opens with the officer hit "à Meaux", then places it at lycée Descartes, Champs-sur-Marne. Meaux is the court. Use Champs-sur-Marne.
-- franceinfo puts Montpellier's lycée Jean-Mermoz in the Gard. Montpellier is in the Hérault. Not checked further.
-- Digest partners: journal says roles due Fri 13 Nov, but nothing in the repo says who owns what. If you already said it, it was not logged.
-- decisions.md now has D-008 and D-009, but D-002 to D-007 are missing from it; they live only in HQ reports and HUB notes.
-- HQ morning run: 09:00 in reports, 08:00 in decisions.md (1 Nov). Unresolved since 3 Nov.
+- Paris arrests on 14 Nov: 126 (préfecture of police, franceinfo) vs 134 (Paris parquet, France 24 with AFP). Different counters.
+- My 14 Nov default said "demo spec first" on Tue 17 Nov; the roadmap puts step 1 (the sentence) first and the contract before step 4. Today's default follows the roadmap.
+- D-011 says sole focus, but D-008 (Digest Phase 0) was never paused. Decision 3 settles it.
+- decisions.md still lacks D-002 to D-007. HQ morning run 08:00 (decisions.md) vs 09:00 (reports), open since 3 Nov.
