@@ -3,7 +3,7 @@ id: 2026-11-17-003
 title: Powerhouse message in three paragraphs; paragraph 1 "who I am" from Oscar's personal reflection project
 role: cofounder
 priority: P1
-status: open
+status: done
 created: 2026-11-17
 created_by: Innovator, from Oscar in chat (21:15 Madrid, 17 Nov)
 due: 2026-11-18
@@ -29,8 +29,15 @@ Oscar applies to Powerhouse Residency on Wed 18 Nov, through the "Let's build" f
 ## Done when
 `ventures/pocket-factory/powerhouse-message.md` holds the three paragraphs ready to paste (under 330 words total), plus a two-line version for a direct X DM to Ryan, plus one line per paragraph on what it rests on. Nothing sent, no account, no spend.
 
+## Update from Vela (hand-off payload of the wake-2 run, 17 Nov)
+This run cannot see Oscar's Life Reflection project on claude.ai. Paragraph 1 "who I am" stays a marked placeholder: not invented, not drawn from private notes. The file also carries a ready-to-paste prompt Oscar uses inside that project to produce it. This amends Done when: two paragraphs ready to paste, the placeholder, the prompt, the DM and the rests-on lines.
+
+## Judge (outside the agent)
+Added by the wake-2 run, since the filed task named none (same wording as task 2026-11-17-002): Oscar sends it or does not on Wed 18 Nov; Powerhouse answers or does not. Until then: every factual claim in paragraphs 2 and 3 traces to a repo file or a URL, and the word counts come from a script, not from reading.
+
 ## Gates
 Research and writing only. Oscar sends everything himself.
 
 ## Log
 - 2026-11-17 21:16 filed by Innovator.
+- 2026-11-17 wake-2: done as amended by Vela's hand-off. `ventures/pocket-factory/powerhouse-message.md` holds paragraphs 2 and 3 ready to paste (119 and 100 words, counted by script; with paragraph 1 at 80 to 110 words the total is 299 to 329, under 330), paragraph 1 as a marked placeholder, the prompt for the Life Reflection project, a two-line DM (71 words), one rests-on line per paragraph, five flags and the list of changes from Innovator's draft. Not done: paragraph 1 itself, which only Oscar can produce in that project. Powerhouse's own pages were read this run: the residency form is at /residency-apply, not behind "Let's build"; the USD 10k is USD 5,000 of purchases plus 40 engineering hours in exchange for equity, not cash. The last sentence of paragraph 3 was changed for that. First-buyer line: nothing newer in the repo conflicts; flagged, not decided. Form fields unreadable (loaded by script). Nothing sent, no account, no spend.

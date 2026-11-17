@@ -1,5 +1,7 @@
 # Powerhouse Residency: the 5-line application for Pocket Factory (draft)
 
+Superseded as the text to send by `powerhouse-message.md` (wake-2 run, 2026-11-17, task 2026-11-17-003). That run read Powerhouse's own pages: the residency has an application form (https://powerhouse.engineering/residency-apply) and the USD 10k is a package in exchange for equity, not cash. Section 5 of that file corrects line 5 and section 3 points 3 and 5 below. Section 2 below remains the source table.
+
 Written 2026-11-17 by the evening HQ run (task 2026-11-17-002, from Innovator's decision "Apply to Powerhouse Residency (Shenzhen, Mar 2027) for Pocket Factory by Fri 21 Nov", HUB note 20261117192817344-ebc4c6ad). Draft only: nothing sent, no account, no spend. Oscar pastes and sends it himself, after the two conditions in section 3.
 
 ## 1. The five lines (English, ready to paste, 225 words counted with the bracketed note)
