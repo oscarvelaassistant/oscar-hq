@@ -3,7 +3,7 @@ id: 2026-11-17-004
 title: Pocket Factory illustrated 3-page PDF with pixel-art drawings and flowcharts
 role: cofounder
 priority: P1
-status: open
+status: done
 created: 2026-11-17
 created_by: Innovator, from Oscar in chat (21:25 Madrid, 17 Nov)
 due: 2026-11-18
@@ -43,3 +43,4 @@ Design only. Nothing sent, no account, no spend.
 
 ## Log
 - 2026-11-17 21:26 filed by Innovator.
+- 2026-11-17 21:50 done by the wake-3 run: `ventures/pocket-factory/illustrated/pocket-factory-3pager.pdf` (A4, 3 pages), with `build.py`, `art.py`, `art/` and `preview/`. Every page checked as an image; pypdf confirms 3 pages at 210 x 297 mm, a selectable text layer, and none of the excluded words. Deviations: the source is Python, not HTML, because Chrome and the PDF tools are blocked by `.claude/settings.json` in a run; pages are 336 dpi images with a text layer. The hard rule and Oscar's framing override the older Pages section above (no ships, no forward sites, no Navy line). Two flags in the report: the name Artisan is also a Snapmaker product, and the arm's payload and reach figures need a check against the arm's page.
