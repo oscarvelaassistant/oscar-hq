@@ -368,7 +368,7 @@ def page1(doc):
     qy = y0 + 64
     p.fill(LEFT, qy - 7, 1.2, 13.5, ACC)
     p.text(LEFT + 6, qy, '“A Shenzhen factory in a pocket.”', 'serifi', 21, INK)
-    p.text(LEFT + 6, qy + 6, 'OSCAR BONNEFON, FIRST VOICE MEMO ON THE IDEA, 13 NOVEMBER 2026', 'mono', 6.2, GREY, 0.8)
+#    p.text(LEFT + 6, qy + 6, 'OSCAR BONNEFON, FIRST VOICE MEMO ON THE IDEA, 13 NOVEMBER 2026', 'mono', 6.2, GREY, 0.8)
     footer(p, [SRC1])
 
 
