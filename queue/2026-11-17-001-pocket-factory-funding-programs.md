@@ -28,6 +28,9 @@ Innovator runs its own search in parallel; Claude's list is an independent secon
 3. Claude's top 3 picks with one reason each, labelled as Claude's opinion, and what Oscar would need ready (deck, demo, cofounder) for each.
 No em dashes. Decisions named by title.
 
+## Update from Oscar (20:50 and 20:51 Madrid, 17 Nov)
+Oscar does not care about losing his ARESA salary; he wants an exciting life and maximum runway, so relocating is a plus. Rank by cash and runway first. He plans to apply to every programme he is eligible for, so include as many real options as possible (up to 25), each with its next deadline and a clear eligible-now yes or no plus what would unlock it.
+
 ## Gates
 Research only. Nothing applied to, signed up for, sent, posted or bought.
 
