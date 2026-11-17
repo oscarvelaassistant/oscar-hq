@@ -472,6 +472,20 @@ def hero():
     a.rect(175, B - 6, 9, 4, 'O'); a.rect(177, B - 8, 5, 2, 'O'); a.rect(178, B - 5, 3, 2, 'd')
     a.rect(179, B - 13, 1, 5, 'K')
     a.sprite(175, B - 21, CHECK_BADGE)
+
+    # the container this all sits in, cut away: corrugated roof beam, corrugated posts, corner castings
+    for x in range(W):
+        a.px(x, 0, 'K'); a.px(x, 3, 'K')
+        a.px(x, 1, 'D' if (x // 2) % 2 == 0 else 'M')
+        a.px(x, 2, 'M' if (x // 2) % 2 == 0 else 'D')
+    for x0 in (0, W - 4):
+        for y in range(4, 96):
+            a.px(x0, y, 'K'); a.px(x0 + 3, y, 'K')
+            a.px(x0 + 1, y, 'D' if (y // 2) % 2 == 0 else 'M')
+            a.px(x0 + 2, y, 'M' if (y // 2) % 2 == 0 else 'D')
+    for x0 in (0, W - 6):
+        a.box(x0, 0, 6, 6, 'O')
+        a.box(x0, 98, 6, 6, 'O')
     return a
 
 

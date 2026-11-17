@@ -328,8 +328,8 @@ def page1(doc):
     header(p, 1)
     kicker(p, 26, 'THE R-T-SAN MACHINE')
     p.text(LEFT - 0.6, 43, 'R-T-SAN', 'px', 40, INK)
-    p.para(LEFT, 52.5, 160, 'An AI factory worker you can set down anywhere. Give it raw material. '
-           'It does what a team of skilled workers could.', 'serif', 14, 6.6)
+    p.para(LEFT, 52.5, 174, 'A container you can drop anywhere in the world, one day on other planets. Two robot '
+           'arms do what a team of highly skilled artisans would, 24/7.', 'serif', 14, 6.6)
 
     hy = 68.0
     k = CW / 192.0
@@ -339,7 +339,7 @@ def page1(doc):
     for n, ax, ay in marks:
         badge(p, LEFT + ax * k, hy + ay * k, n)
 
-    legend = ['Request: file or photo', 'Tools it can pick up', 'Raw stock', 'Two open arms, run by AI',
+    legend = ['Request: file or photo', 'Tools it can pick up', 'Raw stock', 'Two robot arms, run by AI',
               'Machining station', 'Inspection camera', 'Checked, accepted part']
     ly = hy + hh + 4.0
     cwid = CW / 4
@@ -356,14 +356,14 @@ def page1(doc):
     x2 = RIGHT - cw2
     kicker(p, y0, 'WHAT IT IS')
     p.para(LEFT, y0 + 7, cw2,
-           'R-T-SAN is a factory that fits on a workbench. Two open robot arms, run by AI, pick up whichever tool '
-           'the job needs: cut, solder, machine, assemble, check. Raw material goes in. A checked, accepted part '
-           'comes out, with nobody touching it in between.', 'serif', 11, 5.6)
+           'R-T-SAN is a container you can drop anywhere in the world, however remote, and one day on other '
+           'planets. Inside, two robot arms, run by AI, use a panoply of tools to cut, solder, machine, assemble '
+           'and check, 24/7. Raw material goes in. A checked, accepted part comes out.', 'serif', 11, 5.6)
     kicker(p, y0, 'FIRST USE', x=x2)
     p.para(x2, y0 + 7, cw2,
-           'Making parts without skilled hands. The arms are off the shelf and open now [1]. The skills are not. '
-           'R-T-SAN starts narrow: one material, one process, one family of parts. Each skill it learns after that '
-           'widens what it can make.', 'serif', 11, 5.6)
+           "Unlike today's specialized robots, R-T-SAN is general: it makes parts without skilled hands. The arms "
+           'are off the shelf and open now [1]. The skills are not. It starts narrow: one material, one process, '
+           'one family of parts. Each skill it learns widens what it can make.', 'serif', 11, 5.6)
 
     qy = y0 + 64
     p.fill(LEFT, qy - 7, 1.2, 13.5, ACC)
@@ -378,8 +378,8 @@ def page2(doc):
     header(p, 2)
     kicker(p, 26, 'HOW IT WORKS')
     p.text(LEFT, 38, 'One loop, with nobody in between.', 'serifm', 23, INK)
-    p.para(LEFT, 46.5, 150, 'A request goes in and a checked part comes out. When the check fails, R-T-SAN '
-           'scraps the part and goes again.', 'serif', 11, 5.4)
+    p.para(LEFT, 46.5, 174, 'Two robot arms, a panoply of tools, 24/7: a request goes in and a checked part comes '
+           'out. If the check fails, R-T-SAN scraps the part and goes again.', 'serif', 11, 5.4)
 
     bw, bh, gap = 38.0, 36.0, (CW - 4 * 38.0) / 3
     xs = [LEFT + i * (bw + gap) for i in range(4)]
@@ -396,7 +396,7 @@ def page2(doc):
     step(xs[0], r1, 1, 'request', 'REQUEST IN', 'A file, or a photo of a broken part.')
     step(xs[1], r1, 2, 'pick', 'PICK STOCK', 'An arm takes a bar from the rack.')
     step(xs[2], r1, 3, 'hold', 'HOLD', 'The bar is clamped.')
-    step(xs[3], r1, 4, 'machine', 'MACHINE', 'A tool cuts the shape.')
+    step(xs[3], r1, 4, 'machine', 'MACHINE', 'The right tool cuts the shape.')
     step(xs[3], r2, 5, 'finish', 'FINISH', 'Edges are cleaned up.')
     step(xs[2], r2, 6, 'check', 'CHECK', 'A camera inspects the part.')
     step(xs[0], r2, 7, 'out', 'PART OUT', 'Checked and handed over.')
@@ -463,8 +463,9 @@ def page2(doc):
     p.image('arm', LEFT + 6, by + 11.5, 16.5)
     tx = LEFT + 40
     p.text(tx, by + 8.2, 'OPEN ARMS, OFF THE SHELF', 'monob', 8, INK, 0.6)
-    p.para(tx, by + 14.2, 128, "Seeed's reBot-DevArm went open hardware in May 2026 [1]. Its single-arm models "
-           'carry 1.5 kg or 2.5 kg and reach about 760 mm [1]. That bounds the stock R-T-SAN can lift.',
+    p.para(tx, by + 14.2, 128, "Seeed's reBot-DevArm went open hardware in May 2026 [1]. Its B601 arms "
+           'carry 1.5 kg (DM) or 2.5 kg (RS), with a maximum reach of 767 mm or 754 mm [1]. That bounds the stock '
+           'R-T-SAN can lift.',
            'serif', 9.5, 4.5)
     footer(p, [SRC1])
 
@@ -485,9 +486,9 @@ def page3(doc):
     p.image('dome', x2, y, pw)
     p.stroke(x2, y, pw, h, INK, 0.7)
     cy = y + h + 5
-    p.text(LEFT, cy, 'A WORKSHOP IN A REMOTE TOWN', 'monob', 7.5, INK, 0.8)
+    p.text(LEFT, cy, 'ANYWHERE IN THE WORLD, HOWEVER REMOTE', 'monob', 7.5, INK, 0.8)
     p.para(LEFT, cy + 4.8, pw, 'Far from any factory. Raw material in, parts out.', 'serif', 9.5, 4.5, DGREY)
-    p.text(x2, cy, 'A DOME ON ANOTHER PLANET, ONE DAY', 'monob', 7.5, INK, 0.8)
+    p.text(x2, cy, 'ON ANOTHER PLANET, ONE DAY', 'monob', 7.5, INK, 0.8)
     p.para(x2, cy + 4.8, pw, 'The same R-T-SAN, the same skills, far from Earth.', 'serif', 9.5, 4.5, DGREY)
 
     y = cy + 11.5
@@ -497,10 +498,10 @@ def page3(doc):
     p.text(LEFT, cy, 'MANY R-T-SANS, ONE SKILL LIBRARY', 'monob', 7.5, INK, 0.8)
     p.text(RIGHT, cy, 'CONCEPT DRAWINGS', 'mono', 6.2, GREY, 0.8, 'r')
     p.para(LEFT, cy + 4.8, CW, 'A skill learned in one place reaches every R-T-SAN, the way a phone gets updates. '
-           'The end goal is an any factory: give it material and a request, and it makes the part. It gets there '
-           'one process at a time.', 'serif', 9.5, 4.5, DGREY)
+           'The end goal: give it raw material and a request, and it does what a team of highly skilled artisans '
+           'would, 24/7. One skill at a time.', 'serif', 9.5, 4.5, DGREY)
 
-    ty = cy + 16.5
+    ty = cy + 15.5
     p.line([(LEFT, ty), (RIGHT, ty)], RULE, 0.5)
     kicker(p, ty + 6.5, 'THE TEN WEEKS: POWERHOUSE RESIDENCY, SHENZHEN, FROM 1 MARCH 2027 [2]')
     by = ty + 10
@@ -515,23 +516,28 @@ def page3(doc):
     p.text(LEFT, by + 10.6, 'DEMO DAYS EVERY TWO WEEKS [2]', 'mono', 6.2, GREY, 0.8)
     p.text(RIGHT, by + 10.6, 'ONE LOOP WORKING AND FILMED', 'monob', 6.2, ACC, 0.8, 'r')
 
-    gy = by + 18.5
+    gy = by + 17.5
     cw2 = 82.0
     xr = RIGHT - cw2
     p.text(LEFT, gy, 'THE GOAL', 'monob', 7.5, INK, 1.2)
     p.para(LEFT, gy + 5.6, cw2, 'One loop working and filmed for Demo Day: bar stock in, accepted part out. '
-           'One material, one process, one family of parts, on an open arm sourced in Shenzhen. If the whole '
+           'One material, one process, one family of parts, on open arms sourced in Shenzhen. If the whole '
            'loop does not fit, an agreed subsystem of it.', 'serif', 9.5, 4.5)
     p.text(xr, gy, 'WHAT POWERHOUSE ADDS [2]', 'monob', 7.5, INK, 1.2)
     p.para(xr, gy + 5.6, cw2, "USD 5,000 of prototyping parts, sourced and bought by Powerhouse, and 40 hours of "
            "its engineers' time. The package is in exchange for equity. It is not cash. That sourcing and those "
            'hours turn a plan into a part on the table.', 'serif', 9.5, 4.5)
 
-    sy = gy + 30.5
-    p.stroke(LEFT, sy, CW, 9.4, INK, 0.7)
+    sy = gy + 28.0
+    p.stroke(LEFT, sy, CW, 20.5, INK, 0.7)
     p.text(LEFT + 4, sy + 5.9, 'WHERE THIS STANDS', 'monob', 7.5, ACC, 1.0)
     p.text(LEFT + 45, sy + 5.9, 'Step 1: the idea is being refined. Nothing is built yet. Every drawing here is a concept.',
            'serif', 8.6, INK)
+    p.line([(LEFT, sy + 9.2), (RIGHT, sy + 9.2)], RULE, 0.5)
+    p.text(LEFT + 4, sy + 14.6, 'THE FOUNDER', 'monob', 7.5, ACC, 1.0)
+    p.para(LEFT + 45, sy + 14.6, 128, 'French, in Barcelona. Three years in industry as salesperson, business '
+           "developer and AI guy. Not an engineer: Shenzhen's engineers and suppliers would help make it real.",
+           'serif', 8.6, 4.0)
     footer(p, [SRC1, SRC2])
 
 

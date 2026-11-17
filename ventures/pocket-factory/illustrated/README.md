@@ -1,4 +1,4 @@
-# Artisan, the Pocket Factory machine: illustrated 3-pager
+# R-T-SAN: illustrated 3-pager
 
 Task 2026-11-17-004. Concept document for Oscar's Powerhouse application. Design only: nothing sent.
 
@@ -17,5 +17,6 @@ How the PDF is made: each page is a 336 dpi image with an invisible text layer o
 Sources on the pages:
 - [1] Seeed reBot-DevArm, open hardware under CERN-OHL-W 2.0, "effective May 11, 2026": https://github.com/Seeed-Projects/reBot-DevArm
 - [2] Powerhouse Residency: https://powerhouse.engineering/residency
-- The payload (1.5 kg or 2.5 kg) and reach (about 760 mm) figures come from `../powerhouse-message.md` section on scope, which says "the arm's own page" without a URL. The page cites them to [1]. Not re-checked when this was built: confirm before sending.
-- The pull quote is from Oscar's voice memo of 13 November 2026 (per the task file).
+- Payload and reach on page 2 are checked against the Seeed reBot-DevArm README "Hardware Specifications" table [1]: B601-DM 1.5 kg payload and 767 mm max reach, B601-RS 2.5 kg and 754 mm (checked 17 Nov 2026). The earlier "about 760 mm" figure was unverified and is gone.
+- Text matches Oscar's final Powerhouse intro video (transcript: /workspace/video/intro-transcript.md, 17 Nov 2026): a container dropped anywhere, two robot arms, a panoply of tools, 24/7, a team of highly skilled artisans, unlike today's specialized robots, not an engineer, Shenzhen.
+- The pull quote line carries no attribution.
