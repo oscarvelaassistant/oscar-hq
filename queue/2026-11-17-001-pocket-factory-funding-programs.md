@@ -3,7 +3,7 @@ id: 2026-11-17-001
 title: Pocket Factory: accelerators, residencies and grant programmes Oscar could apply to for money to build it
 role: cofounder
 priority: P1
-status: queued
+status: done
 created: 2026-11-17
 created_by: Oscar (20:40 in Innovator chat), filed by Innovator
 effort: Fable high
@@ -35,3 +35,4 @@ Oscar does not care about losing his ARESA salary; he wants an exciting life and
 Research only. Nothing applied to, signed up for, sent, posted or bought.
 
 ## Log
+- 2026-11-17 wake: done. `ventures/pocket-factory/funding-programs.md` written: 25 programmes ranked by stated cash (17 he can apply to as he is today or where the rules do not say, 8 not eligible today with what unlocks each), a dated list, Claude's top 3 picks (EWOR Ideation Fellowship, an Antler residency, Y Combinator late application), a left-out list and a list of what could not be verified. The 20:50 update was picked up mid-run (status was `queued`, treated as open), so the first draft (15 rows in region order) was replaced. Checked by hand against Done when and the update, since the contract names no judge: 25 rows, each with a link, a next date or "not published", and eligible-now Yes, Unclear or No; no em dashes. Limits: seven official pages would not load (listed in section 6), so those rows rest on secondary sources and say so; five rows are "Unclear" on eligibility because the published rules do not say. Nothing applied to, signed up for, sent, posted or bought.
