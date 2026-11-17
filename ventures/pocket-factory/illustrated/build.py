@@ -275,7 +275,7 @@ class Doc:
         objs[2] = ('<< /Type /Pages /Kids [%s] /Count %d >>'
                    % (' '.join('%d 0 R' % k for k in kids), len(kids))).encode()
         ninfo = new()
-        objs[ninfo] = (b'<< /Title (Artisan, the Pocket Factory machine: concept) /Author (Oscar Bonnefon) '
+        objs[ninfo] = (b'<< /Title (R-T-SAN: concept) /Author (Oscar Bonnefon) '
                        b'/Subject (Three-page illustrated concept, November 2026) >>')
 
         out = io.BytesIO()
@@ -297,7 +297,7 @@ class Doc:
 
 # ------------------------------------------------------------ page parts
 def header(p, n):
-    p.text(LEFT, 13, 'POCKET FACTORY', 'monob', 7, INK, 1.4)
+    p.text(LEFT, 13, 'R-T-SAN', 'monob', 7, INK, 1.4)
     p.text(RIGHT, 13, 'CONCEPT, NOVEMBER 2026    %d/3' % n, 'mono', 7, GREY, 1.0, 'r')
     p.line([(LEFT, 16), (RIGHT, 16)], RULE, 0.5)
 
@@ -326,8 +326,8 @@ def badge(p, x, y, n, size=4.2):
 def page1(doc):
     p = doc.page()
     header(p, 1)
-    kicker(p, 26, 'THE POCKET FACTORY MACHINE')
-    p.text(LEFT - 0.6, 43, 'ARTISAN', 'px', 40, INK)
+    kicker(p, 26, 'THE R-T-SAN MACHINE')
+    p.text(LEFT - 0.6, 43, 'R-T-SAN', 'px', 40, INK)
     p.para(LEFT, 52.5, 160, 'An AI factory worker you can set down anywhere. Give it raw material. '
            'It does what a team of skilled workers could.', 'serif', 14, 6.6)
 
@@ -356,13 +356,13 @@ def page1(doc):
     x2 = RIGHT - cw2
     kicker(p, y0, 'WHAT IT IS')
     p.para(LEFT, y0 + 7, cw2,
-           'Artisan is a factory that fits on a workbench. Two open robot arms, run by AI, pick up whichever tool '
+           'R-T-SAN is a factory that fits on a workbench. Two open robot arms, run by AI, pick up whichever tool '
            'the job needs: cut, solder, machine, assemble, check. Raw material goes in. A checked, accepted part '
            'comes out, with nobody touching it in between.', 'serif', 11, 5.6)
     kicker(p, y0, 'FIRST USE', x=x2)
     p.para(x2, y0 + 7, cw2,
            'Making parts without skilled hands. The arms are off the shelf and open now [1]. The skills are not. '
-           'Artisan starts narrow: one material, one process, one family of parts. Each skill it learns after that '
+           'R-T-SAN starts narrow: one material, one process, one family of parts. Each skill it learns after that '
            'widens what it can make.', 'serif', 11, 5.6)
 
     qy = y0 + 64
@@ -378,7 +378,7 @@ def page2(doc):
     header(p, 2)
     kicker(p, 26, 'HOW IT WORKS')
     p.text(LEFT, 38, 'One loop, with nobody in between.', 'serifm', 23, INK)
-    p.para(LEFT, 46.5, 150, 'A request goes in and a checked part comes out. When the check fails, Artisan '
+    p.para(LEFT, 46.5, 150, 'A request goes in and a checked part comes out. When the check fails, R-T-SAN '
            'scraps the part and goes again.', 'serif', 11, 5.4)
 
     bw, bh, gap = 38.0, 36.0, (CW - 4 * 38.0) / 3
@@ -435,7 +435,7 @@ def page2(doc):
         p.image('skill-' + n, x, oy + 20.5, cwid)
         p.text(x + cwid * 9.5 / 22, oy + 41.6, n.upper(), 'mono', 5.6, DGREY, 0.3, 'c')
     p.para(lx, oy + 47.5, 80, 'Each step of the loop is a learned skill, kept like a cartridge. Every skill one '
-           'Artisan learns, every Artisan gets.', 'serif', 9.5, 4.5)
+           'R-T-SAN learns, every R-T-SAN gets.', 'serif', 9.5, 4.5)
 
     rx = LEFT + 98
     p.text(rx, oy + 17, 'THE FACTORY PROCESS', 'monob', 8, INK, 0.6)
@@ -464,7 +464,7 @@ def page2(doc):
     tx = LEFT + 40
     p.text(tx, by + 8.2, 'OPEN ARMS, OFF THE SHELF', 'monob', 8, INK, 0.6)
     p.para(tx, by + 14.2, 128, "Seeed's reBot-DevArm went open hardware in May 2026 [1]. Its single-arm models "
-           'carry 1.5 kg or 2.5 kg and reach about 760 mm [1]. That bounds the stock Artisan can lift.',
+           'carry 1.5 kg or 2.5 kg and reach about 760 mm [1]. That bounds the stock R-T-SAN can lift.',
            'serif', 9.5, 4.5)
     footer(p, [SRC1])
 
@@ -474,8 +474,8 @@ def page3(doc):
     p = doc.page()
     header(p, 3)
     kicker(p, 26, 'WHERE IT GOES')
-    p.text(LEFT, 37, 'Every skill one Artisan learns,', 'serifm', 23, INK)
-    p.text(LEFT, 46.5, 'every Artisan gets.', 'serifm', 23, INK)
+    p.text(LEFT, 37, 'Every skill one R-T-SAN learns,', 'serifm', 23, INK)
+    p.text(LEFT, 46.5, 'every R-T-SAN gets.', 'serifm', 23, INK)
 
     y = 53.5
     pw, h = p.imsize('town', 84.0)
@@ -488,15 +488,15 @@ def page3(doc):
     p.text(LEFT, cy, 'A WORKSHOP IN A REMOTE TOWN', 'monob', 7.5, INK, 0.8)
     p.para(LEFT, cy + 4.8, pw, 'Far from any factory. Raw material in, parts out.', 'serif', 9.5, 4.5, DGREY)
     p.text(x2, cy, 'A DOME ON ANOTHER PLANET, ONE DAY', 'monob', 7.5, INK, 0.8)
-    p.para(x2, cy + 4.8, pw, 'The same Artisan, the same skills, far from Earth.', 'serif', 9.5, 4.5, DGREY)
+    p.para(x2, cy + 4.8, pw, 'The same R-T-SAN, the same skills, far from Earth.', 'serif', 9.5, 4.5, DGREY)
 
     y = cy + 11.5
     _, h = p.image('share', LEFT, y, CW)
     p.stroke(LEFT, y, CW, h, INK, 0.7)
     cy = y + h + 5
-    p.text(LEFT, cy, 'MANY ARTISANS, ONE SKILL LIBRARY', 'monob', 7.5, INK, 0.8)
+    p.text(LEFT, cy, 'MANY R-T-SANS, ONE SKILL LIBRARY', 'monob', 7.5, INK, 0.8)
     p.text(RIGHT, cy, 'CONCEPT DRAWINGS', 'mono', 6.2, GREY, 0.8, 'r')
-    p.para(LEFT, cy + 4.8, CW, 'A skill learned in one place reaches every Artisan, the way a phone gets updates. '
+    p.para(LEFT, cy + 4.8, CW, 'A skill learned in one place reaches every R-T-SAN, the way a phone gets updates. '
            'The end goal is an any factory: give it material and a request, and it makes the part. It gets there '
            'one process at a time.', 'serif', 9.5, 4.5, DGREY)
 

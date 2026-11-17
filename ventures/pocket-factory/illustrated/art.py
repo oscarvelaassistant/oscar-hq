@@ -1,4 +1,4 @@
-"""Pixel art for the Pocket Factory 3-pager. Every drawing is built here, pixel by pixel.
+"""Pixel art for the R-T-SAN 3-pager. Every drawing is built here, pixel by pixel.
 
 Run through build.py. Each scene is an Art grid of palette keys; it exports PNG and SVG
 (art/ folder) and raw RGB for the PDF. All drawings are concepts: nothing shown is built.
@@ -13,7 +13,7 @@ PAL = {
     'L': '#c9c3b8',  # light grey
     'P': '#e9e4d8',  # pale
     'W': '#faf7f0',  # paper
-    'O': '#e8590c',  # accent orange (the part being made, and Artisan's lights)
+    'O': '#e8590c',  # accent orange (the part being made, and R-T-SAN's lights)
     'o': '#f4a66a',  # light orange
     'd': '#a63d05',  # dark orange
     's': '#fbe3cf',  # orange tint
@@ -321,9 +321,9 @@ def cartridge(name):
     return a
 
 
-# --------------------------------------------------------------- Artisan
+# --------------------------------------------------------------- R-T-SAN
 def artisan_small(a, cx, by, left=None, right=None, lights='O'):
-    """Small Artisan standing on a surface whose top row is `by`.
+    """Small R-T-SAN standing on a surface whose top row is `by`.
     left / right: (elbow, wrist) points relative to (cx, by)."""
     a.rect(cx - 7, by - 2, 15, 2, 'K')            # base plate
     a.box(cx - 3, by - 12, 7, 10, 'L')            # torso
@@ -372,7 +372,7 @@ def hero():
     a.rect(0, 97, W, 7, 'P')
     a.rect(0, 96, W, 1, 'L')
 
-    # pegboard with tools Artisan can pick up
+    # pegboard with tools R-T-SAN can pick up
     a.box(18, 4, 56, 20, 'P', 'L')
     for y in range(7, 22, 3):
         for x in range(21, 72, 3):
@@ -421,7 +421,7 @@ def hero():
         a.px(x, t, 'K'); a.px(x + 1, t, 'K')
     a.rect(18, 54, 26, 1, 'K')
 
-    # Artisan
+    # R-T-SAN
     cx = 92
     a.box(cx - 17, B - 5, 34, 5, 'D')             # base
     a.box(cx - 7, 40, 15, B - 45, 'L')            # torso
