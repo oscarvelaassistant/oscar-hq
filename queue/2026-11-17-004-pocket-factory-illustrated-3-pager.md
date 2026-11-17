@@ -16,6 +16,9 @@ A 3-page illustrated PDF that explains Pocket Factory and shows what it could lo
 
 Oscar's words: "images, flowcharts, and pretty non-slop (i'd love some claude making drawings in like 64-bit showing what the pocket factory could look like)". Read "64-bit" as retro pixel art (crisp 16-bit console style); Claude draws them itself, as SVG or HTML canvas pixel grids, no stock images, no generic AI art.
 
+## HARD RULE from Oscar (21:28, 17 Nov)
+No ships, no shipyard, no naval, no forward sites, no deployable factories, no US Navy budget line anywhere: Oscar told us to drop the ship focus. First use stays general: making parts without skilled hands; arms are cheap and open now, the skills are not. Page 3 panels: a cell on a workbench, many cells in a small workshop, cells sharing skills.
+
 ## Pages
 1. What it is: a hero pixel-art drawing of the cell (a workbench with two open robot arms, stock rack, a machining or finishing station, an inspection camera, an output tray with an accepted part), plus the one-line idea and the first use (repair parts at the point of need, on ships and at forward sites).
 2. How it works: a flowchart of the loop (file or request in, bar stock picked, held, machined, finished, checked, accepted or rejected and retried, part out) with small pixel icons per step, and the layer that is ours: the learned skill library and the factory process on off-the-shelf open arms (Seeed reBot-DevArm, open since May 2026).
