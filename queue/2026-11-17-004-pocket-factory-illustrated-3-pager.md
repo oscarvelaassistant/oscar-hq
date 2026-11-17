@@ -19,6 +19,9 @@ Oscar's words: "images, flowcharts, and pretty non-slop (i'd love some claude ma
 ## HARD RULE from Oscar (21:28, 17 Nov)
 No ships, no shipyard, no naval, no forward sites, no deployable factories, no US Navy budget line anywhere: Oscar told us to drop the ship focus. First use stays general: making parts without skilled hands; arms are cheap and open now, the skills are not. Page 3 panels: a cell on a workbench, many cells in a small workshop, cells sharing skills.
 
+## Oscar's framing (21:30, 17 Nov), use this as the spine
+The machine is called Artisan (Oscar's name, 14 Nov voice memo). Artisan is an AI factory worker, an artisan you can set down anywhere in the world, or one day on another planet, give raw material, and it does anything a team of skilled workers could do: two open arms that pick up any tool (cut, solder, machine, assemble, check). Inspiration: Warhammer STCs, a Shenzhen factory in a pocket (13 Nov voice memo, vault 🎙️ Transcripts/2026-11-13 - Pocket Factory voice memo.md). Every skill one Artisan learns, every Artisan gets. Pixel art: Artisan at a workbench; Artisan in a remote town workshop; Artisan in a dome on another planet; many Artisans sharing skills. Do not use Oscar's 'Africa' or Rhodesia wording; say remote places.
+
 ## Pages
 1. What it is: a hero pixel-art drawing of the cell (a workbench with two open robot arms, stock rack, a machining or finishing station, an inspection camera, an output tray with an accepted part), plus the one-line idea and the first use (repair parts at the point of need, on ships and at forward sites).
 2. How it works: a flowchart of the loop (file or request in, bar stock picked, held, machined, finished, checked, accepted or rejected and retried, part out) with small pixel icons per step, and the layer that is ours: the learned skill library and the factory process on off-the-shelf open arms (Seeed reBot-DevArm, open since May 2026).
