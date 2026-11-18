@@ -8,7 +8,7 @@ created: 2026-11-16
 created_by: Oscar (19:12 in Innovator chat), filed by Innovator
 effort: Fable 5.2 high
 depends_on: 2026-11-16-003 (beta-plan.md); build on its cut, do not redo it
-approval: Oscar asked for the page to be built now ("yes go do that now")
+approval: Oscar asked for the page to be built now ("yes go do that now"). Setup page pick (D-017) answered by Oscar on 18 Nov 2026 at 10:18 Madrid, "Keep A, the evening page" (relayed by Vela in the wake run's payload)
 ---
 
 ## Goal
@@ -44,25 +44,27 @@ Page URL (or local path), the final question list, the cut list, what Oscar must
 - Status stays `in-progress`: the done-when (Oscar fills it in on his phone, presses the button, a PDF is produced on the box and passes the validator) needs sessions 1 to 3 on the box. Next: a Claude Code session on the box with Oscar, starting with session 1 of `beta-plan.md`; session 3 takes this folder as its starting point.
 - 2026-11-16 21:30 (Claude, wake-4, local run on the box, started 19:13 by Vela): this run and the evening cloud run worked this task at the same time without seeing each other, because the task still read `open` in the repo until this run committed at its end. Result: two question designs, two pages and two Workers. Nothing of the evening run was changed. This run's question design is kept beside it as `ventures/digest/questions-box-run.md`; its code is on the box in `/workspace/digest-product/`. The choice between them is the decision below. This run also went over the 60-minute budget (about two hours by the clock) and stopped building when it saw that.
 - 2026-11-18 09:10 (Claude, morning, cloud run): the decide-by time for "which DailyDigest setup page to keep" (D-017) passed with no approval note in the HUB and no change to this file's `approval:` field. The written default holds: A (`ventures/digest/questions.md`, `ventures/digest/beta/`) stays the repo's version, the box fork waits, nothing is deployed. Oscar can still pick B or C; the memo stands below. Status stays `in-progress`; the remaining done-when needs a box session.
+- 2026-11-18 10:19 (Claude, wake, local run on the box, started by Vela): Oscar's answer to "which DailyDigest setup page to keep" (D-017) arrived in the run's payload: "Keep A, the evening page" (18 Nov 10:18 Madrid). Recorded in `approval:`. A was already the applied default, so no file moved; `questions-box-run.md` is marked not kept and the box fork's `worker/` is left on disk, unused. Work done on the box fork, in the order of the list below: the validator and the renderer now read A's profile shape (the never-list is read out of the `about` box, "why you" may rest on topics, about, city or urls) and print the masthead "The <Name> Daily"; the copy budgets are measured per slot and all 12 full-page test cases fit (item 3, done); schema, fixture and tests follow (16 tests pass, fixture passes offline and with `--pdf`, preview looked at). Not done: anything that needs node, the claude CLI or a deploy (none allowed in this run). Two open points for Oscar are in the report and the fork README (name length 40 on the page against 24 in the masthead; masthead typeface differs between page preview and PDF). Status stays `in-progress`.
 
-## State of the box half after wake-4 (2026-11-16)
+## State of the box half after the wake run of 2026-11-18
 Code lives in `/workspace/digest-product/` (outside this repo, no git there). Its `README.md` lists every file, what was checked and what is not built, in order.
 
 Done
-- Part A, second version: `ventures/digest/questions-box-run.md` (final wording, the cut, connects, friction rules).
-- Setup page `worker/form.html`, built into `worker/dist/worker.js` (239 KB, fonts embedded, strict CSP). Checked in headless Chrome at 390 and 320 px wide with the real CSP header: masthead follows the name, tap-to-fill topics, autosave, button, status texts, prefill on return. Screenshots in `dev/shots/`. The save and status answers in that check were stand-ins, not the Worker.
-- `validate.py` (10 unit tests pass) and `render_issue.py` (one-page PDF and PNG from a placeholder fixture, passes `validate.py --pdf`).
+- `validate.py` and `render_issue.py` on the kept page's profile shape, masthead "The <Name> Daily". 16 unit tests pass; the placeholder fixture passes offline and with `--pdf`.
+- Copy budgets measured on the page (`dev/calibrate_budgets.py verify`: every slot at its limit, 4, 5 and 6 stories, four fillers, 12 of 12 fit, nothing dropped). In characters: lead headline 56, dek 110, body 300, why you 95, 2 sources; a short slot 45, 180, 50, 1 source; the tall column 60, 560, 90, 3 sources. The tightest case leaves 4 px, and the filler is made-up prose, so the renderer's overflow refusal stays the last check. The numbers live in `validate.BUDGET`; `issue.schema.json` repeats them for the writer and a test keeps the two equal.
+- From wake-4, not kept: part A's second version (`ventures/digest/questions-box-run.md`) and its page in the fork's `worker/`.
 
 Not done (the next run picks up here, in this order)
-1. Run `node --test worker/test/` (12 tests written, never run: this run was not allowed to start node or the claude CLI). The Worker has never executed.
-2. `new_link.py`, `beta_runner.py`, `write.sh` and `WRITE-PROMPT.md` (designs in the fork README).
-3. Calibrate the validator's copy budgets to the page (a four-story issue leaves the right columns half empty; an 86-character lower-left headline overflowed and the renderer refused it).
-4. One real issue from Oscar's answers through the writer, validated with links opened.
-5. `send.py` against the stub.
+1. Run the kept Worker's tests on the box (`node worker.test.mjs` in a copy of `ventures/digest/beta/`; 28 of 28 in the cloud run, never run on the box: no box run has been allowed to start node).
+2. `beta_runner.py`, `write.sh` and `WRITE-PROMPT.md` (designs in the fork README, on the kept Worker's status contract in `ventures/digest/beta/README.md`).
+3. One real issue from Oscar's answers through the writer, validated with links opened.
+4. `send.py` against the stub.
 
-Not met from the done-when: Oscar opening the page on his phone, and a PDF built from his answers.
+Not met from the done-when: Oscar opening the page on his phone, and a PDF built from his answers. Both need a box session with node, the claude CLI and, for the page on his phone, the deploy with his typed yes.
 
 ## Decision
+
+Answered 18 Nov 2026 10:18 Madrid by Oscar: A ("Keep A, the evening page"). The memo below is kept as written.
 
 ### D-017 Which DailyDigest setup page to keep
 - What: two runs built the page the same evening without seeing each other's work. Pick the question set; the code follows the pick.

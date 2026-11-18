@@ -2,7 +2,7 @@
 
 Part A of queue task 004 (2026-11-16), the box run's version. Builds on the cut in `beta-plan.md`. "DailyDigest" is a placeholder name.
 
-This is the second of two designs written the same evening by two runs that did not see each other. The repo's current version is `questions.md` (evening cloud run, page in `beta/`). Which one is kept is the decision "Which DailyDigest setup page to keep (D-017)" in `queue/2026-11-16-004-dailydigest-test-page.md`. Until Oscar answers, this file is a proposal and `questions.md` stands.
+This is the second of two designs written the same evening by two runs that did not see each other. The repo's current version is `questions.md` (evening cloud run, page in `beta/`). Not kept: Oscar answered the decision "Which DailyDigest setup page to keep (D-017)" in `queue/2026-11-16-004-dailydigest-test-page.md` on 18 Nov 2026 with "Keep A, the evening page", so `questions.md` and `beta/` are the version in force. This file and the page it describes (`/workspace/digest-product/worker/`) stay on disk as a record and are not built on.
 
 Where the two differ:
 

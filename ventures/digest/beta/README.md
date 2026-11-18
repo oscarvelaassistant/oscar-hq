@@ -2,6 +2,8 @@
 
 Written 2026-11-16 by the HQ evening run for task `queue/2026-11-16-004`. This is the cloud half of `beta-plan.md` section 2 (build session 3), written ahead of the box sessions because the page was asked for now and the box is not reachable from a cloud run. Nothing here is deployed, bound to an account or reachable from the internet. The deploy waits for Oscar's typed yes in session 3.
 
+This is the kept page: Oscar answered "which DailyDigest setup page to keep (D-017)" on 18 Nov 2026 with "Keep A, the evening page". The other page (`../questions-box-run.md`, `/workspace/digest-product/worker/`) stays on disk and is not built on.
+
 | File | What it is |
 |---|---|
 | `public/form.html` | The setup page, one static file with its script. Fields and wording from `../questions.md` section 4. Fonts are expected under `public/fonts/` (copied from the pipeline's `fonts/` in session 3, not in this repo); Georgia and the system sans are the fallback and are what the screenshot below used. |
@@ -12,8 +14,8 @@ Written 2026-11-16 by the HQ evening run for task `queue/2026-11-16-004`. This i
 
 ## What the box session still has to do (sessions 1 to 3 in `beta-plan.md`)
 
-1. Session 1 and 2 are untouched by this folder: the fork of `/workspace/digest`, `WRITE-PROMPT.md`, `write.sh`, `validate.py`, `send.py`, `beta-runner.sh`.
-2. In session 3, copy this folder into `/workspace/digest-product/worker/`, copy the four font files into `public/fonts/`, run the tests, open `public/form.html` locally with `{{PROFILE_JSON}}` set to `{}` and check it on a phone-width window, then on a phone.
+1. Session 1 and 2 are untouched by this folder: the fork of `/workspace/digest`, `WRITE-PROMPT.md`, `write.sh`, `validate.py`, `send.py`, `beta-runner.sh`. State on 18 Nov 2026: the fork exists; its `validate.py` and `render_issue.py` read this page's profile shape (`../questions.md` section 5) and print the masthead "The <Name> Daily"; the writer, the runner and the sender are not built. What is there and what was checked: `/workspace/digest-product/README.md`.
+2. In session 3, copy this folder into a new folder in the fork, `/workspace/digest-product/worker-kept/` (`worker/` there holds the page that was not kept), copy the four font files into `public/fonts/`, run the tests, open `public/form.html` locally with `{{PROFILE_JSON}}` set to `{}` and check it on a phone-width window, then on a phone.
 3. Point `beta-runner.sh` at `GET /r/profiles` (bearer token) and at `PUT /r/status/<id>` after each issue: `being-made` when it starts, `sent` with `at_local` as `HH:MM` Madrid when `send.py` returns, `late` after a second failure, `saved` after a profile save with no issue due.
 4. Create the runner token on the box (`openssl rand -base64 32 | tr '+/' '-_' | tr -d '='`), store its SHA-256 as `runner:<hash>` with value `1` in the namespace (`wrangler kv key put`), keep the token in a chmod 600 file.
 5. Oscar's typed yes, then: KV namespace, `wrangler deploy`, the hostname route. Then `./new_link.sh oscar` and the done-when of session 3.
