@@ -1,65 +1,57 @@
-# Innovator morning brief, Tuesday 17 November 2026
+# Innovator morning brief, Wednesday 18 November 2026
 
 Written about 05:40 Madrid for page 2 of Oscar's Digest. Times Europe/Madrid.
 
 ## Where we are
-Two tracks now. Pocket Factory stays the venture (D-011, no spend, D-015). Since last night the Digest beta runs beside it (D-016, 19:03): a link where Paul and Pietro each set up their own Digest and get a PDF by email. Two HQ runs built that setup page in parallel last night, so there are two versions and one choice (D-017). Your morning hour now has two claims on it. That is the tradeoff to name.
+R-T-SAN (renamed from Pocket Factory on 17 Nov) is the venture. Framing since last night: Artisan, an AI factory worker; the value is learned skills and the factory process on open arms, not our own hardware. You chose to apply to Powerhouse Residency (Shenzhen) today and send it yourself. The illustrated 3-pager is done. The Digest beta still waits on the setup page pick, and its default lands at 09:00.
 
 ## Open questions
-- Which setup page do we keep? HQ's D-017, decide by Wed 18 Nov 09:00.
-- What do Paul and Pietro each own? Due today.
-- Who buys Pocket Factory first, and what does it make? Roadmap step 1, this week.
-- Do the ARESA contract clauses touch a side venture? Still unread.
+- Which name goes on the application: R-T-SAN, Artisan, or both? The message draft still says Pocket Factory.
+- Paragraph 1 of the Powerhouse message (who I am) is still a placeholder.
+- Do the ARESA outside-work and IP clauses allow naming ARESA, or applying at all? Still unread.
+- What do Paul and Pietro each own? Was due Tue 17 Nov.
 - What counts as traction? Still unanswered.
 
 ## Roadmap progress
-Pocket Factory roadmap (13 Nov): step 2, market research, done and still waiting on your one-line verdict. Step 1 sentence due this week. Steps 3 to 6 not started. The Digest beta has its own plan (ventures/digest/beta-plan.md, three build sessions); session 1 has not started.
+Step 1 (one sentence: who buys first, what it makes) not written; due this week, rewrite around skills on open arms. Step 2 market map done, verdict due today. Step 3 sim demo and step 4 deck not started. Step 5 outreach has started early through Powerhouse, your call (17 Nov 20:35).
 
 ## Done since yesterday
-- D-016 logged: Digest beta with Paul and Pietro (c765f0b, 19:03).
-- Beta plan written: six-route Worker plus box, three build sessions (f280d04, wake-3).
-- Setup page, version A: questions.md, form and Worker in ventures/digest/beta/, 28 tests pass (cc92b36, evening run).
-- Setup page, version B: questions-box-run.md, page checked in headless Chrome, validator (10 tests) and a one-page placeholder PDF in /workspace/digest-product/ (a3f8f6c, wake-4).
-- Pocket Factory plan.md reworked short from your notes, any-material end goal and first step (44f20a5, 9d0fe61).
-- Spend 0.00 EUR (HQ reports 16 Nov).
+- Funding programmes, 25 ranked by cash: ventures/pocket-factory/funding-programs.md (801a7eb).
+- Powerhouse 5-line draft (1deadfc), then the three-paragraph message plus X DM to Ryan Dunwoody (5b4cb28).
+- Illustrated 3-pager PDF, Artisan framing, renamed R-T-SAN, matched to your intro video, Seeed payload and reach checked (b8d4fc2, d03935b).
+- Brainstorm: five entries logged (Normal drone, ETH skid-steer, AnyMachine, reBot-DevArm, Powerhouse).
 
 ## Threads in play
 | Thread | State | Next | Source |
 |---|---|---|---|
-| Digest setup page | Two versions, nothing deployed | Decision 1 | reports/2026-11-16-wake-4.md |
-| Paul and Pietro roles | Not written, due today | Decision 2 | decisions.md D-016 |
-| Digest build session 1 | Ready, waits for you at the box | After decision 1 | beta-plan.md |
-| Who buys first (step 1) | Yours this week | Decision 3 | roadmap.md |
-| ARESA contract clauses | Unread; default moved it to Wed 18 | Decision 3 | journal 16 Nov |
-| Market map verdict | No reaction logged | One line by Wed 18 | morning brief 16 Nov |
-| Pitch deck (step 4) | Closed until the verdict | Waits | roadmap.md |
+| Powerhouse application | Draft ready except paragraph 1; ship wording still in it | Decision 1 | powerhouse-message.md |
+| Step 1 sentence | Not written | Decision 2, 30 min | roadmap.md, journal 17 Nov |
+| Digest setup page | Two versions, nothing deployed | Decision 3, default 09:00 | reports/2026-11-16-wake-4.md |
+| Funding list merge | Claude's file pushed; mine at /workspace/out | I merge today | journal 17 Nov |
+| R-T-SAN 3-pager | Done | Attach or link if the form allows | illustrated/ |
+| ARESA clauses | Unread | Before sending | roadmap.md |
+| Paul and Pietro roles | Overdue since Tue 17 | Two lines | decisions.md D-016 |
+| Market map verdict | Due today | One line | morning brief 16 Nov |
 | Crowd control | Untouched since 13 Nov | Parked in practice | decisions.md |
-| Team fit, Paul and Mathieu | Deep take, unscheduled | Waits | brainstorm 13 Nov |
 
 ## Tasks and due dates
-- Today 07:00 to 08:00: morning hour. HQ runs 09:00, 12:00, 21:00.
-- Today 08:00: yesterday's default lands. Step 1 sentence first, ARESA contract Wed 18 Nov.
-- Today: what Paul and Pietro each own (journal 16 Nov).
-- Today 14:00: national strike, Paris march Nation to place d'Italie.
-- Wed 18 Nov 09:00: setup page decision (D-017). Wed 18 Nov: market map verdict, ARESA contract.
-- Overdue: parked revisits dated 7 Nov.
+- Today 07:00 to 08:00: morning hour. Powerhouse send (your call), step 1 sentence.
+- Today 09:00: setup page default lands (A stays, nothing deployed). HQ runs 09:00, 12:00, 21:00.
+- Today: market map verdict. ARESA contract (yesterday's default moved it here).
+- Today: I merge the two funding lists, sorted by deadline, for 19:00.
+- Overdue: Paul and Pietro roles (17 Nov). Parked revisits dated 7 Nov.
+- Fri 20 Nov 09:00: reminder, feedback to Nico on Project Quest.
+- Fri 21 Nov: the original Powerhouse date, if today slips.
 
 ## Decisions for today (Oscar picks the focus)
-1. Which Digest setup page to keep. Pick: C, version B's questions and masthead on version A's tested Worker. "What do you do all day?" feeds every "why you" line, and the page should look like the PDF they get. Cost: one merge step. 5 min to say it. Default if silent by Wed 18 Nov 09:00: A stays, B waits, nothing deployed. Reversible.
-2. What Paul and Pietro each own. Pick: two lines today, one per name, before build session 1. Ownership written after the build is a fight later. 10 min. Default: the build runs on stub, nothing goes to Paul or Pietro. Reversible.
-3. Who gets the morning hour: Pocket Factory or the Digest? Pick: Pocket Factory keeps 07:00 to 08:00, the Digest gets a separate box session. The sole focus already slipped once in four days. Default: today's hour goes to the step 1 sentence, as yesterday's default says. Reversible.
-(Yesterday's top was the morning hour contract question. Today's top is the Digest page.)
-
-## On the street (France), 17 Nov
-- National strike today: public service, rail, teachers, students. Paris march 14:00, Nation to place d'Italie, validated by the préfecture. Source: BFMTV, https://www.bfmtv.com/societe/manifestations/info-bfmtv-manifestation-du-17-novembre-entre-40-000-et-80-000-personnes-attendues-dans-les-rues-de-paris_AN-202611160455.html
-- Police forecast (an estimate, theirs): 220,000 to 300,000 in the regions, 30,000 to 60,000 in Paris, 200 to 400 radical activists in Paris. Source: BFMTV, same link.
-- 5 Nov turnout: 575,000 (Interior ministry) vs 1.6 million (CGT). Last weekend: 106,000 to 200,000. Officer numbers for today not announced. Sources: La Dépêche, https://www.ladepeche.fr/2026/11/16/manifestation-du-17-novembre-greve-des-cheminots-ecoles-fermees-transports-perturbes-a-quoi-faut-il-sattendre-mardi-13654762.php ; Ouest-France, https://www.ouest-france.fr/societe/manifestation/direct-greve-du-17-novembre-la-prefecture-de-police-valide-le-parcours-de-la-manifestation-prevue-mardi-a-paris-487f544d-1657-44ee-9027-17c14b50b108
-- Toulouse: Alliance police union on a "grève du zèle" from 16 Nov over the risk bonus (ISSP to 33.5% over three years from April 2027); police march planned 26 Nov. Source: europesays (republishing local press), https://www.europesays.com/fr/1312697/
-- Paris préfecture banned gatherings around several lycées and universities. Source: Ouest-France, same link.
-- Why it matters (my opinion): police morale and pay are now the story, not kit. Parked thread, noted for when crowd control returns.
+1. Send the Powerhouse application today, in which shape? Pick: send through the residency form (https://powerhouse.engineering/residency-apply), after two fixes: paste paragraph 1, and replace the ships and forward sites line in paragraph 2 and the DM with the Artisan framing. As drafted it breaks your 17 Nov 21:28 rule. 30 min. Default if not sent by 08:00: it waits for Fri 21 Nov, nothing sent. Reversible.
+2. Step 1 sentence around skills on open arms. Pick: write it inside the same hour, because it is also line 2 of the application. 15 min. Default: the 3-pager's line "An AI factory worker you can set down anywhere" stands in. Reversible.
+3. Which Digest setup page. Pick: still C, B's questions on A's tested Worker. Default at 09:00: A stays, nothing deployed. Reversible.
+(Yesterday's top was the Digest setup page. Today's top is Powerhouse, which you chose.)
 
 ## Flags: conflicting dates and facts
-- Two HQ runs worked the same task (004) at once and produced two pages and two Workers. Wake-4 ran about 2 h 20 min against a 60 min budget. HQ proposes claiming a task before working; that change is yours.
-- Version A's example name in the first field is "Paul", one of the two beta readers.
-- BFMTV's headline says 40,000 to 80,000 in Paris; the article says it was revised down to 30,000 to 60,000.
-- D-017 lives in the queue file and the report, not yet in decisions.md. D-002 to D-007 still missing there.
+- powerhouse-message.md paragraph 2 and the DM still pitch ships, forward sites and the US Navy budget line. You banned that at 21:28; the 3-pager was fixed after (d03935b), the message was not.
+- Powerhouse money: my 17 Nov note said USD 10k prototyping, first check. Powerhouse's own page, read by HQ: the USD 10,000 package is for equity, USD 5,000 of parts they buy plus USD 5,000 engineering credits (40 hours). Not cash.
+- Channel: my journal says the Let's build form; HQ found a separate residency form and recommends it.
+- Name: message says Pocket Factory, 3-pager wordmark says ARTISAN, venture is R-T-SAN.
+- D-017 still not in decisions.md. D-002 to D-007 still missing there.
