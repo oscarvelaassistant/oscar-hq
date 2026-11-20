@@ -1,54 +1,57 @@
-# Innovator morning brief, Thursday 19 November 2026
+# Innovator morning brief, Friday 20 November 2026
 
-Written about 05:40 Madrid for page 2 of Oscar's Digest. Times Europe/Madrid.
+Written about 05:45 Madrid for page 2 of Oscar's Digest. Times Europe/Madrid. Quiet day: no new brainstorm items, decisions or venture commits since yesterday's brief.
 
 ## Where we are
-R-T-SAN is the venture; Artisan is the machine in the 3-pager: skills and factory process on open arms, no own hardware. The Powerhouse message is fixed under your no-ship rule but still lacks paragraph 1 and a name choice; the repo shows no send yesterday, so the written default applies: it waits for Fri 21 Nov. The Digest beta: you kept page A (18 Nov 10:18); what is left needs a box session with you present for the deploy yes.
+R-T-SAN is the venture: skills and factory process on open arms, no own hardware. Two applications are live: Powerhouse (send date Fri 21 Nov) and Entrepreneurs First Bridge, which you chose on 18 Nov (closes Mon 23 Nov, your target Sun 22 Nov). Both need the same missing piece: the "who I am" paragraph. The Digest beta waits on a box session with you present.
 
 ## Open questions
-- Which name goes on outside documents: R-T-SAN, Artisan, or both?
-- Paragraph 1 of the Powerhouse message (who I am) is still a placeholder.
+- The "who I am" paragraph: still a placeholder in powerhouse-message.md. Write it once, use it for Powerhouse and EF.
 - Do the ARESA outside-work and IP clauses allow applying? Still unread.
+- Which name goes outside: R-T-SAN, Artisan, or both? Yesterday's default applies (3-pager names) unless you said otherwise.
 - What do Paul and Pietro each own? Due Tue 17 Nov, still open.
 - What counts as traction? Still unanswered.
 
 ## Roadmap progress
-Step 1 (one sentence: who buys first, what it makes) not written. Step 2 market map done; the one-line verdict was due Wed 18, not logged. Steps 3 (sim demo) and 4 (deck) not started. Step 5 outreach started early through Powerhouse, your call.
+Step 1 (one sentence: who buys first, what it makes) not written. Step 2 market map done, one-line verdict still not logged (due Wed 18). Steps 3 (sim demo) and 4 (deck) not started. Step 5 outreach started early through Powerhouse and EF, your call.
 
 ## Done since yesterday
-- You kept setup page A (Digest beta); validator and PDF renderer moved to it, copy limits measured, 16 tests pass (reports/2026-11-18-wake.md, 8e331c0).
-- Powerhouse paragraph 2 and the X DM rewritten under the no-ship rule (a69da45).
-- Funding lists merged: /workspace/out/pocket-factory-funding-all-2026-11-17.md.
-- Brainstorm: the AI trading article went to the TradingBots project, not an oscar-hq thread (aca59ce).
+- Nothing new from you in the repo. brainstorm.md has no 19 Nov entries.
+- HQ runs: morning and evening ran clean. Midday's push was refused (403); the evening run recovered its report from the HUB (ff1e3a0).
 
 ## Threads in play
 | Thread | State | Next | Source |
 |---|---|---|---|
-| Name and step 1 line | Not decided | Decision 1, 15 min | roadmap.md, powerhouse-message.md |
-| Powerhouse application | Ready except paragraph 1 and name | Decision 2, by Fri 21 | powerhouse-message.md |
-| ARESA clauses | Unread | Before any send | roadmap.md |
-| Digest setup page | Page A kept; tests, writer, deploy left | Decision 3 | reports/2026-11-18-wake.md |
-| Funding list | Merged | Pick which to apply to after Powerhouse | /workspace/out |
-| Paul and Pietro roles | Overdue since Tue 17 | Two lines | decisions.md D-016 |
+| EF Bridge application | Started 18 Nov, saved | Decision 1, finish by Sun 22 | my journal 18 Nov, apply.joinef.com |
+| EF European Founders | Started, saved | After Bridge | my journal 18 Nov |
+| Powerhouse | Ready except paragraph 1 | Decision 2, send Fri 21 | powerhouse-message.md |
+| ARESA clauses | Unread | 20 min before any send | roadmap.md |
+| Name and step 1 line | Default applied | Revisit with the deck | brief 19 Nov |
+| Paul and Pietro roles | Overdue since Tue 17 | Decision 3 | decisions.md D-016 |
+| Digest setup page | Page A kept; tests, writer, deploy left | Box session with you | reports/2026-11-19-evening.md |
+| Funding list | Merged | Pick next after EF | /workspace/out/pocket-factory-funding-all-2026-11-17.md |
 | Market map verdict | Overdue since Wed 18 | One line | brief 16 Nov |
-| R-T-SAN 3-pager | Done | Attach if the form allows | illustrated/ |
 | Crowd control | Untouched since 13 Nov | Parked in practice | decisions.md D-011 |
 
 ## Tasks and due dates
-- Today 07:00 to 08:00: morning hour. Decision 1, then ARESA clause read.
+- Today 07:00 to 08:00: morning hour.
+- Today 09:00: reminder, feedback to Nico on Project Quest.
 - Today: HQ runs 09:00, 12:00, 21:00.
-- Fri 20 Nov 09:00: reminder, feedback to Nico on Project Quest.
-- Fri 21 Nov: Powerhouse send date. Default if not sent: no application, revisit Mon 1 Dec (powerhouse-application.md line 42).
+- Fri 21 Nov: Powerhouse send. Default if not sent: no application, revisit Mon 1 Dec.
+- Sun 22 Nov: your EF Bridge target. Mon 23 Nov: EF Bridge closes.
 - Overdue: Paul and Pietro roles (17 Nov), market map verdict (18 Nov).
 
 ## Decisions for today (Oscar picks the focus)
-1. Which name and one line go on everything outside? Pick: R-T-SAN is the company, Artisan is the machine, and you write the step 1 sentence now around skills on open arms. It feeds the Powerhouse message and the deck. 15 min in the morning hour. Default by 08:00: names as in the 3-pager, its line "An AI factory worker you can set down anywhere" stands in. Reversible.
-2. Powerhouse: send Fri 21 or let it lapse to Mon 1 Dec? Pick: send Fri 21, after you read the ARESA clause today (20 min) and paste paragraph 1. It is equity, not cash, and you send it yourself. Default if not sent Fri 21: no application, revisit Mon 1 Dec. Reversible.
-3. Digest setup page: book the box session? Pick: yes, one 45 min session with you present for the deploy yes, Fri 20 Nov 19:00. Also cap names at 24 characters so the masthead never breaks. Default: Digest waits, nothing deployed, revisit Mon 23 Nov. Reversible.
+1. Morning hour on EF Bridge? Pick: yes. Write the "who I am" paragraph once (20 min), paste it into EF Bridge and Powerhouse, then fill the rest of EF from Powerhouse paragraphs 2 and 3 (40 min). One paragraph unblocks two applications. Default if not done today: EF moves to Sat 21 or Sun 22, nothing submitted. Reversible.
+2. Powerhouse: send tomorrow, Fri 21? Pick: yes, after the ARESA clause read (20 min, today after work). Equity, not cash, and you send it yourself. Default if not sent Fri 21: no application, revisit Mon 1 Dec. Reversible.
+3. Paul and Pietro roles: write them or drop the deadline? Pick: write two lines today, 10 min. Without them the Digest beta has no owner for distribution, which was your reason to keep it. Default: Digest stays paused, revisit Mon 23 Nov. Reversible.
+
+## Market note (quiet day, France first)
+- Tue 17 Nov: unions called a nationwide public sector strike; tens of thousands marched across France for pay rises, after high school protests widened into a cost-of-living push. Public workers number about 5.8 million (X News, https://x.com/i/trending/2122760165401493673). No crowd-control figures (deployments, arrests) found in that source.
 
 ## Flags
-- Powerhouse: your 17 Nov call was to send Wed 18. The repo shows no send and no paragraph 1. The Fri 21 fallback now applies.
-- HQ midday run blocked for the second day in a row (17 and 18 Nov): repo unreachable, session token invalid (reports/2026-11-18-midday.md). Morning and evening runs work.
-- Setup page accepts 40-character names, the PDF masthead cuts at 24 (reports/2026-11-18-wake.md).
-- parked.md revisit dates are still 7 Nov 2026, twelve days stale.
+- Yesterday's brief missed your EF Bridge decision of 18 Nov. It is in my journal, not in the repo (decisions.md has no EF line).
+- Powerhouse: your 17 Nov call was to send Wed 18. Still no send in the repo; the Fri 21 fallback holds.
+- HQ midday push refused for the third day running (17, 18, 19 Nov).
+- parked.md revisit dates still 7 Nov 2026, thirteen days stale.
 - Powerhouse message still says Pocket Factory; 3-pager says Artisan; venture is R-T-SAN.
