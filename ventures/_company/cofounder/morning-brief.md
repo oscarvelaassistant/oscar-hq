@@ -1,9 +1,9 @@
 # Innovator morning brief, Wednesday 25 November 2026
 
-Written about 05:35 Madrid for page 2 of Oscar's Digest. Times Europe/Madrid. Covers Tue 24 Nov brief to now.
+Written about 05:35 Madrid, then updated 05:40 Madrid to include the 24 Nov evening deploy. Times Europe/Madrid. Covers Tue 24 Nov brief to now.
 
 ## Where we are
-R-T-SAN is still the venture on paper. Yesterday your time went to PersonalPress (DailyDigest renamed): rename, value prop, voice pick and a website MVP plan. Emergent Ventures hits its default tonight at 21:00. The "who I am" paragraph is still missing, now eight days.
+R-T-SAN is still the venture on paper. Yesterday your time went to PersonalPress (DailyDigest renamed): rename, value prop, voice pick, and a website MVP now live on Cloudflare's free tier at personalpress.oscarbonnefon.workers.dev. Nothing spent. Emergent Ventures hits its default tonight at 21:00. The "who I am" paragraph is still missing, now eight days.
 
 ## Open questions
 - HQ task 004 (the old DailyDigest setup page): keep it or close it for the PersonalPress build? Asked by HQ two evenings running (reports 23 and 24 Nov).
@@ -17,14 +17,15 @@ Step 1 (one sentence: who buys first, what it makes) not written. Step 2 market 
 
 ## Done since yesterday's brief
 - Tue 24 Nov 12:29: PersonalPress rename, value prop and formats logged in brainstorm.md (ab2501a).
-- Tue 24 Nov 15:51: PersonalPress MVP website build plan logged (ba343e5); plan at /workspace/out/personalpress-mvp-build-plan-2026-11-24.md. Nothing deployed, nothing spent.
+- Tue 24 Nov 15:51: PersonalPress MVP website build plan logged (ba343e5); plan at /workspace/out/personalpress-mvp-build-plan-2026-11-24.md.
 - Tue 24 Nov: two Innovator decisions, both PersonalPress: voice pick ElevenLabs v4 Turbo through its Startup Grant (you read the grant page yourself Wed 25), and a website MVP on Cloudflare's free tier (HQ evening report, fc5cb81).
+- Tue 24 evening: private Origin repo vela-dev/PersonalPress published; site live at personalpress.oscarbonnefon.workers.dev with D1 (EU), hourly cron, and Google OAuth in testing mode (gmail.readonly). Invite sign-up and login work in EN, FR, ES and IT (redeployed 20:16). Nothing spent. R2 is off (it needs a card); audio uploads return that audio storage is not configured.
 - HQ runs Tue 24: morning and evening clean, midday push refused again, recovered from the HUB (d1de468, fc5cb81).
 
 ## Threads in play
 | Thread | State | Next | Source |
 |---|---|---|---|
-| PersonalPress MVP | Plan written, nothing built | Decision 1 | brainstorm.md 24 Nov 15:50 |
+| PersonalPress MVP | Live on workers.dev, invite sign-up working | Decision 1 | deploy 24 Nov evening |
 | PersonalPress voice | ElevenLabs grant, page unread | Decision 3, today | HQ report 24 Nov evening |
 | HQ task 004 | Untouched, waits on your word | Decision 1 | HQ report 24 Nov evening |
 | Emergent Ventures | Not written, default tonight 21:00 | Decision 2 | brief 24 Nov |
@@ -62,7 +63,8 @@ The "who I am" paragraph has blocked sends eight days: Powerhouse (Wed 18, Sat 2
 
 ## Flags
 - PersonalPress backend conflict: the 24 Nov 15:50 plan has Claude Sonnet 5.5 via the Claude API writing each issue; your later approval (24 Nov, my memory) is a mechanical-turk backend on your own Claude subscription, with the Claude API optional and off.
-- PersonalPress host conflict: the plan says press.projetrefonte.com; a test site already exists at personalpress.oscarbonnefon.workers.dev (my memory, 24 Nov).
+- PersonalPress host: the plan says press.projetrefonte.com; the live test site is personalpress.oscarbonnefon.workers.dev (deployed 24 Nov evening). A custom domain is still open.
+- Friends must be added as Google test users before Gmail connect works for them (OAuth is in Testing mode).
 - PersonalPress app stores: the 12:27 brainstorm line says build for App Store and Google Play; the 15:50 plan says website only, app stores wait.
 - decisions.md has no line for EF Bridge, Emergent Ventures, or the PersonalPress rename and MVP.
 - HQ midday push refused eight days running (17 to 24 Nov). Fix is on your side in claude.ai.
