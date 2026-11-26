@@ -1,72 +1,70 @@
-# Innovator morning brief, Wednesday 25 November 2026
+# Innovator morning brief, Thursday 26 November 2026
 
-Written about 05:35 Madrid, then updated 05:40 Madrid to include the 24 Nov evening deploy. Times Europe/Madrid. Covers Tue 24 Nov brief to now.
+Written about 05:35 Madrid. Times Europe/Madrid. Covers Wed 25 Nov brief to now.
 
 ## Where we are
-R-T-SAN is still the venture on paper. Yesterday your time went to PersonalPress (DailyDigest renamed): rename, value prop, voice pick, and a website MVP now live on Cloudflare's free tier at personalpress.oscarbonnefon.workers.dev. Nothing spent. Emergent Ventures hits its default tonight at 21:00. The "who I am" paragraph is still missing, now eight days.
+R-T-SAN is still the venture on paper. PersonalPress is where your hours go: the test site is live on Cloudflare's free tier, the old setup page task is closed, and HQ has nothing queued for it. Nothing spent. Emergent Ventures passed its default last night at 21:00; whether you sent it is not recorded, so it revisits Sun 29. The "who I am" paragraph is still missing, nine days now.
 
 ## Open questions
-- HQ task 004 (the old DailyDigest setup page): keep it or close it for the PersonalPress build? Asked by HQ two evenings running (reports 23 and 24 Nov).
-- PersonalPress backend: Claude API, or the mechanical-turk run on your own Claude subscription? The repo plan and your approval disagree (see Flags).
-- What do Paul and Pietro each own? Open since Tue 17 Nov. The 24 Nov brainstorm line now gives them the product definition.
+- Did Emergent Ventures go in last night? Not recorded anywhere I can read.
 - Did EF Bridge go in on Mon 23? Still unrecorded.
-- Do the ARESA outside-work and IP clauses allow applying? Still unread.
+- Do you own projetrefonte.com? It decides whether the ElevenLabs grant's business email rule is met (your 10 min check from yesterday).
+- What do Paul and Pietro each own? Open since Tue 17 Nov.
+- Do the ARESA outside-work and IP clauses allow applying anywhere? Still unread.
 
 ## Roadmap progress
-Step 1 (one sentence: who buys first, what it makes) not written. Step 2 market map done, verdict not logged (due Wed 18). Steps 3 (sim demo) and 4 (deck) not started. Step 5 running early through applications, your call. PersonalPress runs beside the roadmap under the Digest beta decision of 16 Nov.
+Step 1 (one sentence: who buys first, what it makes) not written. Step 2 market map done, verdict not logged (due Wed 18). Steps 3 (sim demo) and 4 (deck) not started, and HQ notes neither has a queue task. Step 5 running early through applications, your call. PersonalPress runs beside the roadmap under the Digest beta decision of 16 Nov.
 
 ## Done since yesterday's brief
-- Tue 24 Nov 12:29: PersonalPress rename, value prop and formats logged in brainstorm.md (ab2501a).
-- Tue 24 Nov 15:51: PersonalPress MVP website build plan logged (ba343e5); plan at /workspace/out/personalpress-mvp-build-plan-2026-11-24.md.
-- Tue 24 Nov: two Innovator decisions, both PersonalPress: voice pick ElevenLabs v4 Turbo through its Startup Grant (you read the grant page yourself Wed 25), and a website MVP on Cloudflare's free tier (HQ evening report, fc5cb81).
-- Tue 24 evening: private Origin repo vela-dev/PersonalPress published; site live at personalpress.oscarbonnefon.workers.dev with D1 (EU), hourly cron, and Google OAuth in testing mode (gmail.readonly). Invite sign-up and login work in EN, FR, ES and IT (redeployed 20:16). Nothing spent. R2 is off (it needs a card); audio uploads return that audio storage is not configured.
-- HQ runs Tue 24: morning and evening clean, midday push refused again, recovered from the HUB (d1de468, fc5cb81).
+- Wed 25 Nov 09:44: HQ task 004 (old DailyDigest setup page) closed as dropped on your word; the PersonalPress Cloudflare build replaces it (9bf1700).
+- Wed 25 Nov: ElevenLabs Startup Grant read. Rules: no incorporation needed; 12 months free and 33M characters; under 25 employees, a business email, a long-term product with a plan to make money; one application per company; answer within a week (source: https://elevenlabs.io/startup-grants). My pick in chat: apply once the email is sorted.
+- Wed 25 Nov: backend question (Claude API or your own subscription) parked to Mon 1 Dec in chat.
+- HQ runs Wed 25: morning and evening clean, midday push refused again, recovered by the evening run (630d21f, 62649b4). Queue empty.
 
 ## Threads in play
 | Thread | State | Next | Source |
 |---|---|---|---|
-| PersonalPress MVP | Live on workers.dev, invite sign-up working | Decision 1 | deploy 24 Nov evening |
-| PersonalPress voice | ElevenLabs grant, page unread | Decision 3, today | HQ report 24 Nov evening |
-| HQ task 004 | Untouched, waits on your word | Decision 1 | HQ report 24 Nov evening |
-| Emergent Ventures | Not written, default tonight 21:00 | Decision 2 | brief 24 Nov |
-| "Who I am" paragraph | Placeholder | Feeds EV, Powerhouse, EF | powerhouse-message.md |
+| PersonalPress build | Site live, HQ queue empty | Decision 1 | HQ report 25 Nov evening |
+| PersonalPress voice | Grant rules read | Decision 3 | Innovator chat 25 Nov |
+| PersonalPress backend | Parked | Mon 1 Dec | Innovator chat 25 Nov |
+| "Who I am" paragraph | Placeholder, day nine | Decision 2 | powerhouse-message.md |
+| Emergent Ventures | Default passed 21:00 Wed | Sun 29 Nov | brief 25 Nov |
 | EF Bridge | Closed Mon 23, outcome unknown | Confirm | brief 23 Nov |
 | ARESA clauses | Unread | Before any send | roadmap.md |
-| Antler ONE Berlin | Video rule unconfirmed | Revisit Mon 30 Nov | HUB note 22 Nov |
-| Powerhouse | Not sent | Revisit Mon 1 Dec | HQ report 24 Nov evening |
+| Antler ONE Berlin | Video rule unconfirmed | Mon 30 Nov | HUB note 22 Nov |
+| Powerhouse | Not sent | Mon 1 Dec | HQ report 24 Nov evening |
 | Paul and Pietro roles | Overdue since Tue 17 | Mon 1 Dec | decisions.md D-016 |
 | Market map verdict | Overdue since Wed 18 | One line | brief 16 Nov |
 | Crowd control | Parked since 13 Nov | Market note below | decisions.md D-011 |
 
 ## Tasks and due dates
 - Today 07:00 to 08:00: morning hour.
-- Today: read the ElevenLabs Startup Grant page yourself (your pick, 24 Nov).
-- Today 21:00: Emergent Ventures default (not sent means revisit Sun 29).
+- Today: check whether you own projetrefonte.com, 10 min (your next action from 25 Nov).
 - Today: HQ runs (logged around 09:10, 12:05 and 21:05).
-- Mon 30 Nov: Antler video check. Mon 1 Dec: Powerhouse revisit, Paul and Pietro roles, voice re-decide if the grant is not done.
+- Sun 29 Nov: Emergent Ventures revisit. Mon 30 Nov: Antler video check. Mon 1 Dec: Powerhouse, Paul and Pietro roles, backend and voice re-decide.
 - Overdue: Paul and Pietro roles (17 Nov), market map verdict (18 Nov).
 
 ## Decisions for today (Oscar picks the focus)
-1. HQ task 004: close it in favour of the PersonalPress build? Pick: yes, close it. One line in a for-claude note, 5 min this morning. The old setup page and the new Cloudflare site are the same job twice, and HQ has asked two evenings in a row. Default: 004 stays open and untouched. Reversible.
-2. Emergent Ventures: let tonight's default run? Pick: yes, let EV slide to Sun 29, but write only the "who I am" paragraph today, 20 min, any time before 21:00. That paragraph is the real blocker for EV, Powerhouse and EF. Default: EV revisits Sun 29, paragraph still empty. Reversible.
-3. ElevenLabs Startup Grant: read the page today as planned? Pick: yes, 15 min, read only, no application until the backend question in Flags is settled. Default: voice re-decided Mon 1 Dec. Reversible.
+1. Give HQ its first PersonalPress task? HQ ran idle twice yesterday waiting for one. Pick: yes, one for-claude note, 10 min: "the live site produces one text issue for Oscar, no API spend". That fits the subscription path you approved and does not need the parked backend fork settled. Default: HQ stays idle until Mon 1 Dec. Reversible.
+2. Write the "who I am" paragraph today? Pick: yes, 20 min, before 21:00, nothing else. It blocks EV (Sun 29), Powerhouse (Mon 1 Dec) and any EF follow-up. Default: it stays empty and Sun 29 starts from zero. Reversible.
+3. ElevenLabs grant: check projetrefonte.com today? Pick: yes, 10 min, check only, no application. Default: free plan, voice re-decided Mon 1 Dec. Reversible.
 
 ## Pattern
-The "who I am" paragraph has blocked sends eight days: Powerhouse (Wed 18, Sat 21), EF Bridge (Sun 22, Mon 23), EV (Tue 24, tonight). Second pattern, my read: a new product thread pulled the day again on Tue 24, as Pocket Factory did on 13 Nov.
+The "who I am" paragraph has blocked sends nine days: Powerhouse (Wed 18, Sat 21), EF Bridge (Sun 22, Mon 23), EV (Tue 24, Wed 25). It was decision 2 yesterday too, so this is its second morning on the list, not the top item.
 
 ## Market note (France first)
-- France: no new street item in the last 60 hours on X News. Last one: Sat 21 Nov, sixth weekend of cost-of-living protests, organisers 150,000, officials 82,500 (X News, https://x.com/i/trending/2124188303234900408).
-- Belgium, Mon 23 Nov: 50,000 to 70,000 marched against austerity; tear gas and water cannon near Midi station after clashes (X News, https://x.com/i/trending/2124869179840876785).
-- UK, Sun 22 Nov: an unknown substance released at a Don Toliver concert at Co-op Live, Manchester, caused breathing problems and eye irritation for 89 people; Greater Manchester Police testing it (X News, https://x.com/i/trending/2125366077085663716).
-- US, Fri 20 Nov: agents broke a car window with a baton during a detention outside the Santa Clarita Valley Sheriff's Station; bystanders report pepper spray (X News, https://x.com/i/trending/2125033018574455101).
-- My read: irritants are still the default tool, and Manchester shows how fast one hurts a crowd indoors. Opinion, not data.
+- France, Sat 21 Nov: sixth straight weekend of cost-of-living protests; projectiles at officers, vehicle fires, arrests and police charges in Paris, Marseille and Bordeaux (X News, https://x.com/i/trending/2124188303234900408). Nothing newer on the street in X News.
+- France, Wed 25 Nov: surprise strike by French Eurostar staff over pay; at least six trains to Paris and Brussels hit (X News, https://x.com/i/trending/2125559075320615382).
+- Europe, Mon 23 Nov: Dutch TTF gas futures up as much as 8.6% to EUR 96 per MWh, EU storage at 69%, 10 to 15 points below typical late November (X News, https://x.com/i/trending/2124816807978549624). My read, opinion not data: heating bills feed the cost-of-living marches into December.
+- UK, Sun 22 Nov: the Co-op Live substance incident in Manchester led to 12,000 people evacuated, one hospitalised, dozens treated for eye and breathing issues; the venue now locks phones in pouches for its next show (X News, https://x.com/i/trending/2125366077085663716).
+- UK, Tue 24 Nov: Police Scotland charged 13 people for supporting proscribed Palestine Action at a peaceful 31 Oct Edinburgh protest, weeks after the event (X News, https://x.com/i/trending/2125278776095375369).
 
 ## Flags
-- PersonalPress backend conflict: the 24 Nov 15:50 plan has Claude Sonnet 5.5 via the Claude API writing each issue; your later approval (24 Nov, my memory) is a mechanical-turk backend on your own Claude subscription, with the Claude API optional and off.
-- PersonalPress host: the plan says press.projetrefonte.com; the live test site is personalpress.oscarbonnefon.workers.dev (deployed 24 Nov evening). A custom domain is still open.
-- Friends must be added as Google test users before Gmail connect works for them (OAuth is in Testing mode).
-- PersonalPress app stores: the 12:27 brainstorm line says build for App Store and Google Play; the 15:50 plan says website only, app stores wait.
-- decisions.md has no line for EF Bridge, Emergent Ventures, or the PersonalPress rename and MVP.
-- HQ midday push refused eight days running (17 to 24 Nov). Fix is on your side in claude.ai.
-- parked.md revisit dates still 7 Nov, eighteen days stale.
+- Manchester figures: yesterday's brief said 89 people had breathing problems; today's X News update says 12,000 evacuated, one hospitalised, dozens treated. Same story, the newer source wins.
+- HQ midday count: my briefs counted the midday push refused eight days running from 17 Nov (now nine to 25 Nov); HQ's 25 Nov evening report says four in a row (22 to 25 Nov). One of the two counts is wrong.
+- HQ's wake report of 25 Nov is not in the HUB yet; HQ says Vela saves it.
+- PersonalPress host: plan says press.projetrefonte.com; live test site is personalpress.oscarbonnefon.workers.dev.
+- PersonalPress app stores: the 24 Nov 12:27 brainstorm line says App Store and Google Play; the 15:50 plan says website only.
+- decisions.md has no line for EF Bridge, Emergent Ventures, the PersonalPress rename and MVP, the voice pick, or closing task 004.
+- parked.md revisit dates still 7 Nov, nineteen days stale.
 - Names: roadmap.md and powerhouse-message.md say Pocket Factory; the venture is R-T-SAN.
