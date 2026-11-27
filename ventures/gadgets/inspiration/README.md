@@ -14,7 +14,7 @@ Images: 29 of 29. Each is the first photo of the post, or the first frame of its
 
 - What: Artificial-life simulation on a 60 Hz e-ink display; the ghosting and trails give fluid-looking motion. Image is the video's first frame.
 - Link: https://x.com/hturan/status/2125609297895903294
-- Source: DM, sent by Fionn, 25 Nov Nov 2026
+- Source: DM, sent by Fionn, 25 Nov 2026
 
 ## Desk gadgets
 
@@ -24,7 +24,7 @@ Images: 29 of 29. Each is the first photo of the post, or the first frame of its
 
 - What: Pixel, an open-frame 3D-printed PC case, called gorgeous by the author.
 - Link: https://x.com/andreintg/status/2125946257852285039
-- Source: like; DM, sent by Oscar, 26 Nov Nov 2026
+- Source: like; DM, sent by Oscar, 26 Nov 2026
 - Comment: "Another example all of these are made for tech Brose the market of the people is wide-open"
 
 ### @kieranklaassen
@@ -33,7 +33,7 @@ Images: 29 of 29. Each is the first photo of the post, or the first frame of its
 
 - What: LLMs used with thermal printers for planning; the photo shows printed paper slips.
 - Link: https://x.com/kieranklaassen/status/2125649169138528553
-- Source: DM, sent by Oscar, 26 Nov Nov 2026
+- Source: DM, sent by Oscar, 26 Nov 2026
 - Comment: "gadjet #45"
 
 ### @inanimate_tech
@@ -42,7 +42,7 @@ Images: 29 of 29. Each is the first photo of the post, or the first frame of its
 
 - What: WORKS '26: five promptable AI devices you can order, controlled by gesture and voice. Image is the video's first frame.
 - Link: https://x.com/inanimate_tech/status/2125257053341966427
-- Source: DM, sent by Fionn, 25 Nov Nov 2026
+- Source: DM, sent by Fionn, 25 Nov 2026
 - Comment: Comment from Fionn: Bro what about some ting like this for you e ink stuff
 
 ### @oliviscusAI
@@ -51,7 +51,7 @@ Images: 29 of 29. Each is the first photo of the post, or the first frame of its
 
 - What: reBot-DevArm from Seeed Studio, an open-source robotic arm you can legally build and sell. Image is the video's first frame.
 - Link: https://x.com/oliviscusAI/status/2122686374998655392
-- Source: like, 17 Nov Nov 2026
+- Source: like, 17 Nov 2026
 
 ### @RaemondBW
 
@@ -59,7 +59,7 @@ Images: 29 of 29. Each is the first photo of the post, or the first frame of its
 
 - What: Two hardware projects: a USB power analyzer, and a replacement PCB that adds AirPlay to an IKEA speaker. Image shows the PCB.
 - Link: https://x.com/RaemondBW/status/2117773168807166443
-- Source: DM, sent by Fionn, 4 Nov Nov 2026
+- Source: DM, sent by Fionn, 4 Nov 2026
 
 ### @luusssso
 
@@ -77,7 +77,7 @@ Images: 29 of 29. Each is the first photo of the post, or the first frame of its
 
 - What: Tom Booth illustrations from the woodcutter series: a man carving the same woman's likeness as he ages.
 - Link: https://x.com/pmamtraveller/status/2124808965351682185
-- Source: like, 23 Nov Nov 2026
+- Source: like, 23 Nov 2026
 
 ### @pmamtraveller
 
@@ -85,7 +85,7 @@ Images: 29 of 29. Each is the first photo of the post, or the first frame of its
 
 - What: "His Grace" by Natalia Tolmacheva.
 - Link: https://x.com/pmamtraveller/status/2124365500000153752
-- Source: like, 22 Nov Nov 2026
+- Source: like, 22 Nov 2026
 
 ### @Denismourir1000
 
@@ -93,7 +93,7 @@ Images: 29 of 29. Each is the first photo of the post, or the first frame of its
 
 - What: Antique European art and illustrations.
 - Link: https://x.com/Denismourir1000/status/2124263578261700815
-- Source: like and bookmark, 21 Nov Nov 2026
+- Source: like and bookmark, 21 Nov 2026
 
 ### @pmamtraveller
 
@@ -101,7 +101,7 @@ Images: 29 of 29. Each is the first photo of the post, or the first frame of its
 
 - What: "Chevaliere (Female Knight)", a 2004 painting by French hyperrealist Hubert de Lartigue.
 - Link: https://x.com/pmamtraveller/status/2121998102206754958
-- Source: like, 15 Nov Nov 2026
+- Source: like, 15 Nov 2026
 
 ### @_GVNTHER_
 
@@ -119,7 +119,7 @@ Images: 29 of 29. Each is the first photo of the post, or the first frame of its
 
 - What: Oracle Shelf, an "intelligent bookcase" that spots book spines and lights up the books that answer a spoken question. Image is the video's first frame.
 - Link: https://x.com/modem_works/status/2125588103276720393
-- Source: DM, sent by Oscar, 25 Nov Nov 2026
+- Source: DM, sent by Oscar, 25 Nov 2026
 - Comment: "it's litearlly the game, buy some cheapass hardware from china and add a vibecoded app, ppl will buy uit"
 
 ### @yitong
@@ -128,7 +128,7 @@ Images: 29 of 29. Each is the first photo of the post, or the first frame of its
 
 - What: Furniture-making tip: turn a design into a CNC-ready file for a local shop, shown on a Donald Judd-style table in Baltic birch. Image is the video's first frame.
 - Link: https://x.com/yitong/status/2116952646406041615
-- Source: DM, sent by Fionn, 2 Nov Nov 2026
+- Source: DM, sent by Fionn, 2 Nov 2026
 
 ## Art objects
 
@@ -138,7 +138,7 @@ Images: 29 of 29. Each is the first photo of the post, or the first frame of its
 
 - What: "Each Bird Needs Freedom", a doll made around 2013 by Lithuanian dollmaker Dorote Zaukaite.
 - Link: https://x.com/pmamtraveller/status/2124080717508587904
-- Source: like, 21 Nov Nov 2026
+- Source: like, 21 Nov 2026
 
 ### @pmamtraveller
 
@@ -146,7 +146,7 @@ Images: 29 of 29. Each is the first photo of the post, or the first frame of its
 
 - What: Corsican vendetta knife with floral detail on the handle.
 - Link: https://x.com/pmamtraveller/status/2124079010317508699
-- Source: like, 21 Nov Nov 2026
+- Source: like, 21 Nov 2026
 
 ### @pmamtraveller
 
@@ -154,7 +154,7 @@ Images: 29 of 29. Each is the first photo of the post, or the first frame of its
 
 - What: Ceramic pieces designed by artist Gab Bois (an ashtray with blue mosaic tiles in the photo).
 - Link: https://x.com/pmamtraveller/status/2123854155856880066
-- Source: like; DM, sent by Oscar, 20 Nov Nov 2026
+- Source: like; DM, sent by Oscar, 20 Nov 2026
 - Comment: "Man I love ceramics"
 
 ### @wana_visualss
@@ -163,7 +163,7 @@ Images: 29 of 29. Each is the first photo of the post, or the first frame of its
 
 - What: Statue of Queen Zenobia in the Mediterranean Sea, Latakia, Syria.
 - Link: https://x.com/wana_visualss/status/2123544537419194476
-- Source: like, 19 Nov Nov 2026
+- Source: like, 19 Nov 2026
 
 ### @pmamtraveller
 
@@ -171,7 +171,7 @@ Images: 29 of 29. Each is the first photo of the post, or the first frame of its
 
 - What: Bronze sculptures by Scottish sculptor Philip Jackson: cloaked figures in wide hats or hoods with small gilded masks.
 - Link: https://x.com/pmamtraveller/status/2122938259906994637
-- Source: like, 18 Nov Nov 2026
+- Source: like, 18 Nov 2026
 
 ### @pmamtraveller
 
@@ -179,7 +179,7 @@ Images: 29 of 29. Each is the first photo of the post, or the first frame of its
 
 - What: "Le Roi (The King)" by sculptor Arsen Avetissian.
 - Link: https://x.com/pmamtraveller/status/2121669740770849167
-- Source: like and bookmark, 14 Nov Nov 2026
+- Source: like and bookmark, 14 Nov 2026
 
 ### @artinsociety
 
@@ -187,7 +187,7 @@ Images: 29 of 29. Each is the first photo of the post, or the first frame of its
 
 - What: 2,300-year-old bronze head of Thracian king Seuthes III with alabaster and glass-paste eyes (National Museum of Archaeology, Sofia).
 - Link: https://x.com/artinsociety/status/2119704977648365754
-- Source: like, 9 Nov Nov 2026
+- Source: like, 9 Nov 2026
 
 ### @g3p_graph
 
@@ -210,7 +210,7 @@ None found. Observation: nothing about lighting appears in the likes, bookmarks 
 
 - What: Unusual 3D printing, captioned "not your average 3d printing" (a black printed bowl in the photo). Image is the video's first frame.
 - Link: https://x.com/womp3D/status/2125998015592726811
-- Source: DM, sent by Oscar, 27 Nov Nov 2026
+- Source: DM, sent by Oscar, 27 Nov 2026
 
 ### @SciFiArchives
 
@@ -218,7 +218,7 @@ None found. Observation: nothing about lighting appears in the likes, bookmarks 
 
 - What: TUNE X3 headphones by Pressec Design, a retrofuturistic concept inspired by vintage studio equipment.
 - Link: https://x.com/SciFiArchives/status/2123010578616659969
-- Source: DM, sent by Fionn, 18 Nov Nov 2026
+- Source: DM, sent by Fionn, 18 Nov 2026
 - Comment: Fionn: Gorgeous design. Oscar: like unironically bro
 
 ### @pmamtraveller
@@ -227,7 +227,7 @@ None found. Observation: nothing about lighting appears in the likes, bookmarks 
 
 - What: Concept artworks by Safdar Ali Mirza: creature heads designed after axes and hand tools.
 - Link: https://x.com/pmamtraveller/status/2122893427323056464
-- Source: like, 18 Nov Nov 2026
+- Source: like, 18 Nov 2026
 
 ### @kevintwohy
 
@@ -235,7 +235,7 @@ None found. Observation: nothing about lighting appears in the likes, bookmarks 
 
 - What: Book on hardware prototyping and industrial and interaction design, showing the development of an iconic piece of consumer electronics. Image is a video frame or the book cover.
 - Link: https://x.com/kevintwohy/status/2121739170221789433
-- Source: like; DM, sent by Fionn, 14 Nov Nov 2026
+- Source: like; DM, sent by Fionn, 14 Nov 2026
 
 ### @MaxLobovsky
 
@@ -243,7 +243,7 @@ None found. Observation: nothing about lighting appears in the likes, bookmarks 
 
 - What: Vibe-designed water gun with transparent resin parts and printed elastomer valves and seals, made on a $700 printer. The image comes from the quoted original post (an AI-modeled water blaster in a printer), because this post itself had no media. Image is the video's first frame.
 - Link: https://x.com/MaxLobovsky/status/2121458552803914203
-- Source: DM, sent by Fionn, 14 Nov Nov 2026
+- Source: DM, sent by Fionn, 14 Nov 2026
 
 ### @guilhemlettron
 
