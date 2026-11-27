@@ -109,6 +109,19 @@ def box(x, y, w, h, title, sub=None, fill=PANEL, stroke=HAIR, accent=False, size
     return "".join(out)
 
 
+def note_lines(note, w, size=10):
+    """Wrap a chart note to the chart width (about 0.53 em per character at these sizes)."""
+    return wrap(note, max(20, int(w / (size * 0.53)))) if note else []
+
+
+def draw_note(out, note, w, h, size=10):
+    """Draw a wrapped note bottom-up from the chart's bottom edge; returns the height used."""
+    lines = note_lines(note, w, size)
+    for i, ln in enumerate(reversed(lines)):
+        out.append(txt(0, h - 4 - i * (size + 2), ln, size, MUTED))
+    return len(lines) * (size + 2) + 4 if lines else 0
+
+
 def fmt_num(v):
     if v >= 1e9:
         return f"{v/1e9:.1f}B".replace(".0B", "B")
@@ -143,7 +156,7 @@ def chart_line_log(w, h, series, y_ticks, x_ticks, title, unit_label, note=None,
     for xv, lab in x_ticks:
         out.append(txt(X(xv), py1 + 14, lab, 10, MUTED, "middle"))
     out.append(line(px0, py1, px1, py1, "#c3bfb4", 1))
-    out.append(txt(px0 - 6, py0 - 6, unit_label, 10, MUTED, "end"))
+    out.append(txt(0, py0 - 6, unit_label, 10, MUTED, "start"))
     for s in series:
         pts = sorted(s["pts"])
         d = " ".join(f"{'M' if i == 0 else 'L'} {X(x):.1f} {Y(y):.1f}" for i, (x, y, *_) in enumerate(pts))
@@ -151,9 +164,11 @@ def chart_line_log(w, h, series, y_ticks, x_ticks, title, unit_label, note=None,
         for x, y, *lab in pts:
             out.append(circle(X(x), Y(y), 4, s["color"], PAPER, 2))
             if lab and lab[0]:
-                out.append(txt(X(x) + 7, Y(y) - 7, lab[0], 10, INK2))
-    if note:
-        out.append(txt(0, h - 4, note, 10, MUTED))
+                if X(x) > px0 + 0.75 * (px1 - px0):
+                    out.append(txt(X(x) - 8, Y(y) - 9, lab[0], 10, INK2, "end"))
+                else:
+                    out.append(txt(X(x) + 7, Y(y) - 7, lab[0], 10, INK2))
+    draw_note(out, note, w, h)
     return svg(w, h, "".join(out))
 
 
@@ -179,8 +194,7 @@ def chart_bars(w, h, cats, vals, title, unit, color=ACCENT, highlight_last=False
         out.append(txt(x + bw / 2, y - 6, value_fmt(v), 10, INK2, "middle"))
         out.append(txt(x + bw / 2, py1 + 14, str(c), 10, MUTED, "middle"))
     out.append(line(px0, py1, px1, py1, "#c3bfb4", 1))
-    if note:
-        out.append(txt(0, h - 4, note, 10, MUTED))
+    draw_note(out, note, w, h)
     return svg(w, h, "".join(out))
 
 
@@ -189,22 +203,27 @@ def chart_funnel(w, h, steps, title, note=None):
     out = [txt(0, 12, title, 12, INK, weight=600)]
     n = len(steps)
     top = 26
-    rowh = (h - top - (16 if note else 4)) / n
-    vmax = steps[0][1]
-    lab_w = 250
+    nh = len(note_lines(note, w)) * 12 + 4 if note else 4
+    rowh = (h - top - nh) / n
+    vmax = max(v for _, v, _ in steps)
+    lab_w = 300
     bar_x0 = lab_w
-    bar_wmax = w - lab_w - 90
+    bar_wmax = w - lab_w - 52
+    sub_size = 9.5
     for i, (lab, v, sub) in enumerate(steps):
         y = top + i * rowh
         bw = max(6, bar_wmax * math.sqrt(v / vmax))
         col = ACCENT if i == n - 1 else (DARK_MARK if i == 0 else GREY_MARK)
         out.append(rect(bar_x0, y + 6, bw, rowh - 12, col, rx=3))
-        out.append(txt(bar_x0 - 10, y + rowh / 2 - 2, lab, 12, INK, "end", 600))
-        if sub:
-            out.append(txt(bar_x0 - 10, y + rowh / 2 + 12, sub, 10, MUTED, "end"))
+        subs = wrap(sub, int((lab_w - 12) / (sub_size * 0.53))) if sub else []
+        block = 14 + len(subs) * (sub_size + 2)
+        yy = y + rowh / 2 - block / 2 + 10
+        out.append(txt(bar_x0 - 10, yy, lab, 12, INK, "end", 600))
+        for s in subs:
+            yy += sub_size + 2.5
+            out.append(txt(bar_x0 - 10, yy, s, sub_size, MUTED, "end"))
         out.append(txt(bar_x0 + bw + 8, y + rowh / 2 + 4, fmt_num(v), 12, INK2, "start", 600))
-    if note:
-        out.append(txt(0, h - 4, note, 10, MUTED))
+    draw_note(out, note, w, h)
     return svg(w, h, "".join(out))
 
 
@@ -218,8 +237,8 @@ def chart_scatter_map(w, h, points, xlab, ylab, title, note=None):
            line(px0, (py0 + py1) / 2, px1, (py0 + py1) / 2, HAIR, 1)]
     out.append(txt(px0, py1 + 16, xlab[0], 10, MUTED, "start"))
     out.append(txt(px1, py1 + 16, xlab[1], 10, MUTED, "end"))
-    out.append(txt(px0 - 6, py1 - 2, ylab[0], 10, MUTED, "end", extra=f'transform="rotate(-90 {px0-6} {py1-2})"'))
-    out.append(txt(px0 - 6, py0 + 2, ylab[1], 10, MUTED, "start", extra=f'transform="rotate(-90 {px0-6} {py0+2})"'))
+    out.append(txt(px0 - 8, py1 - 2, ylab[0], 10, MUTED, "start", extra=f'transform="rotate(-90 {px0-8} {py1-2})"'))
+    out.append(txt(px0 - 8, py0 + 2, ylab[1], 10, MUTED, "end", extra=f'transform="rotate(-90 {px0-8} {py0+2})"'))
     for p in points:
         x = px0 + p["x"] * (px1 - px0)
         y = py1 - p["y"] * (py1 - py0)
@@ -239,14 +258,13 @@ def chart_scatter_map(w, h, points, xlab, ylab, title, note=None):
     out.append(circle(lx, ly, 5, GREY_MARK)); out.append(txt(lx + 10, ly + 4, "AI hardware", 10, INK2))
     out.append(rect(lx + 90 - 4.5, ly - 4.5, 9, 9, DARK_MARK, rx=2)); out.append(txt(lx + 100, ly + 4, "Display and e-ink products", 10, INK2))
     out.append(circle(lx + 262, ly, 5, ACCENT)); out.append(txt(lx + 272, ly + 4, "This venture", 10, INK2))
-    if note:
-        out.append(txt(0, h - 4, note, 10, MUTED))
+    draw_note(out, note, w, h)
     return svg(w, h, "".join(out))
 
 
 def chart_gantt(w, h, rows, months, title, today_idx=None, note=None):
     """rows: list of (label, start_month_idx(float), end_month_idx(float), state in {'done','next','later','gate'})."""
-    lab_w = 230
+    lab_w = 270
     px0, px1 = lab_w, w - 16
     top = 26
     header_h = 18
@@ -269,43 +287,42 @@ def chart_gantt(w, h, rows, months, title, today_idx=None, note=None):
         x = px0 + today_idx * mw
         out.append(line(x, top + header_h - 4, x, h - (16 if note else 4), ACCENT, 1.5, 'stroke-dasharray="3 3"'))
         out.append(txt(x + 4, top + header_h + 8, "today", 9, ACCENT))
-    # legend
-    lx = px0
-    ly = h - 6
-    if note:
-        out.append(txt(0, h - 4, note, 10, MUTED))
+    draw_note(out, note, w, h)
     return svg(w, h, "".join(out))
 
 
 def chart_stacked_hbar(w, h, title, total_label, segments, benchmarks=None, note=None):
     """One retail-price bar split into segments (label, share 0..1, color, placeholder bool). benchmarks: list of (label, share) marks on a margin scale."""
     out = [txt(0, 12, title, 12, INK, weight=600)]
-    bx0, bx1 = 10, w - 10
-    by, bh = 40, 46
+    bx0, bx1 = 4, w - 4
+    by, bh = 42, 30
     x = bx0
-    for lab, share, col, ph in segments:
+    for i, (lab, share, col, ph) in enumerate(segments):
         sw = (bx1 - bx0) * share
         out.append(rect(x + 1, by, sw - 2, bh, col, rx=3, extra=('stroke-dasharray="4 3"' if ph else ""), stroke=(INK2 if ph else "none")))
-        if sw > 60:
-            out.append(txt(x + sw / 2, by + bh / 2 + 4, lab, 11, "#ffffff" if col in (ACCENT, DARK_MARK) else INK, "middle", 600))
-        else:
-            out.append(txt(x + sw / 2, by + bh + 14, lab, 10, INK2, "middle"))
+        out.append(txt(x + sw / 2, by + bh / 2 + 4, f"{share*100:.0f}%", 10, "#ffffff" if col in (ACCENT, DARK_MARK) else INK2, "middle", 600))
+        # legend line under the bar: swatch plus label, one per segment
+        ly = by + bh + 14 + i * 13
+        out.append(rect(bx0, ly - 8, 9, 9, col, rx=2, stroke=(INK2 if ph else "none"), extra=('stroke-dasharray="3 2"' if ph else "")))
+        out.append(txt(bx0 + 14, ly, lab, 10, INK2))
         x += sw
-    out.append(txt(bx0, by - 8, total_label, 11, INK2))
+    out.append(txt(bx0, by - 8, total_label, 10.5, INK2))
     if benchmarks:
-        yb = by + bh + 44
-        out.append(txt(bx0, yb - 8, "Gross margin benchmarks, premium consumer hardware (latest fiscal year):", 11, INK2))
-        out.append(line(bx0, yb + 10, bx1, yb + 10, "#c3bfb4", 1))
-        for lab, share in benchmarks:
-            xx = bx0 + (bx1 - bx0) * share
-            out.append(circle(xx, yb + 10, 5, DARK_MARK, PAPER, 2))
-            out.append(txt(xx, yb + 30, lab, 10, INK2, "middle"))
-            out.append(txt(xx, yb + 42, f"{share*100:.0f}%", 10, MUTED, "middle"))
+        yb = by + bh + 14 + len(segments) * 13 + 22
+        out.append(txt(bx0, yb - 10, "Gross margin benchmarks, latest fiscal year", 10.5, INK2))
         for t in (0, 0.25, 0.5, 0.75):
             xx = bx0 + (bx1 - bx0) * t
-            out.append(txt(xx, yb - 20, f"{t*100:.0f}%", 9, MUTED, "middle"))
-    if note:
-        out.append(txt(0, h - 4, note, 10, MUTED))
+            out.append(txt(xx, yb + 4, f"{t*100:.0f}%", 8.5, MUTED, "middle" if t else "start"))
+        out.append(line(bx0, yb + 14, bx1, yb + 14, "#c3bfb4", 1))
+        for j, (lab, share, *opt) in enumerate(sorted(benchmarks, key=lambda b: b[1])):
+            anchor = opt[0] if opt else "middle"
+            row = opt[1] if len(opt) > 1 else j % 2
+            xx = bx0 + (bx1 - bx0) * share
+            out.append(circle(xx, yb + 14, 4.5, DARK_MARK, PAPER, 2))
+            out.append(line(xx, yb + 18, xx, yb + 24 + row * 12, HAIR, 1))
+            out.append(txt(xx + (4 if anchor == "start" else -4 if anchor == "end" else 0), yb + 34 + row * 12,
+                           f"{lab} {share*100:.0f}%", 9.5, INK2, anchor))
+    draw_note(out, note, w, h)
     return svg(w, h, "".join(out))
 
 
@@ -388,16 +405,19 @@ ul {{ padding-left: 18px; margin: 0; }}
 .accent {{ color: {ACCENT}; }}
 sup.fn {{ font-size: 9px; color: {ACCENT}; font-weight: 600; vertical-align: super; line-height: 0; margin-left: 1px; }}
 .cols {{ display: grid; gap: 36px; height: 100%; }}
-.c2 {{ grid-template-columns: 1fr 1fr; }}
-.c21 {{ grid-template-columns: 1.15fr 1fr; }}
-.c12 {{ grid-template-columns: 1fr 1.25fr; }}
-.c3 {{ grid-template-columns: 1fr 1fr 1fr; }}
+.cols > div {{ min-width: 0; }}
+.c2 {{ grid-template-columns: minmax(0,1fr) minmax(0,1fr); }}
+.c21 {{ grid-template-columns: minmax(0,1.15fr) minmax(0,1fr); }}
+.c12 {{ grid-template-columns: minmax(0,1fr) minmax(0,1.25fr); }}
+.c3 {{ grid-template-columns: minmax(0,1fr) minmax(0,1fr) minmax(0,1fr); }}
+.small li {{ font-size: 13px; line-height: 1.4; margin: 0 0 6px 0; }}
+.tiles4 {{ display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 12px; margin-top: 14px; }}
 .label {{ font-size: 11.5px; letter-spacing: .12em; text-transform: uppercase; color: {MUTED}; font-weight: 600; margin: 0 0 8px 0; }}
 .card {{ background: {PANEL}; border: 1px solid {HAIR}; border-radius: 8px; padding: 14px 16px; }}
 .card.ph {{ border-style: dashed; }}
 .tile {{ background: {PANEL}; border: 1px solid {HAIR}; border-radius: 8px; padding: 14px 16px 12px 16px; }}
 .tile .v {{ font-size: 34px; line-height: 1; margin: 2px 0 6px 0; letter-spacing: -.02em; color: {INK}; }}
-.tile .v.ph {{ color: {MUTED}; font-size: 22px; }}
+.tile .v.ph {{ color: {MUTED}; font-size: 17px; letter-spacing: 0; }}
 .tile .k {{ font-size: 11.5px; letter-spacing: .1em; text-transform: uppercase; color: {MUTED}; font-weight: 600; }}
 .tile .m {{ font-size: 12px; color: {INK2}; line-height: 1.4; }}
 table.t {{ border-collapse: collapse; width: 100%; font-size: 11px; line-height: 1.3; }}
@@ -405,6 +425,8 @@ table.t th {{ text-align: left; font-weight: 600; color: {MUTED}; font-size: 10p
 table.t td {{ padding: 4px 8px 4px 0; border-bottom: 1px solid {HAIR}; vertical-align: top; color: {INK}; }}
 table.t td.n {{ font-variant-numeric: tabular-nums; white-space: nowrap; }}
 table.t tr.us td {{ color: {ACCENT}; font-weight: 600; }}
+table.t.compact {{ font-size: 10.5px; line-height: 1.25; }}
+table.t.compact td {{ padding: 3px 6px 3px 0; }}
 .ph {{ color: {MUTED}; }}
 .badge {{ display: inline-block; font-size: 10px; letter-spacing: .08em; text-transform: uppercase; font-weight: 700; color: {ACCENT};
          border: 1px solid {ACCENT}; border-radius: 3px; padding: 2px 6px; vertical-align: middle; margin-left: 6px; }}
@@ -528,16 +550,16 @@ def s_problem():
         title="Cheapest price to run a GPT-4-class model, USD per million tokens (log scale)",
         unit_label="USD / 1M tokens",
         note="Epoch AI series [46]; about 208x cheaper in two years (our arithmetic). a16z: cost falls about 10x a year at equal capability [47].")
-    eink = chart_bars(270, 190, ["2023", "2024", "2025"], [27.1, 32.2, 36.1],
+    eink = chart_bars(220, 190, ["2023", "2024", "2025"], [27.1, 32.2, 36.1],
                       title="E Ink Holdings revenue, NT$ bn", unit="NT$ bn", highlight_last=True,
                       value_fmt=lambda v: f"{v:.1f}", ymax=42,
-                      note="2024 +19%, 2025 +12%, record profit [52, 53, 54]")
+                      note="+19% in 2024, +12% in 2025 [52, 53, 54]")
     facts = f'''
-<div class="tile" style="height:190px">
+<div class="tile" style="flex:1;min-width:0;min-height:190px;font-size:12px">
   <div class="k">Also in place</div>
-  <p class="small" style="margin:8px 0 6px 0"><b>Open tool standard.</b> The Model Context Protocol, launched Nov 2024, now has more than 10,000 public servers and Linux Foundation governance with Anthropic, OpenAI, Google and Microsoft at the table.{fn(49, 50)}</p>
-  <p class="small" style="margin:0 0 6px 0"><b>Models that fit in an object.</b> Gemma 3n runs in 2 to 3 GB of memory on phone-class hardware.{fn(48)}</p>
-  <p class="small" style="margin:0"><b>Commodity radios.</b> Espressif has shipped more than 1.5 billion Wi-Fi SoCs.{fn(51)}</p>
+  <p class="small" style="margin:8px 0 6px 0;font-size:12px"><b>Open tool standard.</b> The Model Context Protocol, launched Nov 2024, now has more than 10,000 public servers and Linux Foundation governance with Anthropic, OpenAI, Google and Microsoft at the table.{fn(49, 50)}</p>
+  <p class="small" style="margin:0 0 6px 0;font-size:12px"><b>Models that fit in an object.</b> Gemma 3n runs in 2 to 3 GB of memory on phone-class hardware.{fn(48)}</p>
+  <p class="small" style="margin:0;font-size:12px"><b>Commodity radios.</b> Espressif has shipped more than 1.5 billion Wi-Fi SoCs.{fn(51)}</p>
 </div>'''
     left = f'''
 <div class="label">The problem</div>
@@ -552,7 +574,7 @@ def s_problem():
     right = f'''
 <div class="label">Why now</div>
 {llm}
-<div style="display:flex;gap:22px;margin-top:10px">{eink}{facts}</div>'''
+<div style="display:flex;gap:22px;margin-top:10px;align-items:flex-start"><div style="flex:none">{eink}</div>{facts}</div>'''
     return slide(2, "Problem and why now", "The problem, and why the answer is possible now",
                  f'<div class="cols c2">{left and f"<div>{left}</div>"}<div>{right}</div></div>',
                  "Sources by number on slide 10 and in research.md. Figures marked \"reported\" come from search snippets, not opened pages.")
@@ -576,7 +598,7 @@ def s_hero():
             d.append(arrow(x + bw + 2, 70, x + bw + gap - 2, 70))
     flow = svg(flow_w, flow_h, "".join(d))
     specs = f'''
-<div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:12px;margin-top:14px">
+<div class="tiles4">
   <div class="tile"><div class="k">Panel</div><div class="v ph">[placeholder]</div><div class="m">7.5in to 13.3in e-paper, mono or Spectra 6 colour</div></div>
   <div class="tile"><div class="k">Target price</div><div class="v ph">[placeholder]</div><div class="m">due Sat 28 Nov</div></div>
   <div class="tile"><div class="k">Unit cost at MOQ</div><div class="v ph">[placeholder]</div><div class="m">first ODM quote pending</div></div>
@@ -627,7 +649,7 @@ def s_market():
         ("Tidbyt ambient display", 100000, "devices shipped, lifetime to 2024 [12]"),
         ("Rabbit r1", 100000, "sold by Sept 2024; 5,000 daily users [13]"),
         ("reMarkable paper tablets", 791000, "devices sold in 2024 alone (reported) [14]"),
-        ("Plaud AI recorders", 2000000, "devices, cumulative to June 2026; US$100M+ software ARR [15]"),
+        ("Plaud AI recorders", 2000000, "cumulative to June 2026; US$100M+ software ARR [15]"),
     ], title="What one product line has actually reached (units)", note="Square-root scale. Aura reports \"single-digit millions\" of frames, cumulative, profitable [23].")
     left = f'''
 <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
@@ -662,10 +684,10 @@ def s_competition():
         dict(name="Nixplay", x=0.08, y=0.30, kind="display"),
         dict(name="InkPoster", x=0.05, y=0.80, kind="display"),
         dict(name="Inkplate, DIY boards", x=0.30, y=0.10, kind="display"),
-        dict(name="Fraimic, Jitrainno (prompt to picture)", x=0.70, y=0.56, kind="display"),
+        dict(name="Fraimic, Jitrainno (prompt to picture)", x=0.70, y=0.56, kind="display", dx=-196, dy=20),
         dict(name="This venture", x=0.88, y=0.86, kind="us", dx=-120, dy=24),
     ]
-    scatter = chart_scatter_map(600, 450, pts, ("Fixed function", "Shaped by talking to it"), ("Utility object", "Premium design object"),
+    scatter = chart_scatter_map(540, 440, pts, ("Fixed function", "Shaped by talking to it"), ("Utility object", "Premium design object"),
                                 "Where the products sit (positions are our reading of each product's marketing: opinion)")
     rows = [
         ("Humane Ai Pin", "$699 + $24/mo", "$230M+ raised", "Dead Feb 2025; HP paid $116M for assets", fn(17)),
@@ -682,10 +704,10 @@ def s_competition():
         ("Tidbyt", "$199, no sub", "acquired", "100k devices; no new hardware since Modal deal", fn(12)),
     ]
     trs = "".join(f"<tr><td><b>{esc(a)}</b></td><td class='n'>{esc(b)}</td><td>{esc(c)}</td><td>{esc(d)}{e}</td></tr>" for a, b, c, d, e in rows)
-    table = f'''<table class="t"><thead><tr><th>Product</th><th>Price</th><th>Money</th><th>Outcome, Nov 2026</th></tr></thead><tbody>{trs}</tbody></table>
-<p class="small" style="margin-top:10px"><b>The gap, from the record.</b> The only products configured in plain language are AI art frames (prompt to picture){fn(16, 58)}. TRMNL owners configure by writing code with an LLM. Nobody ships an object a non-technical owner can reshape by describing it (fact as found; whether a premium brand can fill the gap is unproven).</p>'''
+    table = f'''<table class="t compact"><thead><tr><th>Product</th><th>Price</th><th>Money</th><th>Outcome, Nov 2026</th></tr></thead><tbody>{trs}</tbody></table>
+<p class="small" style="margin-top:8px;font-size:12px"><b>The gap, from the record.</b> The only products configured in plain language are AI art frames (prompt to picture){fn(16, 58)}. TRMNL owners configure by writing code with an LLM. Nobody ships an object a non-technical owner can reshape by describing it (fact as found; whether a premium brand can fill the gap is unproven).</p>'''
     return slide(6, "Competition", "Competition: many objects, and none that the owner can reshape by talking to it",
-                 f'<div class="cols" style="grid-template-columns:600px 1fr;gap:28px"><div>{scatter}</div><div>{table}</div></div>',
+                 f'<div class="cols" style="grid-template-columns:540px minmax(0,1fr);gap:28px"><div>{scatter}</div><div>{table}</div></div>',
                  "Prices and outcomes as published at the dates in research.md section 2. \"Reported\" marks figures seen in search snippets only.")
 
 
@@ -710,10 +732,10 @@ def s_business():
     d.append(txt(1160 / 2, y0 + 120, "the loop: what owners ask for shapes the next object", 10, MUTED, "middle"))
     flow = svg(1160, 140, "".join(d))
     unit = chart_stacked_hbar(
-        362, 215, "Where a retail euro goes (structure, not a forecast)", "Retail price = 100%. Unit cost [placeholder] until the first ODM quote.",
-        [("Unit cost: 1/3 at the 3x rule", 0.333, DARK_MARK, False), ("Freight, duty, VAT, payments, returns [placeholder]", 0.27, PAPER, True), ("Gross margin, to compare below", 0.397, PAPER, True)],
-        benchmarks=[("Peloton hw", 0.136), ("Apple", 0.368), ("Sonos", 0.437), ("reMarkable", 0.434), ("Garmin", 0.587)],
-        note="3x rule [37]. Margins: Apple FY25 [26], Sonos FY25 [27], Peloton FY25 [28], reMarkable Q1 25 [30], Garmin FY24 [29].")
+        362, 232, "Where a retail euro goes (structure, not a forecast)", "Retail price = 100%. Unit cost [placeholder] until the first ODM quote.",
+        [("Unit cost: one third, the 3x rule of thumb", 0.333, DARK_MARK, False), ("Freight, duty, VAT, payments, returns [placeholder]", 0.27, PAPER, True), ("Gross margin, compared with the benchmarks below", 0.397, PAPER, True)],
+        benchmarks=[("Peloton hw", 0.136), ("Apple", 0.368), ("Sonos", 0.437, "start"), ("reMarkable", 0.434), ("Garmin", 0.587, "start")],
+        note="Premium consumer hardware. 3x rule [37]. Margins: Apple FY25 [26], Sonos FY25 [27], Peloton FY25 [28], reMarkable Q1 25 [30], Garmin FY24 [29].")
     tiers = f'''
 <div class="label">Software tiers (draft, Oscar's pricing call)</div>
 <div class="card" style="padding:10px 12px;margin-bottom:8px"><b>Free.</b> <span class="small">On-device layouts, local refresh, no cloud AI. The object is complete without paying.</span></div>
