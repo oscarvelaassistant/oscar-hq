@@ -277,3 +277,19 @@ Observation from these 29 posts, not a measurement and not a forecast. Each patt
 ## How the images were fetched
 
 Post media came from X's public read tools (get_posts_by_ids with media fields), then downloaded from pbs.twimg.com. No image was skipped; the water-gun post had no media of its own, so its image comes from the post it quotes.
+
+
+## Added 27 Nov evening (sent by Oscar)
+
+### @huntie
+![](images/2126278478295109862.jpg)
+- What: "My favourite way to review agent plans", a coffee-desk setup for reviewing AI agent plans.
+- Link: https://x.com/huntie/status/2126278478295109862
+- Source: Oscar in Innovator chat, 27 Nov 2026
+
+### @ahm3dhub
+![](images/2126078769483985199.jpg)
+- What: ESP-Mosaico ESP32-S31 modular AI board with a 2.16in touch AMOLED, IMU and voice, sold on AliExpress. A cheap China-sourced base for a premium gadget.
+- Link: https://x.com/ahm3dhub/status/2126078769483985199
+- Source: Oscar in Innovator chat, 27 Nov 2026
+
