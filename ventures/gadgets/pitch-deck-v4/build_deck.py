@@ -12,6 +12,11 @@ v4 (27 Nov 2026, Oscar's ask: update the deck with the saved X posts in ../inspi
 posts the founder keeps saving, with captions, categories, a credit per image and the patterns (observations, never a market
 measurement); tie-ins on the brand (slide 3), collection (5), funnel (7) and competition (8) slides; all 29 post URLs in the
 appendix. v3's slides 4 to 10 are now 5 to 11 with their content, numbers and layout unchanged. The POSTS block holds the posts.
+Layout fix (27 Nov 2026, after Innovator's first render of v4, measured on that PDF): slide 7's right column is tightened so the
+observation tile clears the footer (class "tight": table rows without wrapped region names, smaller paddings, the funnel canvas
+740 px wide instead of 790, the observation cut to one sentence of two readings); slide 4's moodboard images are 92 px tall and its
+patterns label is one line shorter; slide 3's credit lines get room; slides 5 and 7 (two-line titles) start their body 10 px lower
+(class "t2"), slide 5's price ladder is 176 px tall to make that room. No number changed.
 All numbers live in this file and in research.md (section 7 for the market work, section 8 for the posts) with their sources.
 Every footnote number is generated from the SRC registry below in order of first use; a star after the number marks a
 source that was seen in a search snippet only (unverified). Placeholders are marked [placeholder].
@@ -566,6 +571,7 @@ html, body {{ margin: 0; padding: 0; background: #e7e2d8; font-family: {SANS}; c
 h1 {{ font-family: {SERIF}; font-weight: 400; font-size: 34px; line-height: 1.12; margin: 10px 0 0 0; letter-spacing: -.01em; max-width: 1120px; }}
 h1 em {{ font-style: italic; color: {ACCENT}; }}
 .body {{ position: absolute; left: 60px; right: 60px; top: 150px; bottom: 56px; }}
+.slide.t2 .body {{ top: 160px; }}   /* slides whose title wraps to two lines: 10 px more between the title and the body */
 .foot {{ position: absolute; left: 60px; right: 60px; bottom: 22px; display: flex; justify-content: space-between; align-items: baseline;
         font-size: 10.5px; color: {MUTED}; border-top: 1px solid {HAIR}; padding-top: 8px; }}
 .foot .mid {{ flex: 1; margin: 0 24px; color: {MUTED}; }}
@@ -631,16 +637,25 @@ table.t.compact td {{ padding: 3px 6px 3px 0; }}
 .pill {{ display: inline-block; font-size: 10px; letter-spacing: .06em; text-transform: uppercase; font-weight: 700; padding: 1px 7px; border-radius: 9px; border: 1px solid {HAIR}; color: {INK2}; margin-right: 4px; }}
 .mood {{ display: grid; grid-template-columns: repeat(4, 192px); gap: 10px; }}
 .mood .cell {{ background: {PANEL}; border: 1px solid {HAIR}; border-radius: 6px; overflow: hidden; }}
-.mood .cell img {{ display: block; width: 100%; height: 100px; object-fit: cover; }}
+.mood .cell img {{ display: block; width: 100%; height: 92px; object-fit: cover; }}
 .mood .cap {{ font-size: 9.5px; line-height: 1.25; color: {INK}; padding: 5px 7px 0 7px; min-height: 29px; }}
 .mood .cat {{ font-size: 7.5px; letter-spacing: .08em; text-transform: uppercase; color: {ACCENT}; font-weight: 700; margin-right: 4px; }}
-.mood .credit {{ font-size: 7.2px; line-height: 1.3; color: {MUTED}; padding: 2px 7px 5px 7px; word-break: break-all; }}
+.mood .credit {{ font-size: 7.2px; line-height: 1.3; color: {MUTED}; padding: 2px 7px 4px 7px; word-break: break-all; }}
 .mood .credit sup.fn {{ font-size: 7px; }}
 .pat {{ padding-left: 14px; margin: 0; }}
-.pat li {{ font-size: 10px; line-height: 1.35; margin: 0 0 4px 0; color: {INK}; }}
+.pat li {{ font-size: 10px; line-height: 1.35; margin: 0 0 3px 0; color: {INK}; }}
 .rule {{ display: flex; gap: 10px; align-items: flex-start; padding: 9px 12px; }}
 .rule .thumb {{ width: 56px; height: 56px; object-fit: cover; border-radius: 4px; flex: none; border: 1px solid {HAIR}; }}
-.rule .credit-line {{ font-size: 8px; color: {MUTED}; margin-top: 3px; word-break: break-all; }}
+.rule .credit-line {{ font-size: 8px; color: {MUTED}; margin-top: 5px; line-height: 1.4; word-break: normal; overflow-wrap: anywhere; }}
+.rule .credit-line sup.fn {{ margin-left: 2px; }}
+/* slide 7, right column: the table, the paragraph and the three tiles tightened so the observation tile clears the footer */
+.tight table.t.compact td {{ padding: 2px 6px 2px 0; }}
+.tight table.t.compact {{ font-size: 10px; }}
+.tight table.t th {{ padding: 2px 6px 4px 0; }}
+.tight table.t td:first-child {{ white-space: nowrap; }}
+.tight p.small {{ line-height: 1.3; }}
+.tight .tile {{ padding: 6px 12px; }}
+.tight .tile .m {{ font-size: 11px; line-height: 1.25; }}
 """
 
 # ---------------------------------------------------------------- slides that do not depend on new research
@@ -764,11 +779,12 @@ def s_collection():
                  (150, "Ember mug"), (179.99, "Marshall Emberton III"), (899.99, "Samsung Frame 43in")]),
     ]
     ladder = chart_price_lanes(
-        1160, 192, lanes, 400, "Where comparable objects sell: retail list prices in their own currency, not converted",
+        1160, 176, lanes, 400, "Where comparable objects sell: retail list prices in their own currency, not converted",
         note=f"Our price per object: [placeholder], due Sat 28 Nov. Prices read on retail pages, accessed 27 Nov 2026 (HAY, Alessi, Ember, Nanoleaf and the EUR retail prices were seen in snippets only) {cite('price_v', 'price_s')}.")
-    body = f'<div class="label" style="margin-bottom:6px">The collection at launch: three families, nine objects (draft, placeholder renders and prices)</div>{grid}<div style="margin-top:10px">{ladder}</div>'
+    body = f'<div class="label" style="margin-bottom:6px">The collection at launch: three families, nine objects (draft, placeholder renders and prices)</div>{grid}<div style="margin-top:6px">{ladder}</div>'
     return slide(5, "Product: the collection", "The collection: decorations, gadgets and light under one name, from a shelf object to a talking display",
-                 body, "Flat placeholder renders; one-liners from the 26 Nov catalogue decision; the two decor objects are concept placeholders. No saved post shows lighting (slide 4).")
+                 body, "Flat placeholder renders; one-liners from the 26 Nov catalogue decision; the two decor objects are concept placeholders. No saved post shows lighting (slide 4).",
+                 extra_class="t2")
 
 
 # ---------------------------------------------------------------- v4: the posts the founder keeps saving (slide 4; research.md section 8)
@@ -887,11 +903,11 @@ def s_inspiration():
     grid = f'<div class="mood">{"".join(cells)}</div>'
     items = [f'<li><b>{esc(t)}</b> {esc(s)}{fn(*["x_" + i for i in ids]) if ids else ""}</li>' for t, s, ids in PATTERNS]
     dates = sorted(post_date(p["id"]) for p in POSTS)
-    right = (f'<div class="label">Patterns in the 29 posts saved {dates[0]} to {dates[-1]} (observation, not a market measurement)</div>'
-             f'<ul class="pat">{"".join(items)}</ul><div style="margin-top:8px">{chart_counts(338, "The 29 posts by category (observation)")}</div>')
+    right = (f'<div class="label">Patterns in the 29 posts (observation, not a measurement)</div>'
+             f'<ul class="pat">{"".join(items)}</ul><div style="margin-top:6px">{chart_counts(338, "The 29 posts by category (observation)")}</div>')
     return slide(4, "Product: the inspiration", "Inspiration: what the founder keeps saving, and the patterns in it",
                  f'<div class="cols" style="grid-template-columns:798px minmax(0,1fr);gap:24px"><div>{grid}</div><div>{right}</div></div>',
-                 "Images belong to their authors: private reference, not for publication. Patterns are observations, not a market measurement. Post dates are decoded from the post ids.")
+                 f"Images belong to their authors: private reference, not for publication. The 29 posts were saved {dates[0]} to {dates[-1]}; patterns are observations, not a market measurement. Post dates are decoded from the post ids.")
 
 
 def s_concept():
@@ -1205,7 +1221,7 @@ def s_market_funnel():
                    pill=("ASSUMPTION", "a"), world=f"World ceiling: {usd_m(W_REV[0])} to {usd_m(W_REV[1])} a year",
                    bh=f"Spain, France, Germany: {usd_m(B_REV[0])} to {usd_m(B_REV[1])} a year")
     funnel = chart_funnel_pair(
-        790, steps, revenue, "From the world's households to customers, and the beachhead inside it (bar widths on a log scale)",
+        740, steps, revenue, "From the world's households to customers, and the beachhead inside it (bar widths on a log scale)",
         note="Each step narrows by the ratio in its label. Bar widths are logarithmic, so they show the order of magnitude, not the proportion. Not a forecast.")
     trs = []
     for r in REGIONS:
@@ -1215,27 +1231,31 @@ def s_market_funnel():
     table = (f'<table class="t compact"><thead><tr><th>US$ bn, 2025</th><th>Decor without furniture</th><th>Sold online<br>x 41.5%</th><th>Premium tier<br>x {PREMIUM_SH*100:.1f}%</th></tr></thead><tbody>{"".join(trs)}</tbody></table>')
     share_hh = B_STEPS[0] / W_STEPS[0] * 100
     share_prem = B_STEPS[3] / W_STEPS[3] * 100
+    # the observation sentence is kept short on purpose: two lines at 11 px in this column (measured on the first v4 render)
+    observation = "Two readings from saved posts (slide 4): a wider market than tech people; cheap hardware plus an app sells."
+    assert len(observation) <= 108, "slide 7 observation must stay two lines"
     right = f'''
-<div class="label">The same funnel in dollars, by region</div>
+<div class="label" style="margin-bottom:6px">The same funnel in dollars, by region</div>
 {table}
-<p class="small" style="margin:6px 0 0 0;font-size:11px"><b>ASSUMPTION:</b> the 42.5% non-furniture share, the 41.5% online share{fn("gmi_decor")} and the {PREMIUM_SH*100:.1f}% premium share{fn("gmi_eu_mh")} each come from one publisher and are applied to every region. Gadgets are left out (no premium split found). Latin America and Middle East and Africa are thinly sourced.</p>
-<div class="tile" style="margin-top:8px;padding:8px 12px">
+<p class="small" style="margin:4px 0 0 0;font-size:10.5px"><b>ASSUMPTION:</b> the 42.5% non-furniture share, the 41.5% online share{fn("gmi_decor")} and the {PREMIUM_SH*100:.1f}% premium share{fn("gmi_eu_mh")} each come from one publisher and are applied to every region. Gadgets are left out (no premium split found). Latin America and Middle East and Africa are thinly sourced.</p>
+<div class="tile" style="margin-top:6px">
   <div class="k">The beachhead in dollars</div>
   <div class="m">Germany 11.0 + Spain 4.4 + France 7.4 = <b>US${B_MIDHIGH:.1f}bn</b> of mid-to-high decor (US$50 to 1,000 an item), furniture included. <b>SOURCED</b>, GMI; France is 13.45% of 55, my arithmetic.{fn("gmi_eu_mh")}</div>
 </div>
-<div class="tile" style="margin-top:6px;padding:8px 12px">
+<div class="tile" style="margin-top:6px">
   <div class="k">Checks (my arithmetic)</div>
   <div class="m">The three countries hold <b>{share_hh:.1f}%</b> of the world's households but <b>{share_prem:.1f}%</b> of the premium buyers in the funnel, because they shop online more. Not found: regional household counts from a primary source.</div>
 </div>
-<div class="tile" style="margin-top:6px;padding:8px 12px">
+<div class="tile" style="margin-top:6px">
   <div class="k">What the saved posts add (observation)</div>
-  <div class="m">The founder's notes on two posts he saved (slide 4): gadgets like these are made for tech people while the wider market is open; cheap hardware from China plus an app is what people buy. Readings, not measurements: the premium share and the capture rate above stay assumptions.{fn("x_2125946257852285039", "x_2125588103276720393")}</div>
+  <div class="m">{esc(observation)}{fn("x_2125946257852285039", "x_2125588103276720393")}</div>
 </div>
 '''
     return slide(7, "Market: from the world to customers",
                  f"Market funnel: from 2.2 billion households to {round(B_CUST[0], -3)/1e3:.0f},000 to {round(B_CUST[1], -3)/1e3:.0f},000 customers in the three-country beachhead",
-                 f'<div class="cols" style="grid-template-columns:790px minmax(0,1fr);gap:28px"><div>{funnel}</div><div>{right}</div></div>',
-                 "SOURCED: published, measured on that population. ASSUMPTION: our choice, to replace with pilot data. * unverified: snippet or secondary page.")
+                 f'<div class="cols" style="grid-template-columns:740px minmax(0,1fr);gap:24px"><div>{funnel}</div><div class="tight">{right}</div></div>',
+                 "SOURCED: published, measured on that population. ASSUMPTION: our choice, to replace with pilot data. * unverified: snippet or secondary page.",
+                 extra_class="t2")
 
 
 def s_competition():
