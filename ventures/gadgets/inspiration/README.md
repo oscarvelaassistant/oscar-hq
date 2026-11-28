@@ -2,9 +2,9 @@
 
 Built 27 Nov 2026 from Oscar's X likes and bookmarks, and from the posts shared in his X Chat. Updated 28 Nov 2026 with two posts Oscar sent on the evening of 27 Nov. Read-only: nothing was posted, liked, bookmarked or sent. Internal. Sender names in the Source lines are for Oscar's reference only; the pitch deck must not name anyone.
 
-Source list with dates and coverage limits: `/workspace/gadgets/x-gadget-posts-2026-11-27.md` (box), plus the two posts Oscar sent on 27 Nov. 31 posts: 18 from likes and bookmarks, 11 found only in the chat, 2 sent by Oscar on 27 Nov. Dates are 2026, Europe/Madrid, the date the post was created (likes, bookmarks) or shared (chat or Innovator chat). Oscar's comments are quoted as written, typos included.
+Source list with dates and coverage limits: `/workspace/gadgets/x-gadget-posts-2026-11-27.md` (box), plus the two posts Oscar sent on 27 Nov. 26 posts: 13 from likes and bookmarks, 11 found only in the chat, 2 sent by Oscar on 27 Nov. Five wall and decor posts, all from likes or bookmarks, were dropped on 28 Nov at Oscar's request. Dates are 2026, Europe/Madrid, the date the post was created (likes, bookmarks) or shared (chat or Innovator chat). Oscar's comments are quoted as written, typos included.
 
-Images: 31 of 31. Each is the first photo of the post, or the first frame of its video, resized to 900 px on the long side. All images belong to their authors; they are here as private reference, not for publication.
+Images: 26 of 26. Each is the first photo of the post, or the first frame of its video, resized to 900 px on the long side. All images belong to their authors; they are here as private reference, not for publication.
 
 ## Displays and e-ink
 
@@ -84,48 +84,6 @@ Images: 31 of 31. Each is the first photo of the post, or the first frame of its
 - What: Y2K transparent consumer tech (a see-through Sony device in sea green), called "so peak" by the author.
 - Link: https://x.com/luusssso/status/2113274039297028534
 - Source: like and bookmark, 22 Oct 2026
-
-## Wall and decor pieces
-
-### @pmamtraveller
-
-![pmamtraveller: Tom Booth illustrations from the woodcutter series: a man carving the same woman](images/2124808965351682185.jpg)
-
-- What: Tom Booth illustrations from the woodcutter series: a man carving the same woman's likeness as he ages.
-- Link: https://x.com/pmamtraveller/status/2124808965351682185
-- Source: like, 23 Nov 2026
-
-### @pmamtraveller
-
-![pmamtraveller: "His Grace" by Natalia Tolmacheva.](images/2124365500000153752.jpg)
-
-- What: "His Grace" by Natalia Tolmacheva.
-- Link: https://x.com/pmamtraveller/status/2124365500000153752
-- Source: like, 22 Nov 2026
-
-### @Denismourir1000
-
-![Denismourir1000: Antique European art and illustrations.](images/2124263578261700815.jpg)
-
-- What: Antique European art and illustrations.
-- Link: https://x.com/Denismourir1000/status/2124263578261700815
-- Source: like and bookmark, 21 Nov 2026
-
-### @pmamtraveller
-
-![pmamtraveller: "Chevaliere (Female Knight)", a 2004 painting by French hyperrealist Hubert de L](images/2121998102206754958.jpg)
-
-- What: "Chevaliere (Female Knight)", a 2004 painting by French hyperrealist Hubert de Lartigue.
-- Link: https://x.com/pmamtraveller/status/2121998102206754958
-- Source: like, 15 Nov 2026
-
-### @_GVNTHER_
-
-![_GVNTHER_: Illustrations by Yoshitaka Amano.](images/2111851254091776122.jpg)
-
-- What: Illustrations by Yoshitaka Amano.
-- Link: https://x.com/_GVNTHER_/status/2111851254091776122
-- Source: like, 18 Oct 2026
 
 ## Furniture
 
@@ -279,12 +237,12 @@ None found. Observation: nothing about lighting appears in the likes, bookmarks 
 
 ## Patterns Oscar keeps saving
 
-Observation from these 31 posts, not a measurement and not a forecast. Each pattern lists the posts it rests on.
+Observation from these 26 posts, not a measurement and not a forecast. Each pattern lists the posts it rests on.
 
 - **Cheap hardware plus an app.** Oscar's own words on the Oracle Shelf: "buy some cheapass hardware from china and add a vibecoded app, ppl will buy uit". Same direction in the drone under 20 euros, the open-source robot arm, the AirPlay PCB for an IKEA speaker, the thermal-printer-plus-LLM post ("gadjet #45"), and the ESP32-S31 modular AMOLED board sold on AliExpress and made in Mainland China.
 - **Transparent and retrofuturistic objects.** The Y2K see-through Sony device (like and bookmark), the transparent-resin water gun, the TUNE X3 headphones (Oscar: "like unironically bro") and the open-frame Pixel PC case all show internals or vintage studio-equipment looks.
 - **E-ink and calm screens.** Two posts show e-ink or paper-like screens directly: the 60 Hz e-ink simulation, and the large e-ink tablet used in a cafe to review a written plan. One earlier chat comment also links AI devices to "you e ink stuff".
-- **Ceramics and hand-made objects.** The one material Oscar says he loves outright is ceramics ("Man I love ceramics", Gab Bois). The Art objects and Wall and decor groups (13 of 31 posts, 9 of them from @pmamtraveller) lean to sculpture, dolls, bronze and illustration rather than product design.
+- **Ceramics and hand-made objects.** The one material Oscar says he loves outright is ceramics ("Man I love ceramics", Gab Bois). The Art objects group (8 of 26 posts, 5 of them from @pmamtraveller) leans to sculpture, dolls, bronze and illustration rather than product design.
 - **Objects with a built-in behaviour.** Oracle Shelf (a bookcase that lights up the answer), the AI-designed water gun, the printed-paper planning post and the AirPlay speaker PCB all add one small smart function to an ordinary object.
 - **AI-assisted making.** The water gun modeled by Claude, the CNC-ready table file, the LLM with a thermal printer and "vibecoded app" appear in 4 posts and in Oscar's comments.
 - **Made for a wide market, not only for tech people.** Oscar on the Pixel case: "all of these are made for tech Brose the market of the people is wide-open"; on the hand armor: "for robots that could fit anyone".
