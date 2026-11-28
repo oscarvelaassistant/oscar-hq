@@ -8,7 +8,8 @@
 4. banned words are absent (PersonalPress, Fionn, ARESA, shipyard, naval; valuation/round/equity only in the off-the-table lines);
 5. v4: no person's name from the inspiration list and no sender wording ("sent by", "shared by"); every <img> points to an existing
    file under images/ by a relative path; the page size is still 1280x720 px (960x540 pt in print); 17 slides; slide 4 says "observation"
-   and every one of the 29 saved posts has an appendix entry with its URL.
+   and every one of the 26 saved posts (29, plus the two of 28 Nov 2026, less the five Wall and decor posts Oscar removed the
+   same day) has an appendix entry with its URL; none of the five removed posts appears anywhere in the file.
 Exit code 1 if anything fails. The estimate is conservative but is not a render: Innovator's PDF render is the final visual check.
 """
 import html
@@ -114,7 +115,9 @@ for w in ("valuation", "round size", "equity"):
         if "not on the table" not in ctx and "by design" not in ctx and "no valuation" not in ctx:
             problems.append(f"'{w}' outside an off-the-table line: ...{ctx}...")
 
-# v4: images, page size, slide count, the inspiration slide and the 29 post entries
+# v4: images, page size, slide count, the inspiration slide and the 26 post entries
+N_POSTS = 26
+REMOVED = ("2124808965351682185", "2124365500000153752", "2124263578261700815", "2121998102206754958", "2111851254091776122")
 imgs = re.findall(r'<img\b[^>]*\bsrc="([^"]+)"', raw)
 for s in sorted(set(imgs)):
     if not s.startswith("images/") or "://" in s or s.startswith("/"):
@@ -130,9 +133,19 @@ if len(slides) != 17 or slides != [str(i) for i in range(1, 18)]:
 s4 = re.search(r'<section class="slide[^"]*" id="s4">.*?</section>', raw, flags=re.S)
 if not s4 or "observation" not in s4.group(0).lower():
     problems.append("slide 4 does not say observation")
+if s4 and f"the {N_POSTS} posts" not in s4.group(0).lower():
+    problems.append(f"slide 4 does not say 'the {N_POSTS} posts'")
 posts = set(re.findall(r'https://x\.com/[A-Za-z0-9_]+/status/(\d+)', raw))
-if len(posts) != 29:
-    problems.append(f"expected 29 post URLs in the appendix, found {len(posts)}")
+if len(posts) != N_POSTS:
+    problems.append(f"expected {N_POSTS} post URLs in the appendix, found {len(posts)}")
+for pid in ("2126278478295109862", "2126078769483985199"):   # the two posts of 28 Nov 2026
+    if pid not in posts:
+        problems.append(f"post {pid} (added 28 Nov 2026) has no appendix URL")
+for pid in REMOVED:   # the five Wall and decor posts Oscar removed on 28 Nov 2026
+    if pid in raw:
+        problems.append(f"removed post {pid} still appears in the deck")
+if "wall and decor" in low:
+    problems.append("the removed category 'Wall and decor' still appears in the deck")
 for pid in sorted(set(re.findall(r'images/(\d+)\.jpg', raw))):
     if pid not in posts:
         problems.append(f"image {pid} has no appendix URL")

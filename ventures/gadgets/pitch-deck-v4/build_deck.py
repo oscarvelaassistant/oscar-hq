@@ -17,6 +17,15 @@ observation tile clears the footer (class "tight": table rows without wrapped re
 740 px wide instead of 790, the observation cut to one sentence of two readings); slide 4's moodboard images are 92 px tall and its
 patterns label is one line shorter; slide 3's credit lines get room; slides 5 and 7 (two-line titles) start their body 10 px lower
 (class "t2"), slide 5's price ladder is 176 px tall to make that room. No number changed.
+Update (28 Nov 2026, Oscar's ask: add the two posts he sent on the evening of 27 Nov, both in the inspiration list's Displays and
+e-ink category; the same morning the five Wall and decor posts left the inspiration list at Oscar's request): 26 posts, six
+categories. On the moodboard the e-ink tablet and the ESP32 AMOLED board replace the AirPlay board and the dropped illustration;
+the water gun keeps its place (the AirPlay board stays cited in the patterns and the appendix), so the card grid keeps its size.
+The e-ink pattern rests on two posts and the cheap-hardware pattern on six; the hand-made pattern is 8 of 26 (art objects only);
+the lighting gap is one sentence shorter. Measured on Innovator's render of 27 Nov (right column 21 lines, ending 21 px above the
+footer rule): the column is now 20 lines and the category chart one row shorter. Slide 5: the e-ink display's one-liner says
+"saved posts". Slide 7: the observation gains a third reading and a third citation (its tile ended 65 px above the rule).
+Appendix: 26 post URLs. No number changed.
 All numbers live in this file and in research.md (section 7 for the market work, section 8 for the posts) with their sources.
 Every footnote number is generated from the SRC registry below in order of first use; a star after the number marks a
 source that was seen in a search snippet only (unverified). Placeholders are marked [placeholder].
@@ -679,7 +688,7 @@ FAMILIES = [
         ("lock", "Fish-shaped lock", "Interior oddity, in the tradition of Japanese specialist stores."),
     ]),
     ("Gadgets", "Objects with a small computer inside. Smart only where it helps.", [
-        ("eink", "E-ink wall display", "Shows what you ask it to, on paper-like e-ink (saved post: slide 4)."),
+        ("eink", "E-ink wall display", "Shows what you ask it to, on paper-like e-ink (saved posts: slide 4)."),
         ("desk", "Desk AI display", "A face, a voice and a glanceable screen for the desk (saved post: slide 4)."),
         ("key", "Solar AI keychain", "Talk to your AI from a keyring. Charges in daylight."),
     ]),
@@ -788,10 +797,15 @@ def s_collection():
 
 
 # ---------------------------------------------------------------- v4: the posts the founder keeps saving (slide 4; research.md section 8)
-# Source list, images and the founder's comments: ../inspiration/README.md (29 posts, read-only). Captions describe the object in
+# Source list, images and the founder's comments: ../inspiration/README.md (26 posts, read-only). Captions describe the object in
 # the image; post authors appear only as X handles in credit lines. Images: images/<id>.jpg, made by prepare_images.py.
+# 28 Nov 2026: two posts added (Displays and e-ink); the five Wall and decor posts were removed from the list at Oscar's request
+# and are gone from the deck (REMOVED below is checked by check_deck.py).
+REMOVED = ["2124808965351682185", "2124365500000153752", "2124263578261700815", "2121998102206754958", "2111851254091776122"]
 POSTS = [
-    # Displays and e-ink
+    # Displays and e-ink (the first two were added on 28 Nov 2026)
+    dict(id="2126278478295109862", handle="huntie", cat="Displays and e-ink", what="Large e-ink tablet and stylus, read in a cafe"),
+    dict(id="2126078769483985199", handle="ahm3dhub", cat="Displays and e-ink", what="ESP32 board with snap-together AMOLED tiles"),
     dict(id="2125609297895903294", handle="hturan", cat="Displays and e-ink", what="Artificial life moving on a 60 Hz e-ink panel"),
     # Desk gadgets
     dict(id="2125946257852285039", handle="andreintg", cat="Desk gadgets", what="Open-frame 3D-printed PC case with a small clock"),
@@ -800,12 +814,6 @@ POSTS = [
     dict(id="2122686374998655392", handle="oliviscusAI", cat="Desk gadgets", what="Open-source robotic arm that anyone may build and sell"),
     dict(id="2117773168807166443", handle="RaemondBW", cat="Desk gadgets", what="Replacement board adds AirPlay to a flat-pack speaker"),
     dict(id="2113274039297028534", handle="luusssso", cat="Desk gadgets", what="Transparent 1990s cassette player in sea green"),
-    # Wall and decor
-    dict(id="2124808965351682185", handle="pmamtraveller", cat="Wall and decor", what="Illustration: a woodcutter carving a figure out of a tree"),
-    dict(id="2124365500000153752", handle="pmamtraveller", cat="Wall and decor", what="Painting: a dragon woven into a red wall rug above a bed"),
-    dict(id="2124263578261700815", handle="Denismourir1000", cat="Wall and decor", what="Antique European painting of a night ride through storm clouds"),
-    dict(id="2121998102206754958", handle="pmamtraveller", cat="Wall and decor", what="Hyperrealist painting of a kneeling armoured figure under spotlights"),
-    dict(id="2111851254091776122", handle="_GVNTHER_", cat="Wall and decor", what="Red and white ink drawing: a rider on a striped beast"),
     # Furniture
     dict(id="2125588103276720393", handle="modem_works", cat="Furniture", what="A bookcase lights up the books that answer a spoken question"),
     dict(id="2116952646406041615", handle="yitong", cat="Furniture", what="A plywood table design turned into a CNC-ready file for a local shop"),
@@ -828,29 +836,34 @@ POSTS = [
     dict(id="2087040759140855981", handle="asimovinc", cat="Other", what="Open-source humanoid robot sold as a complete kit for US$20,000"),
 ]
 POST = {p["id"]: p for p in POSTS}
-CATS = ["Displays and e-ink", "Desk gadgets", "Wall and decor", "Furniture", "Art objects", "Lighting", "Other"]
-assert len(POSTS) == 29 and len(POST) == 29 and all(p["cat"] in CATS for p in POSTS)
-# the twelve shown on slide 4, in grid order (three of them are reused as thumbnails on slide 3)
-FEATURED = ["2125588103276720393", "2125257053341966427", "2125609297895903294", "2117773168807166443",
-            "2113274039297028534", "2123010578616659969", "2125946257852285039", "2121458552803914203",
-            "2123854155856880066", "2122938259906994637", "2111851254091776122", "2125649169138528553"]
-HANDMADE = [p["id"] for p in POSTS if p["cat"] in ("Art objects", "Wall and decor")]
-assert len(HANDMADE) == 13
-# (title, text, post ids): observations from the 29 posts, never a measurement; mirrors the patterns section of the inspiration README
+CATS = ["Displays and e-ink", "Desk gadgets", "Furniture", "Art objects", "Lighting", "Other"]
+assert len(POSTS) == 26 and len(POST) == 26 and all(p["cat"] in CATS for p in POSTS)
+assert not (set(REMOVED) & set(POST)), "a post Oscar removed is still in the list"
+# the twelve shown on slide 4, in grid order (three of them are reused as thumbnails on slide 3). 28 Nov 2026: the e-ink tablet
+# (cell 4) and the ESP32 AMOLED board (cell 8) replace the AirPlay board (still cited in the patterns) and the removed
+# illustration; the water gun moved from cell 8 to cell 11.
+FEATURED = ["2125588103276720393", "2125257053341966427", "2125609297895903294", "2126278478295109862",
+            "2113274039297028534", "2123010578616659969", "2125946257852285039", "2126078769483985199",
+            "2123854155856880066", "2122938259906994637", "2121458552803914203", "2125649169138528553"]
+HANDMADE = [p["id"] for p in POSTS if p["cat"] == "Art objects"]
+assert len(HANDMADE) == 8
+# (title, text, post ids): observations from the 26 posts, never a measurement; mirrors the patterns section of the inspiration README.
+# Line budget (slide 4, right column, 10 px text, about 60 characters a line): 21 lines in all, measured on Innovator's render of
+# 27 Nov 2026, where the column ended 21 px above the footer rule. A longer line here must be paid for by a shorter one.
 PATTERNS = [
-    ("Cheap hardware plus an app.", "5 posts; the founder's note on the bookcase: cheap hardware from China plus an app sells.",
-     ["2125588103276720393", "2114750542941442453", "2122686374998655392", "2117773168807166443", "2125649169138528553"]),
+    ("Cheap hardware plus an app.", "6 posts; the founder's note on the bookcase: cheap hardware from China plus an app sells.",
+     ["2125588103276720393", "2114750542941442453", "2122686374998655392", "2117773168807166443", "2125649169138528553", "2126078769483985199"]),
     ("Transparent and retrofuturistic.", "4 posts: see-through player, clear-resin water gun, retro headphones, open-frame PC.",
      ["2113274039297028534", "2121458552803914203", "2123010578616659969", "2125946257852285039"]),
-    ("E-ink and calm screens.", "1 post; a thin signal.", ["2125609297895903294"]),
-    ("Ceramics and hand-made objects.", "13 of 29 lean to sculpture, bronze, dolls, illustration; ceramics is the one material the founder names.", HANDMADE),
+    ("E-ink and calm screens.", "2 posts: a 60 Hz e-ink simulation; a large e-ink tablet read in a cafe.", ["2125609297895903294", "2126278478295109862"]),
+    ("Ceramics and hand-made objects.", "8 of 26 lean to sculpture, bronze, dolls; ceramics is the one material the founder names.", HANDMADE),
     ("One small smart function on an ordinary object.", "4 posts: bookcase, printed day plan, AirPlay board, promptable desk devices.",
      ["2125588103276720393", "2125649169138528553", "2117773168807166443", "2125257053341966427"]),
     ("AI-assisted making.", "3 posts: a water gun modelled with AI, a CNC-ready table file, an LLM that prints plans.",
      ["2121458552803914203", "2116952646406041615", "2125649169138528553"]),
     ("A wider market than tech people.", "The founder's notes on the PC case and the hand armour: made for tech people, the wider market is open.",
      ["2125946257852285039", "2113587717259075882"]),
-    ("Gap: no lighting post.", "None among the 29: a gap in the saved material, not a statement about demand. The light family rests on the 26 Nov catalogue decision.", []),
+    ("Gap: no lighting post.", "None among the 26: a gap in the saved material, not a statement about demand.", []),
     ("Also saved, outside these patterns:", "a humanoid robot kit, a hardware-design book, tool-shaped creature art, an unusual 3D print.",
      ["2087040759140855981", "2121739170221789433", "2122893427323056464", "2125998015592726811"]),
 ]
@@ -903,11 +916,11 @@ def s_inspiration():
     grid = f'<div class="mood">{"".join(cells)}</div>'
     items = [f'<li><b>{esc(t)}</b> {esc(s)}{fn(*["x_" + i for i in ids]) if ids else ""}</li>' for t, s, ids in PATTERNS]
     dates = sorted(post_date(p["id"]) for p in POSTS)
-    right = (f'<div class="label">Patterns in the 29 posts (observation, not a measurement)</div>'
-             f'<ul class="pat">{"".join(items)}</ul><div style="margin-top:6px">{chart_counts(338, "The 29 posts by category (observation)")}</div>')
+    right = (f'<div class="label">Patterns in the {len(POSTS)} posts (observation, not a measurement)</div>'
+             f'<ul class="pat">{"".join(items)}</ul><div style="margin-top:6px">{chart_counts(338, f"The {len(POSTS)} posts by category (observation)")}</div>')
     return slide(4, "Product: the inspiration", "Inspiration: what the founder keeps saving, and the patterns in it",
                  f'<div class="cols" style="grid-template-columns:798px minmax(0,1fr);gap:24px"><div>{grid}</div><div>{right}</div></div>',
-                 f"Images belong to their authors: private reference, not for publication. The 29 posts were saved {dates[0]} to {dates[-1]}; patterns are observations, not a market measurement. Post dates are decoded from the post ids.")
+                 f"Images belong to their authors: private reference, not for publication. The {len(POSTS)} posts were saved {dates[0]} to {dates[-1]}; patterns are observations, not a market measurement. Post dates are decoded from the post ids.")
 
 
 def s_concept():
@@ -1231,9 +1244,11 @@ def s_market_funnel():
     table = (f'<table class="t compact"><thead><tr><th>US$ bn, 2025</th><th>Decor without furniture</th><th>Sold online<br>x 41.5%</th><th>Premium tier<br>x {PREMIUM_SH*100:.1f}%</th></tr></thead><tbody>{"".join(trs)}</tbody></table>')
     share_hh = B_STEPS[0] / W_STEPS[0] * 100
     share_prem = B_STEPS[3] / W_STEPS[3] * 100
-    # the observation sentence is kept short on purpose: two lines at 11 px in this column (measured on the first v4 render)
-    observation = "Two readings from saved posts (slide 4): a wider market than tech people; cheap hardware plus an app sells."
-    assert len(observation) <= 108, "slide 7 observation must stay two lines"
+    # the observation sentence is kept short on purpose: at most three lines at 11 px in this column (about 65 characters a line;
+    # on Innovator's render of 27 Nov 2026 the two-line tile ended 65 px above the footer rule, so a third line leaves about 51 px)
+    observation = ("Three readings from saved posts (slide 4): a wider market than tech people; cheap hardware plus an app sells; "
+                   "a modular AMOLED board with voice sells off the shelf from China.")
+    assert len(observation) <= 185, "slide 7 observation must stay within three lines"
     right = f'''
 <div class="label" style="margin-bottom:6px">The same funnel in dollars, by region</div>
 {table}
@@ -1248,7 +1263,7 @@ def s_market_funnel():
 </div>
 <div class="tile" style="margin-top:6px">
   <div class="k">What the saved posts add (observation)</div>
-  <div class="m">{esc(observation)}{fn("x_2125946257852285039", "x_2125588103276720393")}</div>
+  <div class="m">{esc(observation)}{fn("x_2125946257852285039", "x_2125588103276720393", "x_2126078769483985199")}</div>
 </div>
 '''
     return slide(7, "Market: from the world to customers",

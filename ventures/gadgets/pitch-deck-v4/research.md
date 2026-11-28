@@ -403,14 +403,14 @@ Not found: household counts by region from a primary source (the UN DESA Househo
 
 ## 8. v4: the saved X posts behind slide 4 (inspiration) and the tie-ins
 
-Added 2026-11-27 for Oscar's ask: update the deck with the inspiration in `../inspiration/` (README plus images, 29 posts). The authoritative list, with the founder's comments quoted as written and the category of each post, is `../inspiration/README.md`. This section records only what the deck uses and how.
+Added 2026-11-27 for Oscar's ask: update the deck with the inspiration in `../inspiration/` (README plus images, 29 posts). The authoritative list, with the founder's comments quoted as written and the category of each post, is `../inspiration/README.md`. This section records only what the deck uses and how. **Updated 2026-11-28** (section 8.7): two posts Oscar sent on the evening of 27 Nov were added to the list, and the five Wall and decor posts were removed from it at his request the same morning, so the list and the deck now hold **26 posts in six categories**. Counts in 8.2 to 8.6 are the 28 Nov values.
 
 ### 8.1 Method and rules
 
-- Source: the 29 posts and images in `../inspiration/`, built the same day from the founder's saved X material. Nothing was posted, liked or sent. The posts were not re-opened in this run (X pages are not fetchable from an HQ run); the images are the ones in the inspiration folder, each the post's first photo or first video frame.
+- Source: the posts and images in `../inspiration/` (29 on 27 Nov; 26 since 28 Nov, see 8.7), built from the founder's saved X material. Nothing was posted, liked or sent. The posts were not re-opened in this run (X pages are not fetchable from an HQ run); the images are the ones in the inspiration folder, each the post's first photo or first video frame.
 - What the posts are evidence of: the founder's taste and the product direction (what he keeps saving). They are not evidence of market size or demand. Every pattern on slide 4 is labelled an observation; the funnel tile on slide 7 says the founder's readings leave the assumptions as assumptions.
 - Captions describe the object in the image. People named in the posts (artists, makers) are not named in the deck files; post authors appear only as X handles in credit lines. Who sent or shared a post is not recorded in the deck.
-- Credit line per image: handle, post URL (x.com/handle/status/id, shown without the scheme) and the appendix number. The appendix carries the full URL of all 29 posts, tagged "saved X post".
+- Credit line per image: handle, post URL (x.com/handle/status/id, shown without the scheme) and the appendix number. The appendix carries the full URL of every post on the list (26 since 28 Nov), tagged "saved X post".
 - Post dates: decoded from the post id. An X id encodes the creation time in its top bits as milliseconds since 2010-11-04 01:42:54.657 UTC: `(id >> 22) + 1288834974657`. Checked against the dates in the inspiration list: the same day or the day before for every post (time zone, or a post saved the day after it was posted).
 - Images: `prepare_images.py` crops a horizontal band at the moodboard cell ratio (192:100) and resizes it to 384x200 px, JPEG quality 86. No other edit. The images belong to their authors and are private reference, not for publication.
 
@@ -421,45 +421,45 @@ Added 2026-11-27 for Oscar's ask: update the deck with the inspiration in `../in
 | 1 | @modem_works | https://x.com/modem_works/status/2125588103276720393 | 2026-11-25 | Furniture | A bookcase lights up the books that answer a spoken question | cheap hardware plus an app; one small smart function; the founder's note; brand rule 2 (slide 3); funnel tile (slide 7) |
 | 2 | @inanimate_tech | https://x.com/inanimate_tech/status/2125257053341966427 | 2026-11-24 | Desk gadgets | Five promptable desk devices, one design language, orderable | one small smart function; brand rule 3 (slide 3); precedent row (slide 8) |
 | 3 | @hturan | https://x.com/hturan/status/2125609297895903294 | 2026-11-25 | Displays and e-ink | Artificial life moving on a 60 Hz e-ink panel | e-ink; echoes the e-ink display and the wall aquarium (slide 5) |
-| 4 | @RaemondBW | https://x.com/RaemondBW/status/2117773168807166443 | 2026-11-04 | Desk gadgets | Replacement board adds AirPlay to a flat-pack speaker | cheap hardware plus an app; one small smart function |
+| 4 | @huntie | https://x.com/huntie/status/2126278478295109862 | 2026-11-27 | Displays and e-ink | Large e-ink tablet and stylus, read in a cafe | e-ink and calm screens (since 28 Nov; the AirPlay board held this cell before and stays cited in the patterns); echoes the e-ink display (slide 5) |
 | 5 | @luusssso | https://x.com/luusssso/status/2113274039297028534 | 2026-10-22 | Desk gadgets | Transparent 1990s cassette player in sea green | transparent and retrofuturistic |
 | 6 | @SciFiArchives | https://x.com/SciFiArchives/status/2123010578616659969 | 2026-11-18 | Other | Retrofuturistic headphone concept, knurled metal, fabric | transparent and retrofuturistic |
 | 7 | @andreintg | https://x.com/andreintg/status/2125946257852285039 | 2026-11-26 | Desk gadgets | Open-frame 3D-printed PC case with a small clock | transparent and retrofuturistic; a wider market (the founder's note); funnel tile (slide 7) |
-| 8 | @MaxLobovsky | https://x.com/MaxLobovsky/status/2121458552803914203 | 2026-11-14 | Other | AI-designed water gun printed in clear resin, with printed seals | transparent; AI-assisted making |
+| 8 | @ahm3dhub | https://x.com/ahm3dhub/status/2126078769483985199 | 2026-11-27 | Displays and e-ink | ESP32 board with snap-together AMOLED tiles | cheap hardware plus an app (since 28 Nov); observation tile (slide 7): the parts for a displays-first launch sell off the shelf from China |
 | 9 | @pmamtraveller | https://x.com/pmamtraveller/status/2123854155856880066 | 2026-11-20 | Art objects | Ceramic ashtray lined with blue mosaic tiles | ceramics (the founder's note); brand rule 1 (slide 3) |
 | 10 | @pmamtraveller | https://x.com/pmamtraveller/status/2122938259906994637 | 2026-11-18 | Art objects | Three cloaked bronze figures with small gilded masks | hand-made objects |
-| 11 | @_GVNTHER_ | https://x.com/_GVNTHER_/status/2111851254091776122 | 2026-10-18 | Wall and decor | Red and white ink drawing: a rider on a striped beast | hand-made objects, illustration |
+| 11 | @MaxLobovsky | https://x.com/MaxLobovsky/status/2121458552803914203 | 2026-11-14 | Other | AI-designed water gun printed in clear resin, with printed seals | transparent; AI-assisted making (cell 8 until 28 Nov; this cell held a Wall and decor illustration that left the list) |
 | 12 | @kieranklaassen | https://x.com/kieranklaassen/status/2125649169138528553 | 2026-11-25 | Desk gadgets | An LLM plans the day; a thermal printer prints the slips | cheap hardware plus an app; one small smart function; AI-assisted making |
 
-The other 17 posts are cited in the pattern bullets of slide 4 and listed in the appendix (entries tagged "saved X post"); their handles, URLs and descriptions are in `build_deck.py` (the POSTS block) and in the inspiration README. Why these twelve: at least one per category that has a post, every post the founder commented on, and the clearest image for each pattern (my choice, opinion).
+The other 14 posts are cited in the pattern bullets of slide 4 and listed in the appendix (entries tagged "saved X post"); their handles, URLs and descriptions are in `build_deck.py` (the POSTS block) and in the inspiration README. Why these twelve: at least one per category that has a post, every post the founder commented on, and the clearest image for each pattern (my choice, opinion). The 28 Nov swap kept that rule: the two new posts are the only ones Oscar sent himself since the list was built, and the AirPlay board was the least legible image at 92 px (a bare circuit board) whose two patterns are each still shown by two other cells.
 
 ### 8.3 Patterns on slide 4 (observations, with the posts they rest on)
 
 | Pattern | Posts | Note |
 |---|---|---|
-| Cheap hardware plus an app | 5: the bookcase, the drone under 20 euros, the open-source robot arm, the AirPlay board, the thermal-printer planner | the founder's comment on the bookcase post is quoted in the inspiration README; the slide paraphrases it |
+| Cheap hardware plus an app | 6: the bookcase, the drone under 20 euros, the open-source robot arm, the AirPlay board, the thermal-printer planner, the ESP32 AMOLED board sold on AliExpress and made in Mainland China (since 28 Nov) | the founder's comment on the bookcase post is quoted in the inspiration README; the slide paraphrases it |
 | Transparent and retrofuturistic | 4: the see-through player, the clear-resin water gun, the retro headphones, the open-frame PC case | |
-| E-ink and calm screens | 1: the e-ink simulation | thin signal, said so on the slide |
-| Ceramics and hand-made objects | 13: the 8 art objects and the 5 wall and decor posts | the founder's comment on the ceramics post is in the inspiration README; the slide says ceramics is the one material he names |
+| E-ink and calm screens | 2: the e-ink simulation and the large e-ink tablet read in a cafe (since 28 Nov) | no longer called a thin signal on the slide; still an observation about what the founder saves |
+| Ceramics and hand-made objects | 8: the art objects (13 until 28 Nov, when the 5 wall and decor posts left the list) | the founder's comment on the ceramics post is in the inspiration README; the slide says ceramics is the one material he names |
 | One small smart function on an ordinary object | 4: the bookcase, the printed day plan, the AirPlay board, the promptable desk devices | the inspiration README lists the water gun here too; the slide lists the promptable devices instead, because the water gun adds no function to an ordinary object (my reading) |
 | AI-assisted making | 3: the water gun modelled with AI, the CNC-ready table file, the LLM that prints plans; plus the founder's comments | |
 | A wider market than tech people | 2: the founder's comments on the PC case and the hand armour | paraphrased on the slide, no quotation |
-| Gap: no lighting post | 0 of 29 | a gap in the saved material, not a statement about demand; the collection's light family (slide 5) rests on the 26 Nov catalogue decision |
+| Gap: no lighting post | 0 of 26 | a gap in the saved material, not a statement about demand; the collection's light family (slide 5) rests on the 26 Nov catalogue decision (that sentence left the slide on 28 Nov to keep the column's line count; slide 5's footer still says it) |
 | Outside the patterns | 4: the humanoid kit, the hardware-design book, the tool-shaped creature art, the unusual 3D print | cited so that every post has an appendix entry |
 
-Counts by category (29, same categories as the inspiration README): Art objects 8, Other 7, Desk gadgets 6, Wall and decor 5, Furniture 2, Displays and e-ink 1, Lighting 0. My arithmetic on the list.
+Counts by category (26 since 28 Nov, same categories as the inspiration README): Art objects 8, Other 7, Desk gadgets 6, Displays and e-ink 3, Furniture 2, Lighting 0. On 27 Nov the list had 29: the same plus Wall and decor 5, and Displays and e-ink 1. My arithmetic on the list.
 
 ### 8.4 Tie-ins on other slides
 
 - Slide 3 (brand): a thumbnail and a credit line beside each brand rule: rule 1 beside the ceramic ashtray, rule 2 beside the bookcase, rule 3 beside the five promptable devices.
-- Slide 5 (collection): "(saved post: slide 4)" on the e-ink display, the desk display and the wall aquarium; the footer notes that no saved post shows lighting.
-- Slide 7 (funnel): a tile, "What the saved posts add (observation)", with the founder's two readings, labelled as readings that leave the assumptions as assumptions. No number changed.
+- Slide 5 (collection): "(saved posts: slide 4)" on the e-ink display (two posts since 28 Nov), "(saved post: slide 4)" on the desk display and the wall aquarium; the footer notes that no saved post shows lighting.
+- Slide 7 (funnel): a tile, "What the saved posts add (observation)", with three readings since 28 Nov (a wider market than tech people; cheap hardware plus an app sells; a modular AMOLED board with voice sells off the shelf from China), citing the PC case, the bookcase and the ESP32 board. Observations, not market measurements; the funnel's assumptions stay assumptions. No number changed.
 - Slide 8 (competition): one table row (Inanimate, not researched, seen in one saved post) and one sentence in the gap card. Not placed on the map, since its position would be an invented score. The gap claim stands as worded: that post shows gadgets under one name, not decorations, gadgets and oddities together.
-- Appendix: 29 entries tagged "saved X post", numbered in order of first use (the three brand-slide posts come first, then slide 4's grid, then the pattern citations).
+- Appendix: one entry per post on the list (26 since 28 Nov) tagged "saved X post", numbered in order of first use (the three brand-slide posts come first, then slide 4's grid, then the pattern citations).
 
 ### 8.5 Tags for the v4 material
 
-- **Saved X post** (new tag, "p" in `build_deck.py`): the 29 posts. Not opened in this run; image, handle and description from the inspiration folder.
+- **Saved X post** (new tag, "p" in `build_deck.py`): the posts on the list (26 since 28 Nov). Not opened in this run; image, handle and description from the inspiration folder.
 - **My arithmetic**: the post dates (decoded from the ids), the category counts.
 - **Observation**: every pattern and every tie-in sentence.
 - **Opinion**: the choice of the twelve featured posts; the reading that the water gun belongs to the making pattern rather than the smart-function pattern.
@@ -473,3 +473,20 @@ Counts by category (29, same categories as the inspiration README): Art objects 
 - Slide 7: one tile added. Slide 8: one table row and one sentence added; the problem slide's cross-reference says slide 8.
 - Slide 10: the plan row reads "this deck v4". Cover, page title and footers say v4.
 - No number from v3 changed.
+
+### 8.7 Update of 28 Nov 2026: two posts added, five removed
+
+Oscar's ask (through Innovator): add the two posts he sent on the evening of 27 Nov. Both sit in the inspiration list's Displays and e-ink category (commit 7876f9a). While this update was being built, the five Wall and decor posts were removed from the list at Oscar's request (commits c653f43 and 84ec477, 08:03 Madrid), so the deck follows the list as it stands: 26 posts.
+
+| Post | What the deck says | Where |
+|---|---|---|
+| @huntie, https://x.com/huntie/status/2126278478295109862 (posted 2026-11-27, decoded from the id) | Large e-ink tablet and stylus, read in a cafe. The inspiration README: a large e-ink tablet with a stylus, held in a cafe, showing a written plan with handwritten notes; the author's caption calls it a favourite way to review agent plans | moodboard cell 4; e-ink pattern (now 2 posts); slide 5's e-ink display says "saved posts"; appendix |
+| @ahm3dhub, https://x.com/ahm3dhub/status/2126078769483985199 (posted 2026-11-27) | ESP32 board with snap-together AMOLED tiles. The inspiration README: ESP-Mosaico ESP32-S31 modular AI board with a 2.16in touch AMOLED, IMU and voice, sold on AliExpress and made in Mainland China; the image is the video's first frame | moodboard cell 8; cheap-hardware pattern (now 6 posts); slide 7's observation tile, third reading; appendix |
+
+Removed from the deck with the list: the five Wall and decor posts (ids 2124808965351682185, 2124365500000153752, 2124263578261700815, 2121998102206754958, 2111851254091776122), their category on the count chart, and the illustration that held moodboard cell 11. `check_deck.py` fails if any of the five ids or the words "Wall and decor" reappear in `deck.html`.
+
+Moodboard after the swap (grid order): bookcase, five promptable devices, e-ink simulation, e-ink tablet; transparent player, retro headphones, open-frame PC, ESP32 AMOLED tiles; ceramic ashtray, bronze figures, resin water gun, thermal-printer slips. Off the moodboard since 28 Nov: the AirPlay board (still cited in two patterns and in the appendix). Images: `images/` holds exactly the twelve shown; the two new crops were made by `prepare_images.py` from the inspiration images (the tablet's band is placed low, so the tablet's edge and the hand show).
+
+Layout, by arithmetic on Innovator's render of 27 Nov (footer rule at about 665 CSS px): slide 4's pattern list is 20 lines (21 before: the e-ink line grew by one, the gap line and the hand-made line each shrank by one) and the category chart has six rows instead of seven, so the right column ends about 35 px higher than before, about 56 px above the rule; the card grid is unchanged (ended 29 px above the rule). Slide 7's observation tile takes a third line (about 14 px) from a 65 px margin. Slide 5's one-liner change adds one character to a short second line. Innovator's render is the check.
+
+Not changed: every market, competition and business-model figure; slides 1, 2, 3, 6, 8 to 11; the cover date (27 Nov 2026, the day v4 was built; this is an update of v4, noted in the README). Tags: the two posts are "saved X post", not opened in this run; the readings are observations; the choice of which cells to swap is opinion.
