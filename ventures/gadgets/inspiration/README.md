@@ -1,12 +1,28 @@
 # Gadgets inspiration: posts Oscar keeps saving
 
-Built 27 Nov 2026 from Oscar's X likes and bookmarks, and from the posts shared in his X Chat. Read-only: nothing was posted, liked, bookmarked or sent. Internal. Sender names in the Source lines are for Oscar's reference only; the pitch deck must not name anyone.
+Built 27 Nov 2026 from Oscar's X likes and bookmarks, and from the posts shared in his X Chat. Updated 28 Nov 2026 with two posts Oscar sent on the evening of 27 Nov. Read-only: nothing was posted, liked, bookmarked or sent. Internal. Sender names in the Source lines are for Oscar's reference only; the pitch deck must not name anyone.
 
-Source list with dates and coverage limits: `/workspace/gadgets/x-gadget-posts-2026-11-27.md` (box). 29 posts: 18 from likes and bookmarks, 11 found only in the chat. Dates are 2026, Europe/Madrid, the date the post was created (likes, bookmarks) or shared (chat). Oscar's comments are quoted as written, typos included.
+Source list with dates and coverage limits: `/workspace/gadgets/x-gadget-posts-2026-11-27.md` (box), plus the two posts Oscar sent on 27 Nov. 31 posts: 18 from likes and bookmarks, 11 found only in the chat, 2 sent by Oscar on 27 Nov. Dates are 2026, Europe/Madrid, the date the post was created (likes, bookmarks) or shared (chat or Innovator chat). Oscar's comments are quoted as written, typos included.
 
-Images: 29 of 29. Each is the first photo of the post, or the first frame of its video, resized to 900 px on the long side. All images belong to their authors; they are here as private reference, not for publication.
+Images: 31 of 31. Each is the first photo of the post, or the first frame of its video, resized to 900 px on the long side. All images belong to their authors; they are here as private reference, not for publication.
 
 ## Displays and e-ink
+
+### @huntie
+
+![huntie: A large e-ink tablet with a stylus, used in a cafe to review a written plan](images/2126278478295109862.jpg)
+
+- What: A large e-ink tablet with a stylus, held in a cafe, showing a written plan with handwritten notes. The author captions it "My favourite way to review agent plans" with a coffee emoji. First of two similar photos.
+- Link: https://x.com/huntie/status/2126278478295109862
+- Source: sent by Oscar in the Innovator chat, 27 Nov 2026
+
+### @ahm3dhub
+
+![ahm3dhub: ESP-Mosaico ESP32-S31 modular AI board with a 2.16in touch AMOLED](images/2126078769483985199.jpg)
+
+- What: ESP-Mosaico ESP32-S31 modular AI board with a 2.16in touch AMOLED, IMU and voice, sold on AliExpress and made in Mainland China. The image is the video's first frame: square AMOLED tiles showing pixel-art paintings, designed to snap together.
+- Link: https://x.com/ahm3dhub/status/2126078769483985199
+- Source: sent by Oscar in the Innovator chat, 27 Nov 2026
 
 ### @hturan
 
@@ -263,12 +279,12 @@ None found. Observation: nothing about lighting appears in the likes, bookmarks 
 
 ## Patterns Oscar keeps saving
 
-Observation from these 29 posts, not a measurement and not a forecast. Each pattern lists the posts it rests on.
+Observation from these 31 posts, not a measurement and not a forecast. Each pattern lists the posts it rests on.
 
-- **Cheap hardware plus an app.** Oscar's own words on the Oracle Shelf: "buy some cheapass hardware from china and add a vibecoded app, ppl will buy uit". Same direction in the drone under 20 euros, the open-source robot arm, the AirPlay PCB for an IKEA speaker, and the thermal-printer-plus-LLM post ("gadjet #45").
+- **Cheap hardware plus an app.** Oscar's own words on the Oracle Shelf: "buy some cheapass hardware from china and add a vibecoded app, ppl will buy uit". Same direction in the drone under 20 euros, the open-source robot arm, the AirPlay PCB for an IKEA speaker, the thermal-printer-plus-LLM post ("gadjet #45"), and the ESP32-S31 modular AMOLED board sold on AliExpress and made in Mainland China.
 - **Transparent and retrofuturistic objects.** The Y2K see-through Sony device (like and bookmark), the transparent-resin water gun, the TUNE X3 headphones (Oscar: "like unironically bro") and the open-frame Pixel PC case all show internals or vintage studio-equipment looks.
-- **E-ink and calm screens.** One post is saved directly (the 60 Hz e-ink simulation) and one chat comment links AI devices to "you e ink stuff". Observation only: this is a thin signal, 1 or 2 posts.
-- **Ceramics and hand-made objects.** The one material Oscar says he loves outright is ceramics ("Man I love ceramics", Gab Bois). The Art objects and Wall and decor groups (13 of 29 posts, 9 of them from @pmamtraveller) lean to sculpture, dolls, bronze and illustration rather than product design.
+- **E-ink and calm screens.** Two posts show e-ink or paper-like screens directly: the 60 Hz e-ink simulation, and the large e-ink tablet used in a cafe to review a written plan. One earlier chat comment also links AI devices to "you e ink stuff".
+- **Ceramics and hand-made objects.** The one material Oscar says he loves outright is ceramics ("Man I love ceramics", Gab Bois). The Art objects and Wall and decor groups (13 of 31 posts, 9 of them from @pmamtraveller) lean to sculpture, dolls, bronze and illustration rather than product design.
 - **Objects with a built-in behaviour.** Oracle Shelf (a bookcase that lights up the answer), the AI-designed water gun, the printed-paper planning post and the AirPlay speaker PCB all add one small smart function to an ordinary object.
 - **AI-assisted making.** The water gun modeled by Claude, the CNC-ready table file, the LLM with a thermal printer and "vibecoded app" appear in 4 posts and in Oscar's comments.
 - **Made for a wide market, not only for tech people.** Oscar on the Pixel case: "all of these are made for tech Brose the market of the people is wide-open"; on the hand armor: "for robots that could fit anyone".
@@ -276,20 +292,6 @@ Observation from these 29 posts, not a measurement and not a forecast. Each patt
 
 ## How the images were fetched
 
-Post media came from X's public read tools (get_posts_by_ids with media fields), then downloaded from pbs.twimg.com. No image was skipped; the water-gun post had no media of its own, so its image comes from the post it quotes.
+Post media came from X's public read tools (get_posts_by_ids with media fields), then downloaded from pbs.twimg.com. No image was skipped; the water-gun post had no media of its own, so its image comes from the post it quotes. The two posts added on 28 Nov were fetched the same way (first photo, or the video preview for the ESP32 board).
 
-
-## Added 27 Nov evening (sent by Oscar)
-
-### @huntie
-![](images/2126278478295109862.jpg)
-- What: "My favourite way to review agent plans", a coffee-desk setup for reviewing AI agent plans.
-- Link: https://x.com/huntie/status/2126278478295109862
-- Source: Oscar in Innovator chat, 27 Nov 2026
-
-### @ahm3dhub
-![](images/2126078769483985199.jpg)
-- What: ESP-Mosaico ESP32-S31 modular AI board with a 2.16in touch AMOLED, IMU and voice, sold on AliExpress. A cheap China-sourced base for a premium gadget.
-- Link: https://x.com/ahm3dhub/status/2126078769483985199
-- Source: Oscar in Innovator chat, 27 Nov 2026
 
