@@ -19,7 +19,8 @@ RATIO = CELL_W / CELL_H
 
 # post id: vertical anchor of the band (AY). The 12 featured posts of slide 4 (three of them reused on slide 3).
 # 28 Nov 2026: the e-ink tablet and the ESP32 AMOLED board (posts of 27 Nov) replace the AirPlay board and the illustration
-# that left the inspiration list with the Wall and decor posts; the water gun moved to the third row.
+# that left the inspiration list with the Wall and decor posts; the water gun moved to the third row. Later the same morning:
+# the magnetic Wi-Fi camera (The Scout) replaces the bronze figures in cell 10.
 CROPS = {
     "2125588103276720393": 0.45,   # @modem_works, bookcase
     "2125257053341966427": 0.50,   # @inanimate_tech, five promptable devices
@@ -30,7 +31,7 @@ CROPS = {
     "2125946257852285039": 0.40,   # @andreintg, open-frame PC case (portrait)
     "2126078769483985199": 0.52,   # @ahm3dhub, ESP32 AMOLED tiles (portrait video frame, tiles in the middle)
     "2123854155856880066": 0.45,   # @pmamtraveller, ceramic ashtray
-    "2122938259906994637": 0.40,   # @pmamtraveller, bronze figures
+    "2126374876135231971": 0.50,   # @kinglycrow, magnetic Wi-Fi camera (16:9 video frame, wider than the cell: full height, centred)
     "2121458552803914203": 0.42,   # @MaxLobovsky, resin water gun in the printer (portrait)
     "2125649169138528553": 0.40,   # @kieranklaassen, thermal-printer slips (portrait)
 }
